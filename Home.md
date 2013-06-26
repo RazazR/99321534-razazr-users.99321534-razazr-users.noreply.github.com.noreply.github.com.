@@ -2,6 +2,35 @@
 -----
 [ProtoBuf.js](https://github.com/dcodeIO/ProtoBuf.js) is a protobuf implementation on top of [ByteBuffer.js](https://github.com/dcodeIO/ByteBuffer.js) including a .proto parser, reflection, message class building and simple encoding and decoding in plain JavaScript. There is no compilation step required, it's super easy to use and it works out of the box on .proto files.
 
+Why ProtoBuf.js instead of JSON?
+--------------------------------
+While JSON is already much better than XML, it still comes with a significant overhead. Imagine you are transfering object data between two nodes: Using JSON, this might look something like `{"type":"ping","time":123456789}` which is, in this example, 32 bytes large, containing about 9+3+2+1=15 bytes of bounding characters plus 4+4=8 bytes of names, making up 23/32 bytes ~= 70% redundant data for each subsequent message of this type. That's much. ProtoBuf.js, on the other hand, serializes all the data efficiently to binary data, which is 5 bytes long while still being able to distringuish between two messages of different types: `<08 95 9A EF 3A>`
+
+```protobuf
+message Message {
+    optional Ping ping = 1;
+    optional Pong pong = 2;
+    
+    message Ping {
+        required uint32 time = 1;
+    }
+    
+    message Pong {
+        required uint32 time = 1;
+    }
+}
+```
+
+```js
+var builder = ProtoBuf.protoFromFile("PingExample.proto");
+var Message = builder.build("Message");
+var ping = new Message.Ping(123456789);
+var bb = ping.encode();
+bb.printDebug();
+```
+
+Convinced? :-)
+
 Usage
 -----
 #### node.js / CommonJS ####
