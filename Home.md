@@ -60,8 +60,10 @@ var ProtoBuf = dcodeIO.ProtoBuf;
 
 Now, everything is set up and ready to go.
 
-API documentation
------------------
+**Next:** [Learn more about using the API](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder:-Usage-&-Examples)
+
+Documentation
+-------------
 * [Read the wiki](https://github.com/dcodeIO/ProtoBuf.js/wiki/_pages) ([start here](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder:-Usage-&-Examples))
 * [Read the API docs](http://htmlpreview.github.com/?http://github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
 
