@@ -39,7 +39,7 @@ socket.send(buffer.toArrayBuffer());
 socket.send(car.toArrayBuffer());
 ```
 
-#### Putting multiple .proto files into a common namespace ####
+#### Putting multiple .proto files into a common namespace (outdated, use import instead) ####
 
 Example: [tests/example1.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example1.proto),
 [tests/example2.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example2.proto)
