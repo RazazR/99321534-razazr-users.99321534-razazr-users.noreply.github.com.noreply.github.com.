@@ -155,9 +155,7 @@ The parser is only available in the full build (i.e. not in "noparse" builds). C
   is not required by ProtoBuf.js.
   
 #### Not (yet) supported ####
-* *Extensions* (what for?) and *services* (you roll your own, don't you?). If you need anything of this, please open an
-  issue and explain your exact requirements. It's just that I have no idea how to benefit from that and therefore I am
-  not sure how to design it.
+* *Extensions* (ignored) and *services* (you roll your own, don't you?). If you need anything of this, please open an issue and explain your exact requirements. It's just that I have no idea how to benefit from that and therefore I am not sure how to design it.
 
 Calling the parser on your own
 ------------------------------
