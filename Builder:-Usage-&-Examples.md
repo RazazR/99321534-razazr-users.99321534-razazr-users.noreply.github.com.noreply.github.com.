@@ -119,9 +119,11 @@ var YourMessage = builder.build("YourMessage");
 var myMessage = new YourMessage(...);
 var byteBuffer = myMessage.encode();
 var buffer = byteBuffer.toArrayBuffer();
+//         = byteBuffer.toBuffer(); // node.js
 
 // OR: Short...
 var buffer = myMessage.toArrayBuffer();
+//         = myMessage.toBuffer(); // node.js
 
 var socket = ...; // E.g. a WebSocket
 socket.send(buffer);
