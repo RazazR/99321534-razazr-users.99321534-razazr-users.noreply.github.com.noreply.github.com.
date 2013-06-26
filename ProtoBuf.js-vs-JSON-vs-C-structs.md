@@ -5,10 +5,6 @@ Why ProtoBuf.js instead of, let's say, JSON?
 --------------------------------------------
 While JSON is already much better than XML, it still comes with a significant overhead. Imagine you are transfering object data between two nodes: Using JSON, this might look something like `{"type":"ping","time":123456789}` which is, in this example, 32 bytes large, containing 2+3+3+2+1=11 bytes of bounding characters plus 4+4+4=12 bytes of string names, making up 23/32 bytes ~= 71% redundant data for each subsequent message of this type. That's much. ProtoBuf.js, on the other hand, efficiently serializes the data to binary without losing any information, which turns out to be 7 bytes long while still being able to distringuish between two messages of different types: `<0A 05 08 95 9A EF 3A>`
 
-What's the difference to C structs?
------------------------------------
-Despite being somewhat similar, when transfering C structs, there will always be a fixed amount of bytes, even if, let's say, a 32 bit integer value does not require the full 4 bytes to represent its information (e.g. a value of 1). As opposed to this, ProtoBuf.js uses base 128 variable-length integers known as "varints", making the smalles values just one byte large (but there are also fixed length data types available). Furthermore, a protobuf encoded message can easily be extended with more values without breaking existing code while any change to a C struct will usually render old binaries incompatible.
-
 Example
 -------
 ```protobuf
@@ -49,5 +45,9 @@ if (msg.pong) { // Handle Pong if present (even allows multiple message types at
 ```
 
 Convinced already?
+
+What's the difference to C structs?
+-----------------------------------
+Despite being somewhat similar, when transfering C structs, there will always be a fixed amount of bytes, even if, let's say, a 32 bit integer value does not require the full 4 bytes to represent its information (e.g. a value of 1). As opposed to this, ProtoBuf.js uses base 128 variable-length integers known as "varints", making the smalles values just one byte large (but there are also fixed length data types available). Furthermore, a protobuf encoded message can easily be extended with more values without breaking existing code while any change to a C struct will usually render old binaries incompatible.
 
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
