@@ -28,13 +28,16 @@ var msg = new Message(); // Create a new Message
 msg.ping = new Message.Ping(123456789); // Set the ping property
 var bb = msg.encode(); // Encode
 
-... // Send it over the wire
+... // Send it over the wire, e.g. a WebSocket, WebRTC, etc.
 
 var msg = Message.decode(bb); // Decode
 if (msg.ping) {
-   ... // Handle Ping
-} else if (msg.pong) {
-   ... // Handle Pong
+   console.log("Ping: "+msg.ping.time);
+   ...
+}
+if (msg.pong) {
+   console.log("Pong: "+msg.pong.time);
+   ...
 }
 
 ```
