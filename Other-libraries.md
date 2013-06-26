@@ -1,4 +1,5 @@
 Source: http://code.google.com/p/protobuf/wiki/ThirdPartyAddOns
+---
 
 ### [protobuf-js](http://code.google.com/p/protobuf-js/)
 Cons: Depends on ruby and prototype.js. Incomplete.
@@ -7,6 +8,7 @@ Cons: Depends on ruby and prototype.js. Incomplete.
 Cons: Depends on ANTLR. Incomplete.
 
 Source: https://npmjs.org/search?q=protobuf
+---
 
 ### [protobuf](https://github.com/chrisdew/protobuf)
 Pros: Based on the official protoc
