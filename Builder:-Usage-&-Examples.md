@@ -151,5 +151,8 @@ try {
     }
 }
 ```
+Documentation
+-------------
+* [Read the API docs](http://htmlpreview.github.com/?http://github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
 
 **Next:** [Learn more about the Parser](https://github.com/dcodeIO/ProtoBuf.js/wiki/Parser:-Usage-&-supported-directives)
