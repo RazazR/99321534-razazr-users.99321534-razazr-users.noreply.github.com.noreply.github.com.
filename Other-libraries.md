@@ -38,5 +38,5 @@ Cons: Few documentation. Incomplete.
 Found on Google
 ---------------
 ### [protobuf-for-node](http://code.google.com/p/protobuf-for-node/)
-Pros: Based on the official protoc.
+Pros: Based on the official protoc.  
 Cons: Compilation step and C-knowledge required. No type checking and long support. Node only.
