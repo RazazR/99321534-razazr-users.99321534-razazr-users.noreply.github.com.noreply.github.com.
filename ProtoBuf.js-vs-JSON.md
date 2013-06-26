@@ -46,4 +46,4 @@ if (msg.pong) { // Handle Pong if present (even allows multiple message types at
 
 Convinced already?
 
-**Next:** [Feel enlighted and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
+**Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
