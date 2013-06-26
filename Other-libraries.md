@@ -9,7 +9,7 @@ ThirdPartyAddOns ([see](http://code.google.com/p/protobuf/wiki/ThirdPartyAddOns)
 Cons: Depends on ruby and prototype.js. Incomplete. 
 
 ### [protojs](https://github.com/sirikata/protojs)
-Pros: Similar to the python implementation.
+Pros: Similar to the python implementation.  
 Cons: Requires a compilation step. Depends on ANTLR. Incomplete. 
 
 npm ([see](https://npmjs.org/search?q=protobuf))
