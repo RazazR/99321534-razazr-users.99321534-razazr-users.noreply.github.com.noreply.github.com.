@@ -1,3 +1,5 @@
+There are lots of other protobuf libraries for JavaScript around. Before starting ProtoBuf.js, I tried out the most promising ones and later extended this list with a few more libraries. Please not that some libraries may not have been examined in detail, so consider this my personal experience only.
+
 [protobuf ThirdPartyAddOns](http://code.google.com/p/protobuf/wiki/ThirdPartyAddOns)
 ---
 
