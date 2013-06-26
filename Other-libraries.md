@@ -44,4 +44,5 @@ Found on Google
 Pros: Based on the official protoc.  
 Cons: Compilation step and C-knowledge required. No type checking and long support. Node only.
 
+<hr />
 Feel free to edit!
