@@ -43,7 +43,7 @@ if (msg.pong) { // Handle Pong if present (even allows multiple message types at
 
 ```
 
-Convinced? :-)
+Convinced already?
 
 Usage
 -----
