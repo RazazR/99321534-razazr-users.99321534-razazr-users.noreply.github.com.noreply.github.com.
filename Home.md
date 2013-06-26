@@ -61,20 +61,3 @@ var ProtoBuf = dcodeIO.ProtoBuf;
 Now, everything is set up and ready to go.
 
 **Next:** [Learn more about using the API](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder:-Usage-&-Examples)
-
-Documentation
--------------
-* [Read the wiki](https://github.com/dcodeIO/ProtoBuf.js/wiki/_pages) ([start here](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder:-Usage-&-Examples))
-* [Read the API docs](http://htmlpreview.github.com/?http://github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
-
-Tests [![Build Status](https://travis-ci.org/dcodeIO/ProtoBuf.js.png?branch=master)](https://travis-ci.org/dcodeIO/ProtoBuf.js)
-------------------
-* [View source](https://github.com/dcodeIO/ProtoBuf.js/blob/master/tests/suite.js)
-* [View report](https://travis-ci.org/dcodeIO/ProtoBuf.js)
-
-Downloads
----------
-* [ZIP-Archive](https://github.com/dcodeIO/ProtoBuf.js/archive/master.zip)
-* [Tarball](https://github.com/dcodeIO/ProtoBuf.js/tarball/master)
-
-**License:** [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
