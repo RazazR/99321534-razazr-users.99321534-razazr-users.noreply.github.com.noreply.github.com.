@@ -74,3 +74,7 @@ Documentation
 -------------
 * [Read the wiki](https://github.com/dcodeIO/ProtoBuf.js/wiki/_pages)
 * [Read the API docs](http://htmlpreview.github.com/?http://github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
+
+License
+-------
+Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0.html
