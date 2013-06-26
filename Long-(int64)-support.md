@@ -6,3 +6,5 @@ Full 64bit support is available since 0.10.0 and requires a recent version of [L
 * [Read more about ByteBuffer.js](https://github.com/dcodeIO/ByteBuffer.js)
 
 **Next:** If you have any more questions or even an idea on how to extend the wiki, open up an issue or start editing! :-)
+
+**«** [Back to the repository](https://github.com/dcodeIO/ProtoBuf.js)
