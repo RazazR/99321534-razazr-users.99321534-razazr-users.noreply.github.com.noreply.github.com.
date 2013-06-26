@@ -151,3 +151,5 @@ try {
     }
 }
 ```
+
+**Next:** [Learn more about the Parser](https://github.com/dcodeIO/ProtoBuf.js/wiki/Parser:-Usage-&-supported-directives)
