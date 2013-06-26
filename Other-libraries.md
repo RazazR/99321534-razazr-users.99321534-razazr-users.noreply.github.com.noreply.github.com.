@@ -1,6 +1,6 @@
 There are lots of other protobuf libraries for JavaScript around. Before starting ProtoBuf.js, I tried out the most promising ones and later extended this list with a few more libraries. Please note that some libraries may not have been examined in detail, so consider this my personal experience only - for what it's worth.
 
-[protobuf ThirdPartyAddOns](http://code.google.com/p/protobuf/wiki/ThirdPartyAddOns)
+protobuf ThirdPartyAddOns [1](http://code.google.com/p/protobuf/wiki/ThirdPartyAddOns)
 ---
 
 ### [protobuf-js](http://code.google.com/p/protobuf-js/)
@@ -9,7 +9,7 @@ Cons: Depends on ruby and prototype.js. Incomplete.
 ### [protojs](https://github.com/sirikata/protojs)
 Cons: Depends on ANTLR. Incomplete. 
 
-[npm](https://npmjs.org/search?q=protobuf)
+npm [2](https://npmjs.org/search?q=protobuf)
 ---
 
 ### [protobuf](https://github.com/chrisdew/protobuf)
