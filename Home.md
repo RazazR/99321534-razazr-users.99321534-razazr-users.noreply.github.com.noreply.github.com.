@@ -1,4 +1,4 @@
-ProtoBuf.js is a protobuf implementation on top of [ByteBuffer.js](https://github.com/dcodeIO/ByteBuffer.js) including a .proto parser, reflection, message class building and simple encoding and decoding in plain JavaScript. There is no compilation step required and it works out of the box on .proto files.
+[ProtoBuf.js](https://github.com/dcodeIO/ProtoBuf.js) is a protobuf implementation on top of [ByteBuffer.js](https://github.com/dcodeIO/ByteBuffer.js) including a .proto parser, reflection, message class building and simple encoding and decoding in plain JavaScript. There is no compilation step required and it works out of the box on .proto files.
 
 Usage
 -----
@@ -58,8 +58,10 @@ var ProtoBuf = dcodeIO.ProtoBuf;
 ...
 ```
 
-Documentation
--------------
+Now, everything is set up and ready to go.
+
+API documentation
+-----------------
 * [Read the wiki](https://github.com/dcodeIO/ProtoBuf.js/wiki/_pages) ([start here](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder:-Usage-&-Examples))
 * [Read the API docs](http://htmlpreview.github.com/?http://github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
 
@@ -73,6 +75,4 @@ Downloads
 * [ZIP-Archive](https://github.com/dcodeIO/ProtoBuf.js/archive/master.zip)
 * [Tarball](https://github.com/dcodeIO/ProtoBuf.js/tarball/master)
 
-License
--------
-Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0.html
+**License:** [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
