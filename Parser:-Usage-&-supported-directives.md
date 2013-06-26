@@ -84,7 +84,7 @@ The parser is only available in the full build (i.e. not in "noparse" builds). C
       required .My.Game.Test.Priority priority_fqn = 1 [default=LOW];
       required Test.Priority priority_qn = 2 [default=MEDIUM];
   }
-  ```  
+  ``` 
 
 * Options on all levels:
   
