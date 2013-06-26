@@ -34,3 +34,9 @@ Cons: Requires a compilation step. Depends on the Closure Library (goog.proto2.M
 
 ### [gpb](https://github.com/Sannis/node-gpb)
 Cons: Few documentation. Incomplete.  
+
+Found on Google
+---------------
+### [protobuf-for-node](http://code.google.com/p/protobuf-for-node/)
+Pros: Based on the official protoc.
+Cons: Compilation step and C-knowledge required. No type checking and long support.
