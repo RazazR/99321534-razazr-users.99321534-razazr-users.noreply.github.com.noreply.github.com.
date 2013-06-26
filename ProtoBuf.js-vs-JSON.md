@@ -7,6 +7,8 @@ While JSON is already much better than XML, it still comes with a significant ov
 
 But see for yourself:
 
+Example
+-------
 ```protobuf
 // PingExample.proto
 message Message {
