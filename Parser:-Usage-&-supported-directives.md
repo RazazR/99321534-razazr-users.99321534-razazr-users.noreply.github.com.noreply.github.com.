@@ -115,7 +115,7 @@ The parser is only available in the full build (i.e. not in "noparse" builds). I
 
   ```protobuf
   package My; // Not used by the following imports
-  import public "example1.proto"; // The "public" keyword is ignored
+  import public "example1.proto"; // The public keyword is simply ignored
   import "example2.proto";
   
   message Test2 {
