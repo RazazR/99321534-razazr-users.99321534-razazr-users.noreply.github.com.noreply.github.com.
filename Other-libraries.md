@@ -22,7 +22,7 @@ Cons: Requires compilation and a compilation step. Hard to compile on Windows. N
 
 ### [pomelo-protobuf](https://npmjs.org/package/pomelo-protobuf)
 Pros: Seems to be somewhat popular. Split into server and client code.  
-Cons: Not compatible to protoc in some cases. No package, long, default and enum support (incomplete).
+Cons: Not compatible to protoc in some cases. At least no package, long, default and enum support (incomplete).
 
 ### [protobuf.js](https://github.com/nlf/protobuf.js)
 Pros: Plain JavaScript.  
