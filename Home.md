@@ -75,6 +75,11 @@ Documentation
 * [Read the wiki](https://github.com/dcodeIO/ProtoBuf.js/wiki/_pages)
 * [Read the API docs](http://htmlpreview.github.com/?http://github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
 
+Tests [![Build Status](https://travis-ci.org/dcodeIO/ProtoBuf.js.png?branch=master)](https://travis-ci.org/dcodeIO/ProtoBuf.js)
+------------------
+* [View source](https://github.com/dcodeIO/ProtoBuf.js/blob/master/tests/suite.js)
+* [View report](https://travis-ci.org/dcodeIO/ProtoBuf.js)
+
 Downloads
 ---------
 * [ZIP-Archive](https://github.com/dcodeIO/ProtoBuf.js/archive/master.zip)
