@@ -171,3 +171,5 @@ var parser = new ProtoBuf.DotProto.Parser(fs.readFileSync("tests/complex.proto")
 var ast = parser.parse();
 console.log(util.inspect(ast, false, null, true));
 ```
+
+**Next:** [Learn more about proto2js on the command line](https://github.com/dcodeIO/ProtoBuf.js/wiki/Command-line:-proto2js)
