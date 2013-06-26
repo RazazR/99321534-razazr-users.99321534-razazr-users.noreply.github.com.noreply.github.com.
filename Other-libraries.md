@@ -14,11 +14,11 @@ npm ([see](https://npmjs.org/search?q=protobuf))
 
 ### [protobuf](https://github.com/chrisdew/protobuf)
 Pros: Based on the official protoc  
-Cons: Requires compilation and a compilation step.  
+Cons: Requires compilation and a compilation step. Node only.
 
 ### [node-protobuf](https://npmjs.org/package/node-protobuf)
 Pros: Based on the official protoc  
-Cons: Requires compilation and a compilation step. Hard to compile on Windows.  
+Cons: Requires compilation and a compilation step. Hard to compile on Windows. Node only.
 
 ### [pomelo-protobuf](https://npmjs.org/package/pomelo-protobuf)
 Pros: Seems to be somewhat popular. Split into server and client code.  
