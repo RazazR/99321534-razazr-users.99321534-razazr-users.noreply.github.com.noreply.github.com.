@@ -1,3 +1,5 @@
+![ProtoBuf.js - protobuf for JavaScript](https://raw.github.com/dcodeIO/ProtoBuf.js/master/ProtoBuf.png)
+---
 The Builder is probably the core component of ProtoBuf.js. It resolves all type references, performs all the necessary checks and returns ready to use classes. Can be created from a .proto file or from a JSON definition. The later does not even require the .proto parser to be included ([see](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder:-Usage-&-Examples#using-json-without-the-proto-parser)).
 
 #### Using .proto files ####
