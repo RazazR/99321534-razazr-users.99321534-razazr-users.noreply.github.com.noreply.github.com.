@@ -31,11 +31,11 @@ var bb = msg.encode(); // Encode
 ... // Send it over the wire, e.g. a WebSocket, WebRTC, etc.
 
 var msg = Message.decode(bb); // Decode
-if (msg.ping) {
+if (msg.ping) { // Handle Ping if present
    console.log("Ping: "+msg.ping.time);
    ...
 }
-if (msg.pong) {
+if (msg.pong) { // Handle Pong if present (allows multiple)
    console.log("Pong: "+msg.pong.time);
    ...
 }
