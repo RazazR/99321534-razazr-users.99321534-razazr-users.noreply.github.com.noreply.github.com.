@@ -1,3 +1,5 @@
+![ProtoBuf.js - protobuf for JavaScript](https://raw.github.com/dcodeIO/ProtoBuf.js/master/ProtoBuf.png)
+---
 The parser is only available in the full build (i.e. not in "noparse" builds). Compliant with the protobuf parser to the following extend:
 
 * Required, optional, repeated and packed repeated fields:
