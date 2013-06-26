@@ -35,7 +35,7 @@ if (msg.ping) { // Handle Ping if present
    console.log("Ping: "+msg.ping.time);
    ...
 }
-if (msg.pong) { // Handle Pong if present (allows multiple)
+if (msg.pong) { // Handle Pong if present (even allows multiple message types at once)
    console.log("Pong: "+msg.pong.time);
    ...
 }
