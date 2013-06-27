@@ -129,7 +129,7 @@ var socket = ...; // E.g. a WebSocket
 socket.send(buffer);
 ```
 
-#### Decoding from an ArrayBuffer/ByteBuffer/node Buffer ####
+#### Decoding from an ArrayBuffer, a ByteBuffer or a node Buffer ####
 
 ```javascript
 ...
