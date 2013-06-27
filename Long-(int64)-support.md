@@ -7,6 +7,4 @@ Dependencies
 * [Read more about Long.js](https://github.com/dcodeIO/Long.js)
 * [Read more about ByteBuffer.js](https://github.com/dcodeIO/ByteBuffer.js)
 
-**Next:** [Discover more pages](https://github.com/dcodeIO/ProtoBuf.js/wiki/_pages)
-
-**«** [Back to the repository](https://github.com/dcodeIO/ProtoBuf.js)
+**Next:** [Discover more pages](https://github.com/dcodeIO/ProtoBuf.js/wiki/_pages) or [Back to the repository](https://github.com/dcodeIO/ProtoBuf.js)
