@@ -9,4 +9,4 @@
 * [osm-read](https://github.com/marook/osm-read) - An openstreetmap XML and PBF data parser
 
 <hr />
-Feel free to edit!
+Feel free to edit (alphabetical order)!
