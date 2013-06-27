@@ -41,20 +41,6 @@ socket.send(buffer.toArrayBuffer());
 socket.send(car.toArrayBuffer());
 ```
 
-#### Putting multiple .proto files into a common namespace programmatically ####
-
-Example: [tests/example1.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example1.proto),
-[tests/example2.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example2.proto)
-
-```javascript
-var builder = ProtoBuf.protoFromFile("tests/example1.proto");
-ProtoBuf.protoFromFile("tests/example2.proto", builder);
-var root = builder.build();
-var test1 = new root.Test1(123);
-var test2 = new root.Test2("123");
-...
-```
-
 #### Using JSON without the .proto parser ####
 
 Example: [tests/complex.json](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/complex.json)
@@ -106,6 +92,20 @@ var Car = Game.Cars.Car;
 When using JSON only, you can use [ProtoBuf.noparse.js](https://github.com/dcodeIO/ProtoBuf.js/blob/master/ProtoBuf.noparse.js)
 / [ProtoBuf.noparse.min.js](https://github.com/dcodeIO/ProtoBuf.js/blob/master/ProtoBuf.noparse.min.js) instead, which
 do NOT include the `ProtoBuf.DotProto` package for parsing and are therefore even smaller.
+
+#### Putting multiple .proto files into a common namespace programmatically ####
+
+Example: [tests/example1.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example1.proto),
+[tests/example2.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example2.proto)
+
+```javascript
+var builder = ProtoBuf.protoFromFile("tests/example1.proto");
+ProtoBuf.protoFromFile("tests/example2.proto", builder);
+var root = builder.build();
+var test1 = new root.Test1(123);
+var test2 = new root.Test2("123");
+...
+```
 
 Encoder / Decoder
 -----------------
