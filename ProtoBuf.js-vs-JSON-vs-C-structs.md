@@ -46,8 +46,4 @@ if (msg.pong) { // Handle Pong if present (even allows multiple message types at
 
 Convinced already?
 
-What's the difference to C structs?
------------------------------------
-Despite being somewhat similar, when transfering C structs, there will always be a fixed amount of bytes, even if, let's say, a 32 bit integer value does not require the full 4 bytes to represent its information (e.g. a value of 1). As opposed to this, ProtoBuf.js uses base 128 variable-length integers known as "varints", making the smalles values just one byte large (but there are also fixed length data types available). Furthermore, a protobuf encoded message can easily be extended with more values without breaking existing code while any change to a C struct will usually render old binaries incompatible.
-
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
