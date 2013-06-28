@@ -93,6 +93,32 @@ When using JSON only, you can use [ProtoBuf.noparse.js](https://github.com/dcode
 / [ProtoBuf.noparse.min.js](https://github.com/dcodeIO/ProtoBuf.js/blob/master/ProtoBuf.noparse.min.js) instead, which
 do NOT include the `ProtoBuf.DotProto` package for parsing and are therefore even smaller.
 
+#### Constructor alternatives
+Constructors of message classes always allow construction from object notation, like shown in the first example, or alternatively from multiple parameters in the order the properties have been defined in the proto file:
+
+```js
+...
+var Car = Game.Cars.Car;
+var car = new Car(
+    "Rusty",
+    new Car.Vendor(
+        "Iron Inc.",
+        new Car.Vendor.Address("US")
+    ),
+    Car.Speed.SUPERFAST
+);
+
+#### Getters, setters and properties
+In addition to using object notation to initialize message contents, each message instance magically implements a couple of setters and getters for its properties. For example:
+
+```js
+var car = ...;
+car.setModel("Rusty"); // car.getModel();
+car.set_model("Rusty"); // car.get_model();
+car.model = "Rusty"; // car.model;
+...
+```
+
 #### Putting multiple .proto files into a common namespace programmatically ####
 
 Example: [tests/example1.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example1.proto),
