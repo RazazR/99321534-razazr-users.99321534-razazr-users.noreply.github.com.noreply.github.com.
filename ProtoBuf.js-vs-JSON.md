@@ -48,6 +48,6 @@ What about binary JSON?
 -----------------------
 While [BSON](http://bsonspec.org) is better than JSON, it still comes with pretty similar overhead. As of [the specification](http://bsonspec.org/#/specification), BSON always includes all the keys as cstrings and it also does not efficiently store integer or long values as there is no varint encoding. Looking on its hello world example: `{"hello": "world"}` -> `<16 00 00 00 02 h e l l o 00 06 00 00 00 w o r l d 00 00>`
 
-**Bottom line:** Not requiring a schema like in JSON/BSON is convenient but it comes at the price of size and a chance of being more error prone at least in development. Furthermore, Protocol Buffers are capable of storing numeric values more efficiently.
+**Bottom line:** Not requiring a schema like in JSON/BSON is convenient but it comes at the price of size and a chance of being more error prone at least in development. Additionally, Protocol Buffers are capable of storing numeric values more efficiently.
 
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
