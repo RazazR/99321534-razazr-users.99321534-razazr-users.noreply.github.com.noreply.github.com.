@@ -35,10 +35,10 @@ var buffer = car.encode();
 
 // And send it over the wire:
 var socket = ...;
-socket.send(buffer.toArrayBuffer());
+socket.send(buffer.toArrayBuffer()); // node.js: buffer.toBuffer()
 
 // OR: Short...
-socket.send(car.toArrayBuffer());
+socket.send(car.toArrayBuffer()); // node.js: car.toBuffer()
 ```
 
 #### Using JSON without the .proto parser ####
