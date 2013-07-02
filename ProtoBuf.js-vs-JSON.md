@@ -50,6 +50,6 @@ What about binary JSON?
 JSON: `{"hello":"world"}` (17 bytes)  
 BSON: `<16 00 00 00 02 h e l l o 00 06 00 00 00 w o r l d 00 00>` (22 bytes)
 
-**Bottom line:** Not requiring a schema like in JSON/BSON is convenient but it comes at the price of size and a chance of being more error prone at least in development. Additionally, Protocol Buffers are capable of storing numeric values more efficiently.
+**Bottom line:** Not requiring a schema like in JSON/BSON is convenient but it comes at the price of size and a chance of being more error prone at least in development (no type checking, typos in keys). Additionally, Protocol Buffers are capable of storing numeric values more efficiently.
 
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
