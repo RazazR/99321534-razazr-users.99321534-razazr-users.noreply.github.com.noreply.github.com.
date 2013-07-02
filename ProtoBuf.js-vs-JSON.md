@@ -46,7 +46,8 @@ if (msg.pong) { // Handle Pong if present (even allows multiple message types at
 
 What about binary JSON?
 -----------------------
-[BSON](http://bsonspec.org) still comes with a similar overhead. As of [the specification](http://bsonspec.org/#/specification), BSON also includes all the keys as cstrings and it also does not efficiently store integer or long values as there is no varint encoding. Looking on the hello world example should be self explaining: JSON: `{"hello":"world"}` (17 bytes)
+[BSON](http://bsonspec.org) still comes with a similar overhead. As of [the specification](http://bsonspec.org/#/specification), BSON also includes all the keys as cstrings and it also does not efficiently store integer or long values as there is no varint encoding. Looking on the hello world example should be self explaining:  
+JSON: `{"hello":"world"}` (17 bytes)  
 BSON: `<16 00 00 00 02 h e l l o 00 06 00 00 00 w o r l d 00 00>` (22 bytes)
 
 **Bottom line:** Not requiring a schema like in JSON/BSON is convenient but it comes at the price of size and a chance of being more error prone at least in development. Additionally, Protocol Buffers are capable of storing numeric values more efficiently.
