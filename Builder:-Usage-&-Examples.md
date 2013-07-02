@@ -97,8 +97,8 @@ In addition to using object notation to initialize message contents, each messag
 
 ```js
 var car = ...;
-car.setModel("Rusty"); // car.getModel();
-car.set_model("Rusty"); // car.get_model();
+car.setModel("Rusty"); // camel case notation; getter: car.getModel();
+car.set_model("Rusty"); // underscore notation; getter: car.get_model();
 car.model = "Rusty"; // car.model;
 ...
 ```
