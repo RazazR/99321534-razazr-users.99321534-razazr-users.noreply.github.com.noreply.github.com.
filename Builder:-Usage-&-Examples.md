@@ -128,12 +128,10 @@ Built into all message classes. Just call `YourMessage#encode([buffer])` respect
 var YourMessage = builder.build("YourMessage");
 var myMessage = new YourMessage(...);
 var byteBuffer = myMessage.encode();
-var buffer = byteBuffer.toArrayBuffer();
-//         = byteBuffer.toBuffer(); // node.js
+var buffer = byteBuffer.toArrayBuffer(); // node.js: byteBuffer.toBuffer()
 
 // OR: Short...
-var buffer = myMessage.toArrayBuffer();
-//         = myMessage.toBuffer(); // node.js
+var buffer = myMessage.toArrayBuffer(); // node.js: myMessage.toBuffer()
 
 var socket = ...; // E.g. a WebSocket
 socket.send(buffer);
