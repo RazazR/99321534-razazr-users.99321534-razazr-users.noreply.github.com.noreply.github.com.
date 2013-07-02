@@ -90,8 +90,7 @@ var Car = Game.Cars.Car;
 ```
 
 When using JSON only, you can use [ProtoBuf.noparse.js](https://github.com/dcodeIO/ProtoBuf.js/blob/master/ProtoBuf.noparse.js)
-/ [ProtoBuf.noparse.min.js](https://github.com/dcodeIO/ProtoBuf.js/blob/master/ProtoBuf.noparse.min.js) instead, which
-do NOT include the `ProtoBuf.DotProto` package for parsing and are therefore even smaller.
+/ [ProtoBuf.noparse.min.js](https://github.com/dcodeIO/ProtoBuf.js/blob/master/ProtoBuf.noparse.min.js) instead, which do NOT include the `ProtoBuf.DotProto` package for parsing and are therefore even smaller. With [proto2js on the command line](https://github.com/dcodeIO/ProtoBuf.js/wiki/Command-line:-proto2js) its also possible to conveniently convert .proto files to their .json counterparts or even to ready to use classes.
 
 #### Getters, setters and properties
 In addition to using object notation to initialize message contents, each message instance magically implements a couple of setters and getters for its properties. For example:
