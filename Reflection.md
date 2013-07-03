@@ -21,14 +21,14 @@ The general reflection structure is a tree composed of ProtoBuf.Reflect.Namespac
 
 ```text
 Namespace: [root]
-  Namespace: Game
-    Message: Player
-      Message.Field: id
-      Message.Field: name
-      Message.Field: type
-      Enum: Type
-        Enum.Field: USER
-        Enum.Field: ADMIN  
+└ Namespace: Game
+  └ Message: Player
+    └ Message.Field: id
+    └ Message.Field: name
+    └ Message.Field: type
+    └ Enum: Type
+      └ Enum.Field: USER
+      └ Enum.Field: ADMIN  
 ```
 
 This structure is stored inside of the builder's `ns` property. The easiest way to access its elements is by using `Builder#lookup([string])` that works like `Builder#build([string])` but returns the reflection type instead (available since 1.0.4).
