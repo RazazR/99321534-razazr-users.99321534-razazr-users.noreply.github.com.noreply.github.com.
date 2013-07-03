@@ -20,14 +20,15 @@ message Player {
 The general reflection structure is a tree composed of ProtoBuf.Reflect.Namespace instances and everything inside is an instance of ProtoBuf.Reflect.T. So, in the example above, there is an internal structure like:
 
 ```text
-Namespace: Game
-  Message: Player
-    Message.Field: id
-    Message.Field: name
-    Message.Field: type
-    Enum: Type
-      Enum.Field: USER
-      Enum.Field: ADMIN  
+Namespace: [root]
+  Namespace: Game
+    Message: Player
+      Message.Field: id
+      Message.Field: name
+      Message.Field: type
+      Enum: Type
+        Enum.Field: USER
+        Enum.Field: ADMIN  
 ```
 
 This structure is stored inside of the builder's `ns` property. The easiest way to access its elements is by using `Builder#lookup([string])` that works like `Builder#build([string])` but returns the reflection type instead (available since 1.0.4).
