@@ -1,6 +1,3 @@
-![ProtoBuf.js - protobuf for JavaScript](https://raw.github.com/dcodeIO/ProtoBuf.js/master/ProtoBuf.png)
------
-
 It is possible to access the internal reflection structure used by the builder. Common use cases might be to look up which fields are available inside of a message or for programmatic debugging.
 
 Let's look at the following example:
