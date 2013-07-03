@@ -83,10 +83,10 @@ Reflection type instances have a set of shared and custom properties to work wit
   Message field contained in a message.
   * `required: boolean`
   * `repeated: boolean`
-  * `type: {name: string, wireType: number}`
+  * `type: {name: string, wireType: number}` Unresolved native type
   * `id: number`
   * `options: Object.<string,*>`
-  * `resolvedType: ProtoBuf.Reflect.T|null` The resolved non-native reference type
+  * `resolvedType: ProtoBuf.Reflect.T|null` Resolved non-native reference type
 
 * **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*  
   Enum namespace containing enum values.
