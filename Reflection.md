@@ -20,7 +20,7 @@ message Player {
 }
 ```
 
-The general reflection structure is a tree composed from namespaces. So, in the example above, there is an internal structure like:
+The general reflection structure is a tree composed of namespaces. So, in the example above, there is an internal structure like:
 
 ```text
 Namespace: Game
