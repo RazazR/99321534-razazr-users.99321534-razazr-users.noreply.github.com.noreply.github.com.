@@ -77,7 +77,7 @@ Types
   * `clazz: ProtoBuf.Builder.Message` Runtime class as returned by Builder#build
 
 * **ProtoBuf.Reflect.Message.Field** extends *ProtoBuf.Reflect.T*  
-  Message fields contained in messages.
+  Message field contained in a message.
   * `required: boolean`
   * `repeated: boolean`
   * `type: {name: string, wireType: number}`
@@ -90,7 +90,7 @@ Types
   * `object: Object.<string,number>` Runtime object as returned by Builder#build
 
 * **ProtoBuf.Reflect.Enum.Value** extends *ProtoBuf.Reflect.T*  
-  Enum values contained in enums.
+  Enum value contained in an enum.
   * `id: number`
 
 Documentation
