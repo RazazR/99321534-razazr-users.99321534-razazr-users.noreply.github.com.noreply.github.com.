@@ -65,8 +65,8 @@ Types
   Message namespace containing message fields and enums.
 * **ProtoBuf.Reflect.Message.Field** extends *ProtoBuf.Reflect.T*  
   * `required: boolean`
-  * `repeated: boolean`,
-  * `type: string|{name: string, wireType: number}`
+  * `repeated: boolean`
+  * `type: string|{name: string, wireType: number}` (unresolved|resolved)
   * `id: number`
   * `options: Object.<string,*>`
 * **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*  
