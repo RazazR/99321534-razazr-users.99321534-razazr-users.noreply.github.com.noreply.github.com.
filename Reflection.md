@@ -35,7 +35,7 @@ Namespace: Game
 
 This structure is stored inside of the builder's `ns` property and all types are instances of ProtoBuf.Reflect.T, ProtoBuf.Reflect.Message, etc.
 
-The easiest way to access its elements is by using `Builder#lookup([string])` that works pretty much the same like `Builder#build([string])` but returns the reflection type instead (available since 1.0.4).
+The easiest way to access its elements is by using `Builder#lookup([string])` that works like `Builder#build([string])` but returns the reflection type instead (available since 1.0.4).
 
 #### Usage examples:
 
@@ -52,5 +52,5 @@ var TPlayerType = builder.lookup("Game.Player.Type"); // instance of ProtoBuf.Re
 var TRoot = builder.lookup(); // instance of ProtoBuf.Reflect.Namespace
 ```
 
-See also:
-* [ProtoBuf.Relfect API docs](http://htmlpreview.github.io/?http://raw.github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.Reflect.html)
+For information on properties and methods available on the reflected objects, see:
+* [ProtoBuf.Reflect API docs](http://htmlpreview.github.io/?http://raw.github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.Reflect.html)
