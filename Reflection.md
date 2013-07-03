@@ -60,4 +60,6 @@ var TRoot = builder.lookup(); // instance of ProtoBuf.Reflect.Namespace
 For information on properties and methods available on the reflected objects, see:
 * [ProtoBuf.Reflect API docs](http://htmlpreview.github.io/?http://raw.github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.Reflect.html)
 
-**Please note:** Ensure not to make any changes to the internal structure unless you know exactly what you are doing as this will most likely break your code otherwise.
+Please note: Ensure not to make any changes to the internal structure unless you know exactly what you are doing as this will most likely break your code otherwise.
+
+**Next:** [Discover more pages](https://github.com/dcodeIO/ProtoBuf.js/wiki/_pages) or [Back to the repository](https://github.com/dcodeIO/ProtoBuf.js)
