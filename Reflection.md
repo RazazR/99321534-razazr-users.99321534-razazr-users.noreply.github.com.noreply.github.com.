@@ -48,6 +48,11 @@ fields.forEach(function(field) {
     }
 });
 
+var nameField = builder.lookup("Game.Player.name"); // instance of ProtoBuf.Reflect.Message.Field
+if (nameField) {
+    ...
+}
+
 var TPlayerType = builder.lookup("Game.Player.Type"); // instance of ProtoBuf.Relect.Enum
 
 var TRoot = builder.lookup(); // instance of ProtoBuf.Reflect.Namespace
