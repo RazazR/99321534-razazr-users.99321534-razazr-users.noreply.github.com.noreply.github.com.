@@ -62,6 +62,8 @@ var TRoot = builder.lookup(); // instance of ProtoBuf.Reflect.Namespace
 
 Types
 -----
+Reflection types have a set of shared and custom properties to work with:
+
 * **ProtoBuf.Reflect.T**  
   Base type extended by all reflection classes.
   * `parent: ProtoBuf.Reflect.Namespace`
