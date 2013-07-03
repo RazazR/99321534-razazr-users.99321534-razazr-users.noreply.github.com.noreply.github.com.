@@ -17,7 +17,7 @@ message Player {
 }
 ```
 
-The general reflection structure is a tree composed of namespaces. So, in the example above, there is an internal structure like:
+The general reflection structure is a tree composed of ProtoBuf.Reflect.Namespace instances and everything inside is an instance of ProtoBuf.Reflect.T. So, in the example above, there is an internal structure like:
 
 ```text
 Namespace: Game
@@ -30,9 +30,7 @@ Namespace: Game
       Enum.Field: ADMIN  
 ```
 
-This structure is stored inside of the builder's `ns` property and all types are instances of ProtoBuf.Reflect.T, ProtoBuf.Reflect.Message, etc.
-
-The easiest way to access its elements is by using `Builder#lookup([string])` that works like `Builder#build([string])` but returns the reflection type instead (available since 1.0.4).
+This structure is stored inside of the builder's `ns` property. The easiest way to access its elements is by using `Builder#lookup([string])` that works like `Builder#build([string])` but returns the reflection type instead (available since 1.0.4).
 
 #### Usage examples:
 
