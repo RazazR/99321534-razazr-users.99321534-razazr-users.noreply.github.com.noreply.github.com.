@@ -166,7 +166,7 @@ var ProtoBuf = require("protobufjs"),
     util = require("util");
 
 if (!ProtoBuf.DotProto) {
-    throw(new Error("This version of ProtoBuf seems to be a NOPARSE build without .proto support"));
+    throw(new Error("This version of ProtoBuf.js seems to be a NOPARSE build"));
 }
 var parser = new ProtoBuf.DotProto.Parser(fs.readFileSync("tests/complex.proto"));
 var ast = parser.parse();
