@@ -73,6 +73,7 @@ Reflection type instances have a set of shared and custom properties to work wit
   A namespace wrapping a block of children.
   * `children: Array.<ProtoBuf.Reflect.T>`
   * `options: Object.<string,*>`
+  * `getChildren: function([ProtoBuf.Reflect.T])` Gets children of a specific type
 
 * **ProtoBuf.Reflect.Message** extends *ProtoBuf.Reflect.Namespace*  
   Message namespace containing message fields and enums.
