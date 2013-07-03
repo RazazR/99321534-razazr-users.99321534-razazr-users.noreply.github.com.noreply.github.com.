@@ -81,7 +81,7 @@ Types
   * `type: {name: string, wireType: number}`
   * `id: number`
   * `options: Object.<string,*>`
-  * `referenceType: ProtoBuf.Reflect.T|null` The resolved referenced type
+  * `resolvedType: ProtoBuf.Reflect.T|null` The resolved reference type
 
 * **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*  
   Enum namespace containing enum values.
