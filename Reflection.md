@@ -86,7 +86,7 @@ Reflection type instances have a set of shared and custom properties to work wit
   * `type: {name: string, wireType: number}`
   * `id: number`
   * `options: Object.<string,*>`
-  * `resolvedType: ProtoBuf.Reflect.T|null` The resolved reference type
+  * `resolvedType: ProtoBuf.Reflect.T|null` The resolved non-native reference type
 
 * **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*  
   Enum namespace containing enum values.
