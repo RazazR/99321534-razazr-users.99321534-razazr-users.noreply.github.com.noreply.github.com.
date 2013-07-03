@@ -56,9 +56,9 @@ var TPlayerType = builder.lookup("Game.Player.Type"); // instance of ProtoBuf.Re
 
 var TRoot = builder.lookup(); // instance of ProtoBuf.Reflect.Namespace
 ```
-
-For information on properties and methods available on the reflected objects, see:
-* [ProtoBuf.Reflect API docs](http://htmlpreview.github.io/?http://raw.github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.Reflect.html)
+Documentation
+-------------
+* [ProtoBuf.Reflect API](http://htmlpreview.github.io/?http://raw.github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.Reflect.html)
 
 Please note: Ensure not to make any changes to the internal structure unless you know exactly what you are doing as this will most likely break your code otherwise.
 
