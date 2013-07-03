@@ -83,7 +83,7 @@ Reflection type instances have a set of shared and custom properties to work wit
   Message field contained in a message.
   * `required: boolean`
   * `repeated: boolean`
-  * `type: {name: string, wireType: number}` Unresolved native type
+  * `type: {name: string, wireType: number}` Unresolved or native type
   * `id: number`
   * `options: Object.<string,*>`
   * `resolvedType: ProtoBuf.Reflect.T|null` Resolved non-native reference type
