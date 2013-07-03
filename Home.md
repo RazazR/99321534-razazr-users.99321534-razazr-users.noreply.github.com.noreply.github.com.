@@ -2,7 +2,6 @@
 
 **FAQ:**
 * [Why ProtoBuf.js instead of, let's say, JSON?](https://github.com/dcodeIO/ProtoBuf.js/wiki/ProtoBuf.js-vs-JSON)
-* [Any real world examples?](https://github.com/dcodeIO/ProtoBuf.js/tree/master/examples)
 
 Usage
 -----
