@@ -1,5 +1,3 @@
-![ProtoBuf.js - protobuf for JavaScript](https://raw.github.com/dcodeIO/ProtoBuf.js/master/ProtoBuf.png)
-
 [ProtoBuf.js](https://github.com/dcodeIO/ProtoBuf.js) is a [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) implementation on top of [ByteBuffer.js](https://github.com/dcodeIO/ByteBuffer.js) including a .proto parser, reflection, message class building and simple encoding and decoding in plain JavaScript. There is no compilation step required, it's super easy to use and it works out of the box on .proto files.
 
 **FAQ:**
