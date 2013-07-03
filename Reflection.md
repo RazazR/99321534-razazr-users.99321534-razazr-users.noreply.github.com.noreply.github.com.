@@ -1,5 +1,7 @@
 It is possible to access the internal reflection structure used by the builder. Common use cases might be to look up which fields are available inside of a message or for programmatic debugging.
 
+**Requirements:** ProtoBuf.js >= 1.1.0
+
 Let's look at the following example:
 
 ```protobuf
@@ -31,7 +33,7 @@ Namespace: [root]
       └ Enum.Field: ADMIN  
 ```
 
-This structure is stored inside of the builder's `ns` property. The easiest way to access its elements is by using `Builder#lookup([string])` that works like `Builder#build([string])` but returns the reflection type instead (available since 1.0.4).
+This structure is stored inside of the builder's `ns` property. The easiest way to access its elements is by using `Builder#lookup([string])` that works like `Builder#build([string])` but returns the reflection type instead.
 
 #### Usage examples:
 
