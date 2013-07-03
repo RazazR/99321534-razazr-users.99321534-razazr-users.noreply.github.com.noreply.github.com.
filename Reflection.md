@@ -74,7 +74,7 @@ Types
   * `options: Object.<string,*>`
 
 * **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*  
-  Enum namespace containing enum fields.
+  Enum namespace containing enum values.
 
 * **ProtoBuf.Reflect.Enum.Value** extends *ProtoBuf.Reflect.T*  
   * `id: number`
