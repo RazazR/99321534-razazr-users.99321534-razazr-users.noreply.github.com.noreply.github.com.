@@ -170,8 +170,7 @@ var ast = parser.parse();
 console.log(util.inspect(ast, false, null, true));
 ```
 
-Testing for a "noparse" build
------------------------------
+#### Testing for a "noparse" build
 ```js
 ...
 if (ProtoBuf.DotProto) {
