@@ -170,8 +170,8 @@ var ast = parser.parse();
 console.log(util.inspect(ast, false, null, true));
 ```
 
-Distinguishing between a FULL and a NOPARSE build
--------------------------------------------------
+Detecting a NOPARSE build
+-------------------------
 ```js
 ...
 if (ProtoBuf.DotProto) {
