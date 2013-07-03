@@ -1,4 +1,4 @@
-The **Builder** is probably the core component of ProtoBuf.js. It resolves all type references, performs all the necessary checks and returns ready to use classes. A builder can be created from a .proto file (`ProtoBuf.protoFromFile`), a proto string (`ProtoBuf.protoFromString`) or from a JSON definition (`ProtoBuf.newBuilder`, `Builder#define/create`). The later does not even require the .proto parser to be included ([see](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-json-without-the-proto-parser)).
+The **Builder** is probably the core component of ProtoBuf.js. It resolves all type references, performs all the necessary checks and returns ready to use classes. A builder can be created from a .proto file (`ProtoBuf.protoFromFile`), a proto string (`ProtoBuf.protoFromString`) or from a JSON definition (`ProtoBuf.newBuilder`, `Builder#define/create`, [see](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-json-without-the-proto-parser)). The later does not even require the .proto parser to be included.
 
 #### Using .proto files ####
 
