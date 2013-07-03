@@ -62,7 +62,7 @@ Types
   Message namespace containing message fields and enums.
 * **ProtoBuf.Reflect.Message.Field** extends *ProtoBuf.Reflect.T*  
   Message fields. Properties: `required`, `repeated`, `type`, `id`, `options`
-* **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*
+* **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*  
   Enum namespace containing enum fields.
 * **ProtoBuf.Reflect.Enum.Value** extends *ProtoBuf.Reflect.T*  
   Enum values. Properties: `id`
