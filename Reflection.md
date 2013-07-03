@@ -46,6 +46,11 @@ var builder = ProtoBuf.protoFromFile("example.proto"); // from above
 var TPlayer = builder.lookup("Game.Player"); // instance of ProtoBuf.Reflect.Message
 
 var fields = TPlayer.getChildren(ProtoBuf.Reflect.Message.Field); // instances of ProtoBuf.Reflect.Message.Field
+fields.forEach(function(field) {
+    if (!field.required) {
+        ...
+    }
+});
 
 var TPlayerType = builder.lookup("Game.Player.Type"); // instance of ProtoBuf.Relect.Enum
 
