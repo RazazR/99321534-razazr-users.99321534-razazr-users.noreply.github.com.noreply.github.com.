@@ -174,9 +174,9 @@ console.log(util.inspect(ast, false, null, true));
 ```js
 ...
 if (ProtoBuf.DotProto) {
-   // FULL build
+   // full build, parser is available
 } else {
-   // NOPARSE build
+   // noparse build without .proto support
 }
 ...
 ```
