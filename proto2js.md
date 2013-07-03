@@ -44,4 +44,4 @@ proto2js tests/complex.proto -amd=Game.Cars > tests/complex.js
 #   declared dependencies and "Game/Cars" as the module name
 ```
 
-**Next:** [Learn more about long (int64) support](https://github.com/dcodeIO/ProtoBuf.js/wiki/Long-%28int64%29-support)
+**Next:** [Learn more about long (int64) support](https://github.com/dcodeIO/ProtoBuf.js/wiki/Long)
