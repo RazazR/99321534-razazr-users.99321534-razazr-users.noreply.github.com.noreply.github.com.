@@ -1,6 +1,3 @@
-![ProtoBuf.js - protobuf for JavaScript](https://raw.github.com/dcodeIO/ProtoBuf.js/master/ProtoBuf.png)
------
-
 ### Games
 * [eSoccer](http://www.esoccer.me) - omg that spin!
 
