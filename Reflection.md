@@ -56,15 +56,15 @@ Types
 -----
 * **ProtoBuf.Reflect.T**  
   Base type extended by all reflection classes. Properties: `parent`, `name`
-* **ProtoBuf.Reflect.Namespace** extends *ProtoBuf.Reflect.T*
+* **ProtoBuf.Reflect.Namespace** extends *ProtoBuf.Reflect.T*  
   Each block is or implements a namespace. Properties: `children`, `options`
-* **ProtoBuf.Reflect.Message** extends *ProtoBuf.Reflect.Namespace*
+* **ProtoBuf.Reflect.Message** extends *ProtoBuf.Reflect.Namespace*  
   Message namespace containing messages fields and enums.
 * **ProtoBuf.Reflect.Message.Field** extends *ProtoBuf.Reflect.T*  
   Message fields. Properties: `required`, `repeated`, `type`, `id`, `options`
 * **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*
   Enum namespace containing enum fields.
-* **ProtoBuf.Reflect.Enum.Value** extends *ProtoBuf.Reflect.T*
+* **ProtoBuf.Reflect.Enum.Value** extends *ProtoBuf.Reflect.T*  
   Enum values. Properties: `id`
 
 Documentation
