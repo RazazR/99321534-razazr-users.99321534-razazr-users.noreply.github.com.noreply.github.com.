@@ -1,4 +1,4 @@
-**Contents**
+<img src="https://raw.github.com/dcodeIO/ProtoBuf.js/master/ProtoBuf.png" width="200">
 * [Usage](https://github.com/dcodeIO/ProtoBuf.js/wiki)
 * [Builder](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder:-Usage-&-Examples)
 * [Parser](https://github.com/dcodeIO/ProtoBuf.js/wiki/Parser:-Usage-&-supported-directives)
