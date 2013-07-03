@@ -87,7 +87,7 @@ Types
 
 * **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*  
   Enum namespace containing enum values.
-  * `object: Object.<string,*>` Runtime object as returned by Builder#build
+  * `object: Object.<string,number>` Runtime object as returned by Builder#build
 
 * **ProtoBuf.Reflect.Enum.Value** extends *ProtoBuf.Reflect.T*  
   Enum values contained in enums.
