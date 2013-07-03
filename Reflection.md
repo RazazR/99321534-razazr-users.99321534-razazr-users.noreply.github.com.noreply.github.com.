@@ -64,27 +64,31 @@ Types
   Base type extended by all reflection classes.
   * `parent: ProtoBuf.Reflect.Namespace`
   * `name: string`
-  * `resolvedType: ProtoBuf.Reflect.T` Referenced type, e.g. from a message field
 
 * **ProtoBuf.Reflect.Namespace** extends *ProtoBuf.Reflect.T*  
+  A namespace wrapping a block of children.
   * `children: Array.<ProtoBuf.Reflect.T>`
   * `options: Object.<string,*>`
 
 * **ProtoBuf.Reflect.Message** extends *ProtoBuf.Reflect.Namespace*  
   Message namespace containing message fields and enums.
-  * `built: ProtoBuf.Builder.Message` Built class as returned by Builder#build
+  * `clazz: ProtoBuf.Builder.Message` Runtime class as returned by Builder#build
 
 * **ProtoBuf.Reflect.Message.Field** extends *ProtoBuf.Reflect.T*  
+  Message fields contained in messages.
   * `required: boolean`
   * `repeated: boolean`
   * `type: {name: string, wireType: number}`
   * `id: number`
   * `options: Object.<string,*>`
+  * `referenceType: ProtoBuf.Reflect.T|null` The resolved referenced type
 
 * **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*  
   Enum namespace containing enum values.
+  * `object: Object.<string,*>` Runtime object as returned by Builder#build
 
 * **ProtoBuf.Reflect.Enum.Value** extends *ProtoBuf.Reflect.T*  
+  Enum values contained in enums.
   * `id: number`
 
 Documentation
