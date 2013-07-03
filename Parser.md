@@ -165,12 +165,21 @@ var ProtoBuf = require("protobufjs"),
     fs = require("fs"),
     util = require("util");
 
-if (!ProtoBuf.DotProto) {
-    throw(new Error("This version of ProtoBuf.js seems to be a NOPARSE build"));
-}
 var parser = new ProtoBuf.DotProto.Parser(fs.readFileSync("tests/complex.proto"));
 var ast = parser.parse();
 console.log(util.inspect(ast, false, null, true));
+```
+
+Distinguishing between a FULL and a NOPARSE build
+-------------------------------------------------
+```js
+...
+if (ProtoBuf.DotProto) {
+   // FULL build
+} else {
+   // NOPARSE build
+}
+...
 ```
 
 **Next:** [Learn more about proto2js on the command line](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js)
