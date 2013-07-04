@@ -33,7 +33,7 @@ Namespace: [root]
       └ Enum.Field: ADMIN  
 ```
 
-This structure is stored inside of the builder's `ns` property. The easiest way to access its elements is by using `Builder#lookup([string])` that works like `Builder#build([string])` but returns the reflection type instead.
+This structure is stored inside of the builder's `ns` property. The easiest way to access its elements is by using `Builder#lookup([string])` that works similar to `Builder#build([string])` but returns the reflection types instead.
 
 #### Usage examples:
 
