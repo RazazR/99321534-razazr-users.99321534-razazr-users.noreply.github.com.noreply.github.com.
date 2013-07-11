@@ -4,6 +4,7 @@
 ### Utility
 * [heka-node](https://github.com/mozilla-services/heka-node) - A node.js client for Mozilla's Heka logging server
 * [osm-read](https://github.com/marook/osm-read) - An openstreetmap XML and PBF data parser
+* [pson](https://github.com/dcodeIO/PSON) - A binary serialization format built on the simplicity of JSON and the encoding capabilities of ProtoBuf
 
 <hr />
 Feel free to edit (alphabetical order)!
