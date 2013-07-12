@@ -39,12 +39,16 @@ if (msg.pong) { // Handle Pong if present (even allows multiple message types at
 }
 ```
 
-What about binary JSON?
+What about Binary JSON?
 -----------------------
-[BSON](http://bsonspec.org)  comes with a similar overhead. As of [the specification](http://bsonspec.org/#/specification), BSON also includes all the keys as cstrings and it also does not efficiently store integer or long values as there is no varint encoding. Take a look at the hello world example:  
+[BSON](http://bsonspec.org) comes with a similar overhead. As of [the specification](http://bsonspec.org/#/specification), BSON also includes all the keys as cstrings and it also does not efficiently store integer or long values as there is no varint encoding. Take a look at the hello world example:  
 JSON: `{"hello":"world"}` (17 bytes)  
 BSON: `<16 00 00 00 02 h e l l o 00 06 00 00 00 w o r l d 00 00>` (22 bytes)
 
 **Bottom line:** Not requiring a schema like in JSON/BSON is convenient but it comes at the price of size and a chance of being more error prone at least in development (no type checking, key mismatches). Additionally, Protocol Buffers are capable of storing numeric values more efficiently.
+
+What about Protocol JSON?
+-------------------------
+[PSON](https://github.com/dcodeIO/PSON) tries to eliminate the overhead known from JSON/BSON by trading some memory for a smaller packet size on top of ProtoBuf.js. A plain ProtoBuf implementation will always produce a smaller protocol, but if you are used to the convenience of JSON, maybe give it a try!
 
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
