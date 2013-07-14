@@ -49,6 +49,6 @@ BSON: `<16 00 00 00 02 h e l l o 00 06 00 00 00 w o r l d 00 00>` (22 bytes)
 
 What about Protocol JSON?
 -------------------------
-[PSON](https://github.com/dcodeIO/PSON) tries to eliminate the overhead known from JSON/BSON by trading some memory for a smaller packet size on top of ProtoBuf.js. A plain ProtoBuf implementation will always produce a smaller protocol, but if you are used to the convenience of JSON, maybe give it a try!
+[PSON](https://github.com/dcodeIO/PSON) generates, if used wisely, an even smaller protocol than ProtoBuf.
 
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
