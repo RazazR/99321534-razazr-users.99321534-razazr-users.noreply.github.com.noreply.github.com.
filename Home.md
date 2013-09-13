@@ -2,6 +2,7 @@
 
 **FAQ:**
 * [Why ProtoBuf.js instead of, let's say, JSON?](https://github.com/dcodeIO/ProtoBuf.js/wiki/ProtoBuf.js-vs-JSON)
+* [How to validate / decode / reverse engineer a protobuf buffer by hand?](https://github.com/dcodeIO/ProtoBuf.js/issues/55)
 
 Usage
 -----
