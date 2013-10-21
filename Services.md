@@ -44,6 +44,6 @@ myService.MyMethod(new RequestType(), function(err, res) {
 });
 ```
 
-**Troubleshooting:** Keep in mind to avoid that the message data is corrupted in any way on the network level. Protobuf is a binary protocol and thus its data is likely to be corrupted if it is carelessly converted to a string or vice-versa. If available, also use features like binaryType="arraybuffer" as available with WebSockets or, if nothing like that is available, make sure to encode the binary data to base64 prior to transmission and properly decode it on receival.
+**Troubleshooting:** Keep in mind to avoid that the message data is corrupted in any way on the network level. Protobuf is a binary protocol and thus its data is likely to be corrupted if it is carelessly converted to a string or vice-versa. If available, use features like binaryType="arraybuffer" as available with WebSockets or, if nothing like that is available, make sure to encode the binary data to base64 prior to transmission and properly decode it on receival.
 
 **Next:** [Learn more about using reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection)
