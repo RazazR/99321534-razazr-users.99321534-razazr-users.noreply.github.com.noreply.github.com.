@@ -23,6 +23,7 @@ var rpcImpl = function(method, req, callback) {
    if (method == "MyMethod") {
       doSomeFancyNetworkingAndCall(function(errorIfAny, response) {
          callback(errorIfAny, response);
+         // Response may be either a pre-parsed protobuf message or the raw response data
       });
       // or short: doSomeFancNetworkingAndCall(callback); ... you get it
    } else {
@@ -33,7 +34,7 @@ var rpcImpl = function(method, req, callback) {
 // Create a new service and provide it with your RPC implementation.
 var myService = new MyService(rpcImpl);
 
-// Call a service method
+// Call a service method. This will also type check the actual request and the response types.
 myService.MyMethod(new RequestType(), function(err, res) {
    if (err) {
       // handle error...
