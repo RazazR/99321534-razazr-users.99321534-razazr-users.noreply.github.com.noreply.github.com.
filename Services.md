@@ -43,3 +43,5 @@ myService.MyMethod(new RequestType(), function(err, res) {
    // handle response...
 });
 ```
+
+**Next:** [Learn more about using reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection)
