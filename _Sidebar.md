@@ -4,6 +4,7 @@
 * [Parser](https://github.com/dcodeIO/ProtoBuf.js/wiki/Parser)
 * [proto2js](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js)
 * [Long/int64 support](https://github.com/dcodeIO/ProtoBuf.js/wiki/Long)
+* [Services](https://github.com/dcodeIO/ProtoBuf.js/wiki/Services)
 * [Reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection)
 <hr />
 * [API docs](http://htmlpreview.github.com/?http://github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
