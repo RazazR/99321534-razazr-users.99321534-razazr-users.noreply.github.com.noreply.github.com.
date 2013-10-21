@@ -102,14 +102,14 @@ Reflection type instances have a set of shared and custom properties to work wit
   Enum value contained in an enum.
   * `id: number`
 
-* **ProtoBuf.Reflect.Service** extends *ProtoBuf.Reflect.Namespace*
+* **ProtoBuf.Reflect.Service** extends *ProtoBuf.Reflect.Namespace*  
   Service namespace containing service methods.
 
-* **ProtoBuf.Reflect.Service.Method** extends *ProtoBuf.Reflect.T*
+* **ProtoBuf.Reflect.Service.Method** extends *ProtoBuf.Reflect.T*  
   Abstract service method.
   * `options: Object.<string,*>`
 
-* **ProtoBuf.Reflect.Service.RPCMethod** extends *ProtoBuf.Reflect.Service.Method*
+* **ProtoBuf.Reflect.Service.RPCMethod** extends *ProtoBuf.Reflect.Service.Method*  
   RPC service method.
   * `requestName: string`
   * `responseName: string`
