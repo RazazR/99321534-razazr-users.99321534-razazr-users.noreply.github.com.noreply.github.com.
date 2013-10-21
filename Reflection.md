@@ -111,10 +111,10 @@ Reflection type instances have a set of shared and custom properties to work wit
 
 * **ProtoBuf.Reflect.Service.RPCMethod** extends *ProtoBuf.Reflect.Service.Method*  
   RPC service method.
-  * `requestName: string`
-  * `responseName: string`
-  * `resolvedRequestType: ProtoBuf.Reflect.Message`
-  * `resolvedResponseType: ProtoBuf.Reflect.Message`
+  * `requestName: string` Request message name
+  * `responseName: string` Response message name
+  * `resolvedRequestType: ProtoBuf.Reflect.Message` Resolved request message type
+  * `resolvedResponseType: ProtoBuf.Reflect.Message` Resolved response message type
 
 Documentation
 -------------
