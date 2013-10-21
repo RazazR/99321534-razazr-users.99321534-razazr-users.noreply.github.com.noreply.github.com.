@@ -4,4 +4,4 @@ Documentation
 -------------
 * [Read more about Long.js](https://github.com/dcodeIO/Long.js)
 
-**Next:** [Learn more about using reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection)
+**Next:** [Learn more about using services](https://github.com/dcodeIO/ProtoBuf.js/wiki/Services)
