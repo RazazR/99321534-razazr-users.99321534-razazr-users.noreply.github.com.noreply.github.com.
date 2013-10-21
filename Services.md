@@ -1,6 +1,6 @@
 ProtoBuf.js also allows you to define RPC services while it does not limit you to a specific RPC implementation. You are free to implement it on your own using your favourite framework for the job.
 
-Requirements: ProtoBuf.js >= 1.2.0
+**Requirements:** ProtoBuf.js >= 1.2.0
 
 Let's look at the following example:
 
