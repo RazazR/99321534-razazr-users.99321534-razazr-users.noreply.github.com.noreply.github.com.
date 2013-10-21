@@ -113,8 +113,8 @@ Reflection type instances have a set of shared and custom properties to work wit
   RPC service method.
   * `requestName: string` Request message name
   * `responseName: string` Response message name
-  * `resolvedRequestType: ProtoBuf.Reflect.Message` Resolved request message type
-  * `resolvedResponseType: ProtoBuf.Reflect.Message` Resolved response message type
+  * `resolvedRequestType: ProtoBuf.Reflect.Message|null` Resolved request message type
+  * `resolvedResponseType: ProtoBuf.Reflect.Message|null` Resolved response message type
 
 Documentation
 -------------
