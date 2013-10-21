@@ -151,11 +151,15 @@ The **Parser** is only available in the full build (i.e. not in "noparse" builds
   import "google/protobuf/descriptor.proto";
   ```
   
-  These statements are actually simply ignored to make existing definitions compile fine. Low-level bootstrapping
-  is not required by ProtoBuf.js.
-  
-#### Not (yet) supported ####
-* *Extensions* (ignored) and *services* (you roll your own, don't you?). If you need anything of this, please open an issue and explain your exact requirements. It's just that I have no idea how to benefit from that and therefore I am not sure how to design it.
+  These statements are actually simply ignored to make existing definitions compile fine. Low-level bootstrapping is not required by ProtoBuf.js.
+
+* Services:
+
+  ```protobuf
+  service MyService {
+     rpc MyMethod(RequestType) returns(ResponseType);
+  }
+  ```
 
 Calling the parser on your own
 ------------------------------
