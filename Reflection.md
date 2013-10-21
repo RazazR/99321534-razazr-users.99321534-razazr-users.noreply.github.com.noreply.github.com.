@@ -17,6 +17,10 @@ message Player {
       ADMIN = 2;
    }
 }
+
+service MySerivce {
+   rpc MyMethod(Player) returns(Player);
+}
 ```
 
 The general reflection structure is a tree composed of ProtoBuf.Reflect.Namespace instances and everything inside is an instance of ProtoBuf.Reflect.T. So, in the example above, there is an internal structure like:
@@ -30,7 +34,9 @@ Namespace: [root]
     └ Message.Field: type
     └ Enum: Type
       └ Enum.Field: USER
-      └ Enum.Field: ADMIN  
+      └ Enum.Field: ADMIN 
+  └ Service: MyService
+    └ Service.RPCMethod: MyMethod
 ```
 
 This structure is stored inside of the builder's `ns` property. The easiest way to access its elements is by using `Builder#lookup([string])` that works similar to `Builder#build([string])` but returns the reflection types instead.
