@@ -23,11 +23,11 @@ var builder = ProtoBuf.protoFromFile(...the file from above...),
 // Craft your RPC implementation (this is probably the simplest example possible)
 var rpcImpl = function(method, req, callback) {
    if (method == "MyMethod") {
-      doSomeFancyNetworkingAndCall(function(errorIfAny, response) {
+      doSomeFancyNetworkingAndCall(req.toArrayBuffer(), function(errorIfAny, response) {
          callback(errorIfAny, response);
          // Response may be either a pre-parsed protobuf message or the raw response data
       });
-      // or short: doSomeFancNetworkingAndCall(callback); ... you get it
+      // or short: doSomeFancNetworkingAndCall(req.toArrayBuffer(), callback); ... you get it
    } else {
       throw(new Error("Invalid method"));
    }
