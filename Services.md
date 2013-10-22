@@ -67,7 +67,7 @@ MyService.MyMethod(rpcImpl, new RequestType(), function(err, res) {
 4. Your RPC implementation sends out the request and gathers a response.
 5. Your RPC implementation calls the callback provided to it with the error if any or null and the response message.
 6. ProtoBuf.js validates the response message type. If it's an error, the callback is called with it.
-7. The initially provided callback is called with the error if any or null and the response message.
+7. The callback provided when calling the service method is called with the error if any or null and the response message.
 
 Additionally, all defined options are available as the `$options` property on the service class and instance as well as the static and instance methods.
 
