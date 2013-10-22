@@ -132,7 +132,7 @@ var buffer = byteBuffer.toArrayBuffer(); // node.js: byteBuffer.toBuffer()
 var buffer = myMessage.toArrayBuffer(); // node.js: myMessage.toBuffer()
 
 // OR: As a base64 encoded string...
-var b64str = myMessage.toBase64();
+var b64str = myMessage.toBase64(); // (*)
 
 var socket = ...; // E.g. a WebSocket
 socket.send(buffer);
@@ -150,8 +150,9 @@ var myMessage = YourMessage.decode(buffer);
 ```js
 ...
 var b64str = ...; // E.g. a string fetched via AJAX
-var myMessage = YourMessage.decode64(buffer);
+var myMessage = YourMessage.decode64(buffer); // (*)
 ```
+(*) Base64 encoding requires ProtoBuf.js >= 1.2.0 with ByteBuffer >= 1.5.0.
 
 #### Handling truncated messages
 If a message is missing a required field when decoding, the library will throw an `Error` that still contains the rest
