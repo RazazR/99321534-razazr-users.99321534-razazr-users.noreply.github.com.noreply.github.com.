@@ -103,7 +103,8 @@ Reflection type instances have a set of shared and custom properties to work wit
   * `id: number`
 
 * **ProtoBuf.Reflect.Service** extends *ProtoBuf.Reflect.Namespace*  
-  Service namespace containing service methods.
+  Service namespace containing service methods.  
+  * `clazz: ProtoBuf.Builder.Service` Runtime class as returned by Builder#build
 
 * **ProtoBuf.Reflect.Service.Method** extends *ProtoBuf.Reflect.T*  
   Abstract service method.
