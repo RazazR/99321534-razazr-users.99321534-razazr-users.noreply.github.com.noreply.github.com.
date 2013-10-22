@@ -46,6 +46,21 @@ myService.MyMethod(new RequestType(), function(err, res) {
 });
 ```
 
+It's also possible to skip the "new MyService" call and to hand the rpcImpl directly to the static method:
+
+```js
+...
+
+// Note the uppercase "MyService" to access the static method
+MyService.MyMethod(rpcImpl, new RequestType(), function(err, res) {
+   if (err) {
+      // handle error...
+      return;
+   }
+   // handle response...
+});
+```
+
 **Troubleshooting:** Keep in mind that protobuf is a binary protocol and thus its data is likely to be corrupted if it is carelessly converted to a string or vice-versa. If possible, use features like binaryType="arraybuffer" as available with WebSockets or, if nothing like that is available, make sure to encode the binary data to base64 prior to transmission and properly decode it on receival.
 
 **Next:** [Learn more about using reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection)
