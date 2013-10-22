@@ -1,4 +1,4 @@
-ProtoBuf.js also allows you to define RPC services while it does not limit you to a specific RPC implementation. You are free to implement it on your own using your favourite framework for the job.
+ProtoBuf.js also allows you to define [services](https://developers.google.com/protocol-buffers/docs/proto#services) while it does not limit you to a specific RPC implementation. You are free to implement it on your own using your favourite framework for the job, e.g. jQuery's AJAX functionality or WebSockets.
 
 **Requirements:** ProtoBuf.js >= 1.2.0
 
