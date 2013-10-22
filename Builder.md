@@ -135,7 +135,7 @@ var buffer = myMessage.toArrayBuffer(); // node.js: myMessage.toBuffer()
 var b64str = myMessage.toBase64(); // (*)
 
 var socket = ...; // E.g. a WebSocket
-socket.send(buffer);
+socket.send(buffer); // socket.send(b64str);
 ```
 
 #### Decoding from an ArrayBuffer, a ByteBuffer, a node Buffer or a base64 string ####
@@ -150,7 +150,7 @@ var myMessage = YourMessage.decode(buffer);
 ```js
 ...
 var b64str = ...; // E.g. a string fetched via AJAX
-var myMessage = YourMessage.decode64(buffer); // (*)
+var myMessage = YourMessage.decode64(b64str); // (*)
 ```
 * Base64 encoding requires ProtoBuf.js >= 1.2.0 with ByteBuffer >= 1.5.0.
 
