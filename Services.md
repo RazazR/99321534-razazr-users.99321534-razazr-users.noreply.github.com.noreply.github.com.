@@ -46,11 +46,9 @@ myService.MyMethod(new RequestType(), function(err, res) {
 });
 ```
 
-It's also possible to skip the "new MyService" call and to hand the rpcImpl directly to the static method:
+It's also possible to skip the instantiation and to hand the `rpcImpl` directly to the alternative static method:
 
 ```js
-...
-
 // Note the uppercase "MyService" to access the static method
 MyService.MyMethod(rpcImpl, new RequestType(), function(err, res) {
    if (err) {
@@ -60,6 +58,8 @@ MyService.MyMethod(rpcImpl, new RequestType(), function(err, res) {
    // handle response...
 });
 ```
+
+Additionally, all defined options are available as the `$options` property on the service class and instance as well as the static and instance methods.
 
 **Troubleshooting:** Keep in mind that protobuf is a binary protocol and thus its data is likely to be corrupted if it is carelessly converted to a string or vice-versa. If possible, use features like binaryType="arraybuffer" as available with WebSockets or, if nothing like that is available, make sure to encode the binary data to base64 prior to transmission and properly decode it on receival.
 
