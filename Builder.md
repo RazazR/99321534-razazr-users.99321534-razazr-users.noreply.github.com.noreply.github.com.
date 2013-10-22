@@ -152,7 +152,7 @@ var myMessage = YourMessage.decode(buffer);
 var b64str = ...; // E.g. a string fetched via AJAX
 var myMessage = YourMessage.decode64(buffer); // (*)
 ```
-(*) Base64 encoding requires ProtoBuf.js >= 1.2.0 with ByteBuffer >= 1.5.0.
+* Base64 encoding requires ProtoBuf.js >= 1.2.0 with ByteBuffer >= 1.5.0.
 
 #### Handling truncated messages
 If a message is missing a required field when decoding, the library will throw an `Error` that still contains the rest
