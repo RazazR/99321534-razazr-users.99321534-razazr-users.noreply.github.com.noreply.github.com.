@@ -29,7 +29,7 @@ var rpcImpl = function(method, req, callback) {
       });
       // or short: doSomeFancNetworking(req.toArrayBuffer(), callback); ... you get it
    } else {
-      throw(new Error("Invalid method"));
+      throw(new Error("Method not supported"));
    }
 }
 
