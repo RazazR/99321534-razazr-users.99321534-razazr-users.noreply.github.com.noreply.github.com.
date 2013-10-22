@@ -131,17 +131,26 @@ var buffer = byteBuffer.toArrayBuffer(); // node.js: byteBuffer.toBuffer()
 // OR: Short...
 var buffer = myMessage.toArrayBuffer(); // node.js: myMessage.toBuffer()
 
+// OR: As a base64 encoded string...
+var b64str = myMessage.toBase64();
+
 var socket = ...; // E.g. a WebSocket
 socket.send(buffer);
 ```
 
-#### Decoding from an ArrayBuffer, a ByteBuffer or a node Buffer ####
+#### Decoding from an ArrayBuffer, a ByteBuffer, a node Buffer or a base64 string ####
 
 ```javascript
 ...
 var YourMessage = builder.build("YourMessage");
 var buffer = ...; // E.g. a buffer received on a WebSocket
 var myMessage = YourMessage.decode(buffer);
+```
+
+```js
+...
+var b64str = ...; // E.g. a string fetched via AJAX
+var myMessage = YourMessage.decode64(buffer);
 ```
 
 #### Handling truncated messages
