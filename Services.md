@@ -59,6 +59,15 @@ MyService.MyMethod(rpcImpl, new RequestType(), function(err, res) {
 });
 ```
 
+**The flow here is:**  
+1. You call the service method with a request message and provide a callback
+2. ProtoBuf.js validates the request message type. If it's an error, the callback is called (goto 7).
+3. Your RPC implementation is called with the method name, the request message and the callback.
+4. Your RPC implementation sends out the request and gathers a response.
+5. Your RPC implementation calls the callback provided to it with the error if any or null and response message.
+6. ProtoBuf.js validates the response message type. If it's an error, the callback is called with it.
+7. The initially provided callback is called with the error if any or null and the response message.
+
 Additionally, all defined options are available as the `$options` property on the service class and instance as well as the static and instance methods.
 
 **Troubleshooting:** Keep in mind that protobuf is a binary protocol and thus its data is likely to be corrupted if it is carelessly converted to a string or vice-versa. If possible, use features like binaryType="arraybuffer" as available with WebSockets or, if nothing like that is available, make sure to encode the binary data to base64 prior to transmission and properly decode it on receival.
