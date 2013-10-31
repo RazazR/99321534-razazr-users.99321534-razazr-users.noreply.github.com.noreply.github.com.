@@ -61,7 +61,7 @@ MyService.MyMethod(rpcImpl, new RequestType(), function(err, res) {
 
 **The flow here is:**
 
-1. You call the service method with a request message and provide a callback that accepts the error if any as the first argument and, if it's not an error and thus error is `null`, the response messages as the second (just like in node).
+1. You call the service method with a request message and provide a callback that accepts the error if any as the first argument and, if it's not an error and thus error is `null`, the response message as the second (just like in node).
 2. ProtoBuf.js validates the request message type. If it's an error, the callback is called (goto 7).
 3. Your RPC implementation is called with the method name, the request message and the callback.
 4. Your RPC implementation serializes/encodes and sends out the request and gathers a response.
