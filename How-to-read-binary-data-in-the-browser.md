@@ -17,6 +17,6 @@ xhr.onload = function(evt) {
 xhr.send(null);
 ```
 
-Do not use `ProtoBuf.Util.fetch(...)` for reading binary data.
+Do not use `ProtoBuf.Util.fetch(...)` for reading binary data. Depending on the actual browser you are using, this may differ.
 
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
