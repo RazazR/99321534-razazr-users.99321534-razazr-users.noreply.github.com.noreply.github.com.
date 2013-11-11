@@ -16,3 +16,5 @@ xhr.onload = function(evt) {
 }
 xhr.send(null);
 ```
+
+**Note:** Do not use `ProtoBuf.Util.fetch(...)` for reading binary data.
