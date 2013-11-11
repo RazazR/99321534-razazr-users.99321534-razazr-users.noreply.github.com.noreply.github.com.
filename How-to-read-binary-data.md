@@ -7,7 +7,7 @@ To make it easier for you to get this right, here is some insight on the topic:
 
 XMLHttpRequest example
 ----------------------
-``js
+```js
 var xhr = ProtoBuf.Util.XHR();
 xhr.open('GET', "person.bin", true);
 xhr.responseType = "arraybuffer";
@@ -16,4 +16,4 @@ xhr.onload = function(evt) {
 	alert(JSON.stringify(msg.person[0])); // Correctly decoded
 }
 xhr.send(null);
-``
+```
