@@ -1,5 +1,5 @@
 <img src="https://raw.github.com/dcodeIO/ProtoBuf.js/master/ProtoBuf.png" width="200">
-* [Usage](https://github.com/dcodeIO/ProtoBuf.js/wiki)
+* [Usage / FAQ](https://github.com/dcodeIO/ProtoBuf.js/wiki)
 * [Builder](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
 * [Parser](https://github.com/dcodeIO/ProtoBuf.js/wiki/Parser)
 * [proto2js](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js)
