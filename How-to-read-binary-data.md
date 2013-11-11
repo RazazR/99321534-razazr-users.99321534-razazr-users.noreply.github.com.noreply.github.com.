@@ -5,8 +5,7 @@ To make it easier for you to get this right, here is some insight on the topic:
 * [XMLHttpRequest: responseType="arraybuffer"](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Sending_and_Receiving_Binary_Data)
 * [WebSockets: binaryType="arraybuffer"](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
 
-XMLHttpRequest example
-----------------------
+#### XMLHttpRequest example
 ```js
 var xhr = ProtoBuf.Util.XHR();
 xhr.open('GET', "person.bin", true);
