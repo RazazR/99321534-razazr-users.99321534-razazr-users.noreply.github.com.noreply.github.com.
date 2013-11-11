@@ -2,7 +2,7 @@ When reading binary data in the browser it is mandatory to understand that just 
 
 To make it easier for you to get this right, here is some insight on the topic:
 
-* [XMLHttpRequest: responseType = "arraybuffer"](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Sending_and_Receiving_Binary_Data)
+* [XMLHttpRequest: responseType="arraybuffer"](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Sending_and_Receiving_Binary_Data)
 * [WebSockets: binaryType="arraybuffer"](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
 
 XMLHttpRequest example
