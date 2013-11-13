@@ -146,12 +146,12 @@ The **Parser** is only available in the full build (i.e. not in "noparse" builds
       ...
   }
   ```
+
+  Extensions are parsed and applied since 1.4.0. Internal extensions like the following one are ignored because low-level bootstrapping is not required by ProtoBuf.js, thus th "google.protobuf.*" definitions are not present. However, if they are present because they have been loaded manually, extensions will be applied but will not have any effect the parser's workflow (like when extending internal structures with a new keyword):
   
   ```protobuf
   import "google/protobuf/descriptor.proto";
   ```
-  
-  These statements are actually simply ignored to make existing definitions compile fine. Low-level bootstrapping is not required by ProtoBuf.js.
 
 * Services:
 
