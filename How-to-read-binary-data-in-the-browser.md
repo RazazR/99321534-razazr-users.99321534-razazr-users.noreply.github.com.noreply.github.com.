@@ -7,11 +7,14 @@ To make it easier for you to get this right, here is some insight on the topic:
 
 #### XMLHttpRequest snippet
 ```js
+...
+var SomeMessage = ...; // Obtained via ProtoBuf.protoFromFile(...).build("SomeMessage") for example
+
 var xhr = ProtoBuf.Util.XHR();
 xhr.open('GET', "person.bin", true);
 xhr.responseType = "arraybuffer";
 xhr.onload = function(evt) {
-	var msg = test.decode(xhr.response);
+	var msg = SomeMessage.decode(xhr.response);
 	alert(JSON.stringify(msg.person[0])); // Correctly decoded
 }
 xhr.send(null);
