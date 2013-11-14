@@ -15,7 +15,7 @@ xhr.open('GET', "person.bin", true);
 xhr.responseType = "arraybuffer";
 xhr.onload = function(evt) {
 	var msg = SomeMessage.decode(xhr.response);
-	alert(JSON.stringify(msg.person[0])); // Correctly decoded
+	alert(JSON.stringify(msg, null, 4)); // Correctly decoded
 }
 xhr.send(null);
 ```
