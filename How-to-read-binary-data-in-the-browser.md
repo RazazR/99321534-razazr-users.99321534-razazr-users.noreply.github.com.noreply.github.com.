@@ -1,4 +1,4 @@
-When reading binary data in the browser it is mandatory to understand that just reading it (as a string) is not enough. When doing this, the data will probably become corrupted when it is converted between character sets and ProtoBuf.js will not be able to decode it or will return random stuff.
+When reading binary data in the browser it is mandatory to understand that just reading it (as a string) is not enough. When doing this, the data will probably become corrupted when it is converted between character sets and ProtoBuf.js will not be able to decode it or will return random stuff. What's actually required here is to read the data as binary.
 
 To make it easier for you to get this right, here is some insight on the topic:
 
