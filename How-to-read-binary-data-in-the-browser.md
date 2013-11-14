@@ -11,7 +11,7 @@ To make it easier for you to get this right, here is some insight on the topic:
 var SomeMessage = ...; // Obtained via ProtoBuf.protoFromFile(...).build("SomeMessage") for example
 
 var xhr = ProtoBuf.Util.XHR();
-xhr.open('GET', "person.bin", true);
+xhr.open('GET', "encodedProtoBufData.bin", true);
 xhr.responseType = "arraybuffer";
 xhr.onload = function(evt) {
 	var msg = SomeMessage.decode(xhr.response);
