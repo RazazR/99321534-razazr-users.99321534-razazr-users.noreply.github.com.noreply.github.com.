@@ -11,11 +11,15 @@ To make it easier for you to get this right, here is some insight on the topic:
 var SomeMessage = ...; // Obtained via ProtoBuf.protoFromFile(...).build("SomeMessage") for example
 
 var xhr = ProtoBuf.Util.XHR();
-xhr.open(/* method */ "GET", /* file */ "encodedProtoBufData.bin", /* async */ true);
+xhr.open(
+    /* method */ "GET",
+    /* file */ "/path/to/encodedSomeMessageData.bin",
+    /* async */ true
+);
 xhr.responseType = "arraybuffer";
 xhr.onload = function(evt) {
-	var msg = SomeMessage.decode(xhr.response);
-	alert(JSON.stringify(msg, null, 4)); // Correctly decoded
+    var msg = SomeMessage.decode(xhr.response);
+    alert(JSON.stringify(msg, null, 4)); // Correctly decoded
 }
 xhr.send(null);
 ```
