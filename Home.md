@@ -90,13 +90,20 @@ For an extra boost in bandwidth utilization and speed, you may use the [proto2js
 
 ```js
 var builder = ProtoBuf.newBuilder();
-builder.define("my.package"[, topLevelOptions]); // Moves the pointer to the correct namespace
-builder.create(...json definitions like messages, enums, services etc...); // Processes definitions on top of that namespace
-builder.reset(); // Resets the namespace pointer to root
+try {
+    // First of all, move the pointer to the correct namespace (if it's not root)
+    builder.define("my.package"[, topLevelOptions]);
+    // Process definitions on top of that namespace
+    builder.create(...json definitions like messages, enums, services etc...);
+    // And finally reset the namespace pointer to root
+    builder.reset();
 
-// Afterwards, everything is as usual
-var SomeMessage = builder.build("SomeMessage");
-...
+    // Afterwards, everything is as usual
+    var SomeMessage = builder.build("SomeMessage");
+    ...
+} catch (e) {
+    console.log("Something went wrong: "+e.message);
+}
 ```
 
 
