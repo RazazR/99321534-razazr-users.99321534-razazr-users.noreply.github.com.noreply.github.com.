@@ -71,16 +71,16 @@ You'll need the full build to load .proto files and you may either load them fro
 
 ```js
 // Loading from a file, assuming imports to be relative to that file
-// i.e. ``import "file2.proto"``)
+// i.e. `import "file2.proto"`)
 var builder = ProtoBuf.protoFromFile("path/to/file.proto");
 
 // Loading from a file, overriding the import root directory
-// i.e. ``import "path/to/file2.proto"``
+// i.e. `import "path/to/file2.proto"`
 var builder = ProtoBuf.protoFromFile({ root: "path/to", file: "file.proto });
 
 // Loading from a string
 var builder = ProtoBuf.protoFromString(protoString[, filename]);
-// The optional filename parameter is needed only if imports are used and is
+// The optional filename parameter is required only if imports are used and is
 // equivalent to the usage of ProtoBuf.protoFromFile
 ```
 
