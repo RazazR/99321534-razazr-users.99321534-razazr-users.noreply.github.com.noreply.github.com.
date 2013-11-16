@@ -105,6 +105,6 @@ try {
     console.log("Something went wrong: "+e.message);
 }
 ```
-
+This basically is what proto2js does for you automatically when building classes, AMD or CommonJS imports.
 
 **Next:** [Learn more about using the API](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
