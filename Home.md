@@ -86,7 +86,9 @@ var builder = ProtoBuf.protoFromString(protoString[, filename]);
 
 #### Loading .json files
 
-For an extra reduction of bandwidth utilization and parsing overhead, you may use the [proto2js command line utility](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js) to compile your .proto files to JSON. While proto2js also provides some abstraction to create entire classes, using the plain JSON definitions behind this is also possible:
+For an extra reduction of bandwidth utilization and parsing overhead, you may use the [proto2js command line utility](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js) to compile your .proto files to JSON or even self-contained JS files.
+
+This basically is what proto2js does for you automatically when building classes, AMD or CommonJS imports:
 
 ```js
 var builder = ProtoBuf.newBuilder();
@@ -105,6 +107,5 @@ try {
     console.log("Something went wrong: "+e.message);
 }
 ```
-This basically is what proto2js does for you automatically when building classes, AMD or CommonJS imports.
 
 **Next:** [Learn more about using the API](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
