@@ -86,7 +86,7 @@ var builder = ProtoBuf.protoFromString(protoString[, filename]);
 
 #### Loading .json files
 
-For an extra boost in bandwidth utilization and speed, you may use the [proto2js command line utility](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js) to compile your .proto files to JSON. While proto2js also provides some abstraction to create entire classes, using the plain JSON definitions behind this is also possible:
+For an extra reduction of bandwidth utilization and parsing overhead, you may use the [proto2js command line utility](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js) to compile your .proto files to JSON. While proto2js also provides some abstraction to create entire classes, using the plain JSON definitions behind this is also possible:
 
 ```js
 var builder = ProtoBuf.newBuilder();
