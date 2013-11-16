@@ -18,7 +18,7 @@ var ProtoBuf = require("protobufjs");
 ...
 ```
 
-#### RequireJS / AMD ####
+#### RequireJS / AMD
 
 Requires [ByteBuffer.js](http://github.com/dcodeIO/ByteBuffer.js). Optionally depends on [Long.js](https://github.com/dcodeIO/Long.js)
 for long (int64) support. If you do not require long support, you can skip the Long.js config. [Require.js](http://requirejs.org/)
@@ -47,7 +47,7 @@ define("MyModule", ["ProtoBuf"], function(ProtoBuf) {
 });
 ```
 
-#### Browser ####
+#### Browser
 
 Requires [ByteBuffer.js](http://github.com/dcodeIO/ByteBuffer.js). Optionally depends on [Long.js](https://github.com/dcodeIO/Long.js)
 for long (int64) support. If you do not require long support, you can skip the Long.js include.
@@ -64,5 +64,24 @@ var ProtoBuf = dcodeIO.ProtoBuf;
 ```
 
 Now, everything is set up and ready to go.
+
+#### Loading .proto files
+
+You'll need the full build to load .proto files and you may either load them from a file or as a string.
+
+```js
+// Loading from a file, assuming imports to be relative to that file
+// i.e. ``import "file2.proto"``)
+var builder = ProtoBuf.protoFromFile("path/to/file.proto");
+
+// Loading from a file, overriding the import root directory
+// i.e. ``import "path/to/file2.proto"``
+var builder = ProtoBuf.protoFromFile({ root: "path/to", file: "file.proto });
+
+// Loading from a string
+var builder = ProtoBuf.protoFromString(protoString[, filename]);
+// The optional filename parameter is needed only if imports are used and is
+// equivalent to the usage of ProtoBuf.protoFromFile
+```
 
 **Next:** [Learn more about using the API](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
