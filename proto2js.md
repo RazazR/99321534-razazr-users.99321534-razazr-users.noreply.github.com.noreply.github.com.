@@ -1,23 +1,27 @@
 It's also possible to transform .proto files into their JSON counterparts or to transform entire namespaces into ready-to-use message classes and enum objects by using the `proto2js` command line utility.
 
 ```
-  Usage: proto2js protoFile [-class[=My.Package]|-commonjs[=My.Package]|-amd[=My.Package]] [-min] [> outFile]
+ Usage: proto2js protoFile [-class[=My.Package]|-commonjs[=My.Package]|-amd[=My.Package]] [-min] [> outFile]
 
-  Options:
+ Options:
 
-    -class[=My.Package]     Creates the classes instead of just a JSON definition.
-                            If you do not specify a package, the package
-                            declaration from the .proto file is used instead.
+   -class[=My.Package]     Creates the classes instead of just a JSON definition.
+                           If you do not specify a package, the package
+                           declaration from the .proto file is used instead.
 
-    -commonjs[=My.Package]  Creates a CommonJS export instead of just a JSON def.
-                            If you do not specify a package, the package
-                            declaration from the .proto file is used instead.
+   -commonjs[=My.Package]  Creates a CommonJS export instead of just a JSON def.
+                           If you do not specify a package, the package
+                           declaration from the .proto file is used instead.
 
-    -amd[=My.Package]       Creates an AMD define instead of just a JSON def.
-                            If you do not specify a package, the package
-                            declaration from the .proto file is used instead.
+   -amd[=My.Package]       Creates an AMD define instead of just a JSON def.
+                           If you do not specify a package, the package
+                           declaration from the .proto file is used instead.
 
-    -min                    Minifies the output.
+ If none of -class, -commonjs or -amd is specified, the raw AST will be returned.
+
+   -min                    Minifies the output.
+
+   -path=DIR               Adds a directory to the include path.
 ```
 
 So, to create a JSON definition from the [tests/complex.proto](https://github.com/dcodeIO/ProtoBuf.js/blob/master/tests/complex.proto)
