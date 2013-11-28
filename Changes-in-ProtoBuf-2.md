@@ -11,8 +11,8 @@ ProtoBuf.js 2 uses lots of functionality from [ByteBuffer.js 2](https://github.c
 * `ProtoBuf.Builder.Message#decode64` Decodes from base64  
 * `ProtoBuf.Builder.Message#decodeHex` Decodes from hex
 
-Debug output on ByteBuffer instances
-------------------------------------
+#### Debug output on ByteBuffer instances
+
 ByteBuffer 1.x provided a means of debugability through its `#toHex` method that returned the hex representation of the underlying buffer *including* marked offsets. This led to some confusion and has changed. `#toHex` now returns a plain hex encoded representation while `#toString("debug")` returns what ByteBuffer 1.x previously returned for `#toHex`.
 
 Unified reporting of missing fields
