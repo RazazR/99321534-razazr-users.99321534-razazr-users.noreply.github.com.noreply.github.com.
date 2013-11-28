@@ -155,7 +155,7 @@ var myMessage = YourMessage.decode64(b64str); // (*)
 * Base64 encoding requires ProtoBuf.js >= 1.2.0 with ByteBuffer >= 1.5.0.
 
 #### Handling truncated messages
-If a message is missing a required field when it is en- or decoded, the library will throw an `Error` that still contains the rest of the decoded message as its `encoded` respectively `decoded` property. Decoding example:
+If a message is missing a required field when it is en- or decoded, the library will throw an `Error` that still contains the rest of the encoded or decoded message as its `encoded` respectively `decoded` property. Decoding example:
 
 ```javascript
 try {
