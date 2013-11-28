@@ -22,14 +22,14 @@ var builder = ProtoBuf.protoFromFile(...the file from above...),
 
 // Craft your RPC implementation (this is probably the simplest example possible)
 var rpcImpl = function(method, req, callback) {
-   if (method == "MyMethod") {
+   if (method == ".MyService.MyMethod") {
       doSomeFancyNetworking(req.toArrayBuffer(), function(errorIfAny, response) {
          callback(errorIfAny, response);
          // Response may be either a pre-parsed protobuf message or the raw response data
       });
       // or short: doSomeFancNetworking(req.toArrayBuffer(), callback); ... you get it
    } else {
-      throw(new Error("Method not supported"));
+      throw(new Error("Method not supported: "+method));
    }
 }
 
