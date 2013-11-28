@@ -27,4 +27,8 @@ Conversion to plain JSON with proto2js
 --------------------------------------
 proto2js now pulls imports into the resulting JSON output instead of just returning the file names for further processing.
 
+Services support
+----------------
+[see](https://github.com/dcodeIO/ProtoBuf.js/wiki/Services)
+
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
