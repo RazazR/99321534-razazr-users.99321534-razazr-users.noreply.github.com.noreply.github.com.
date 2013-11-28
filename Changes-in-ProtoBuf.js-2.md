@@ -13,7 +13,7 @@ ProtoBuf.js 2 uses lots of functionality from [ByteBuffer.js 2](https://github.c
 
 #### Debug output on ByteBuffer instances
 
-ByteBuffer 1.x provided a means of debugability through its `#toHex` method that returned the hex representation of the underlying buffer *including* marked offsets. This led to some confusion and has changed. `#toHex` now returns a plain hex encoded representation while `#toString("debug")` returns what ByteBuffer 1.x previously returned for `#toHex`.
+ByteBuffer 1.x provided a means of debugability through its `#toHex` method that returned the hex representation of the underlying buffer *including* marked offsets. This led to some confusion and has changed. `#toHex` now returns a plain hex encoded representation while `#toString("debug")` returns what ByteBuffer 1.x previously returned for `#toHex` but without any line breaks.
 
 Unified reporting of missing fields
 -----------------------------------
