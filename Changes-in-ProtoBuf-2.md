@@ -1,4 +1,4 @@
-ProtoBuf.js 2 uses lots of functionality from ByteBuffer 2, like an easier way to encode/decode to/from base64 and hex:
+ProtoBuf.js 2 uses lots of functionality from [ByteBuffer.js 2](https://github.com/dcodeIO/ByteBuffer.js), like an easier way to encode/decode to/from base64 and hex:
 
 * `ProtoBuf.Builder.Message#encodeAB` Encodes to an ArrayBuffer  
 * `ProtoBuf.Builder.Message#toArrayBuffer` Alias for encodeAB
@@ -13,7 +13,7 @@ ProtoBuf.js 2 uses lots of functionality from ByteBuffer 2, like an easier way t
 
 Debug output on ByteBuffer instances
 ------------------------------------
-ByteBuffer 1.x provided a means of debugability through its `#toHex` method that returned the hex representation of the underlying buffer *including* marked offsets. This led to some confusion and has changed. `#toHex` now returns a plain hex encoded representation while `#toString("debug")` returns what ByteBuffer 1.x previously returned for `#toHex`. [see](https://github.com/dcodeIO/ByteBuffer.js)
+ByteBuffer 1.x provided a means of debugability through its `#toHex` method that returned the hex representation of the underlying buffer *including* marked offsets. This led to some confusion and has changed. `#toHex` now returns a plain hex encoded representation while `#toString("debug")` returns what ByteBuffer 1.x previously returned for `#toHex`.
 
 Unified reporting of missing fields
 -----------------------------------
