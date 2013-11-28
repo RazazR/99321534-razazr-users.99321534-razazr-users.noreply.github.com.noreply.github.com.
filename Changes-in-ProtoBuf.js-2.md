@@ -29,6 +29,6 @@ proto2js now pulls imports into the resulting JSON output instead of just return
 
 Services support
 ----------------
-[see](https://github.com/dcodeIO/ProtoBuf.js/wiki/Services)
+Services are now available through [a straight-forward API](https://github.com/dcodeIO/ProtoBuf.js/wiki/Services).
 
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
