@@ -6,6 +6,7 @@ ProtoBuf.js 2 uses lots of functionality from [ByteBuffer.js 2](https://github.c
 * `ProtoBuf.Builder.Message#toBuffer` Alias for #encodeNB  
 * `ProtoBuf.Builder.Message#encode64` Encodes to a base64 encoded string  
 * `ProtoBuf.Builder.Message#encodeHex` Encodes to a hex encoded string  
+* `ProtoBuf.Builder.Message#toString(enc)` Encodes to base64, hex, utf8 (not recommended), debug  
 
 * `ProtoBuf.Builder.Message#decode(buffer, enc)` Decodes with the given encoding if buffer is a string  
 * `ProtoBuf.Builder.Message#decode64` Decodes from base64  
