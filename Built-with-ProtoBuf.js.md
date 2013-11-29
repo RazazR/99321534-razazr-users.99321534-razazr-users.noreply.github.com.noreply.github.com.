@@ -1,3 +1,6 @@
+### Databases
+* [RethinkDB](https://npmjs.org/package/rethinkdb)
+
 ### Games
 * [eSoccer](http://www.esoccer.me) - omg that spin!
 
