@@ -21,7 +21,7 @@ Encoding of messages with missing required fields now reports this through an er
 
 Named function shenanigans
 --------------------------
-Message constructors no longer are named functions as the eval() logic regularily caused trouble.
+Message and service constructors no longer are named functions as the eval() logic regularily caused trouble.
 
 Conversion to plain JSON with proto2js
 --------------------------------------
