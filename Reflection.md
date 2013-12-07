@@ -45,7 +45,7 @@ This structure is stored inside of the builder's `ns` property. The easiest way 
 
 ```js
 ...
-var builder = ProtoBuf.protoFromFile("example.proto"); // from above
+var builder = ProtoBuf.loadProtoFile("example.proto"); // from above
 
 var TPlayer = builder.lookup("Game.Player"); // instance of ProtoBuf.Reflect.Message
 
