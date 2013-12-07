@@ -15,9 +15,9 @@ Example: [tests/complex.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/maste
 ```javascript
 var ProtoBuf = require("protobufjs");
 
-var builder = ProtoBuf.loadProtoFile("tests/complex.proto");
-var Game = builder.build("Game");
-var Car = Game.Cars.Car;
+var builder = ProtoBuf.loadProtoFile("tests/complex.proto"),
+    Game = builder.build("Game"),
+    Car = Game.Cars.Car;
 
 // Construct with arguments list in field order:
 var car = new Car("Rusty", new Car.Vendor("Iron Inc.", new Car.Vendor.Address("US")), Car.Speed.SUPERFAST);
@@ -50,6 +50,18 @@ socket.send(car.toArrayBuffer()); // node.js: car.toBuffer()
 #### Using JSON without the .proto parser ####
 
 Example: [tests/complex.json](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/complex.json)
+
+```js
+var ProtoBuf = require("protobufjs");
+
+var builder = ProtoBuf.loadJsonFile("tests/complex.json");
+
+...actually the same as above...
+```
+
+See: [Using proto2js to transform .proto files to JSON](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js)
+
+#### Using manual creation ####
 
 ```javascript
 var ProtoBuf = require("protobufjs");
