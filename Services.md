@@ -14,7 +14,7 @@ service MyService {
 ```
 
 ```js
-var builder = ProtoBuf.protoFromFile(...the file from above...),
+var builder = ProtoBuf.loadProtoFile(...the file from above...),
     root = builder.build(),
     MyService = root.MyService,
     RequestType = root.RequestType,
