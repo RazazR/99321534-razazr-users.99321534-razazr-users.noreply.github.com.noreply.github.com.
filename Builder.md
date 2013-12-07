@@ -102,6 +102,7 @@ builder.create([
           ]
       }
 ]);
+builder.reset();
 
 var Game = builder.build("Game");
 var Car = Game.Cars.Car;
