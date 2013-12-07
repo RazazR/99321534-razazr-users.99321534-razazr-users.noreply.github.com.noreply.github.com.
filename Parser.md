@@ -126,7 +126,7 @@ The **Parser** is only available in the full build (i.e. not in "noparse" builds
   [example2.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example2.proto)
   
   ```javascript
-  var builder = ProtoBuf.protoFromFile("tests/imports.proto");
+  var builder = ProtoBuf.loadProtoFile("tests/imports.proto");
   var root = builder.build();
   // root now contains:
   // - .Test1
