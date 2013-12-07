@@ -1,7 +1,7 @@
 The **Builder** is probably the core component of ProtoBuf.js. It resolves all type references, performs all the necessary checks and returns ready to use classes. A builder can be created from
 
 * a .proto file: `ProtoBuf.loadProtoFile`
-* a proto string: `ProtoBuf.loadProto`
+* a .proto string: `ProtoBuf.loadProto`
 * a JSON file: `ProtoBuf.loadJsonFile`
 * a JSON definition or string: `ProtoBuf.loadJson`
 * or created manually: `ProtoBuf.newBuilder`, `Builder#define/create`, [see](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-json-without-the-proto-parser))
