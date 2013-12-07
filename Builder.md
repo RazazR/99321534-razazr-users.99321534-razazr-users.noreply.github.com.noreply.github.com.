@@ -125,8 +125,8 @@ Example: [tests/example1.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/mast
 [tests/example2.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example2.proto)
 
 ```javascript
-var builder = ProtoBuf.protoFromFile("tests/example1.proto");
-ProtoBuf.protoFromFile("tests/example2.proto", builder);
+var builder = ProtoBuf.loadProtoFile("tests/example1.proto");
+ProtoBuf.loadProtoFile("tests/example2.proto", builder);
 var root = builder.build();
 var test1 = new root.Test1(123);
 var test2 = new root.Test2("123");
