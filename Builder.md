@@ -1,4 +1,12 @@
-The **Builder** is probably the core component of ProtoBuf.js. It resolves all type references, performs all the necessary checks and returns ready to use classes. A builder can be created from a .proto file (`ProtoBuf.protoFromFile`), a proto string (`ProtoBuf.protoFromString`) or from a JSON definition (`ProtoBuf.newBuilder`, `Builder#define/create`, [see](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-json-without-the-proto-parser)). The later does not even require the .proto parser to be included.
+The **Builder** is probably the core component of ProtoBuf.js. It resolves all type references, performs all the necessary checks and returns ready to use classes. A builder can be created from
+
+* a .proto file: `ProtoBuf.loadProtoFile`
+* a proto string: `ProtoBuf.loadProto`)
+* a JSON file: `ProtoBuf.loadJsonFile`
+* a JSON definition or string: `ProtoBuf.loadJson`
+* or created manually (`ProtoBuf.newBuilder`, `Builder#define/create`, [see](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-json-without-the-proto-parser)).
+
+If you are using JSON and/or manual creation only, it's possible to use the smaller NOPARSE build that does not contain the .proto parser.
 
 #### Using .proto files ####
 
@@ -7,7 +15,7 @@ Example: [tests/complex.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/maste
 ```javascript
 var ProtoBuf = require("protobufjs");
 
-var builder = ProtoBuf.protoFromFile("tests/complex.proto");
+var builder = ProtoBuf.loadProtoFile("tests/complex.proto");
 var Game = builder.build("Game");
 var Car = Game.Cars.Car;
 
