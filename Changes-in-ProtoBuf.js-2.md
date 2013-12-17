@@ -31,4 +31,11 @@ Services support
 ----------------
 Services are now available through [a straight-forward API](https://github.com/dcodeIO/ProtoBuf.js/wiki/Services).
 
+API name changes
+----------------
+`ProtoBuf.protoFromFile` has become `ProtoBuf.loadProtoFile` but is kept as an alias
+`ProtoBuf.protoFromString` has become `ProtoBuf.loadProto` but is kept as an alias
+`ProtoBuf.fromJsonFile` has been added
+`ProtoBuf.fromJson` has been added
+
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
