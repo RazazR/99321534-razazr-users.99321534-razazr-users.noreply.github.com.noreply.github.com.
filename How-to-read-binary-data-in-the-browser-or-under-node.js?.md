@@ -41,7 +41,9 @@ http.request("http://some/url/to/binary.pb", function(res) {
 		var myMessage = MyMessage.decode(data);
 		...
 	});
+	...
 });
+...
 ```
 
 *Note:* Do not use `ProtoBuf.Util.fetch(...)` for reading binary data. This is used exclusively to fetch .proto files. 
