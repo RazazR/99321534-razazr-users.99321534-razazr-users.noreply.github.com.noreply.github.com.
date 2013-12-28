@@ -31,7 +31,7 @@ Depending on the actual browser you are using, this may differ.
 ```js
 var http = require("http");
 
-http.request("http://some/url/to/binary.pb", function(res) {
+http.get("http://some/url/to/binary.pb", function(res) {
 	var data = []; // List of Buffer objects
 	res.on("data", function(chunk) {
 		data.push(chunk); // Append Buffer object
