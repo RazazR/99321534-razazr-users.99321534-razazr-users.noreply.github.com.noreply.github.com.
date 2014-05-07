@@ -4,7 +4,7 @@
 * [ProtoBuf.js 2.2](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-ProtoBuf.js-2.2)
 * [ProtoBuf.js 2.0](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-ProtoBuf.js-2)
 
-**FAQ:**
+**Frequently asked questions:**
 * [Why ProtoBuf.js instead of, let's say, JSON?](https://github.com/dcodeIO/ProtoBuf.js/wiki/ProtoBuf.js-vs-JSON)
 * [How to validate / decode / reverse engineer a protobuf buffer by hand?](https://github.com/dcodeIO/ProtoBuf.js/issues/55)
 * [How to read binary data in the browser / under node.js?](https://github.com/dcodeIO/ProtoBuf.js/wiki/How-to-read-binary-data-in-the-browser-or-under-node.js%3F)
