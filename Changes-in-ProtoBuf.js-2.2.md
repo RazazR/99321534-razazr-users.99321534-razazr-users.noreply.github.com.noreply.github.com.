@@ -12,5 +12,5 @@ var bb = myMessage.encode(); // 2.0: flips, 2.2: flips
 // If explicitly specified, it does not flip anymore so that
 // multiple messages can easily be written into one ByteBuffer:
 var bb = new ByteBuffer();
-myMessage.encode(bb); // 2.0: flips: 2.2: does not flip
+myMessage.encode[Delimited](bb); // 2.0: flips: 2.2: does not flip
 ```
