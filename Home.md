@@ -34,7 +34,7 @@ require.config({
     ...
     "paths": {
         "Long": "/path/to/Long.js",
-        "ByteBuffer": "/path/to/ByteBuffer.js",
+        "ByteBuffer": "/path/to/ByteBufferAB.js",
         "ProtoBuf": "/path/to/ProtoBuf.js"
     },
     ...
@@ -59,7 +59,7 @@ for long (int64) support. If you do not require long support, you can skip the L
 
 ```html
 <script src="Long.min.js"></script>
-<script src="ByteBuffer.min.js"></script>
+<script src="ByteBufferAB.min.js"></script>
 <script src="ProtoBuf.min.js"></script>
 ```
 
