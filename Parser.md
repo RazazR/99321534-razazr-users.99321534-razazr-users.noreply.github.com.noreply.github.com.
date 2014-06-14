@@ -12,7 +12,7 @@ The **Parser** is only available in the full build (i.e. not in "noparse" builds
   ```
 
 * Data types: int32, uint32, sint32, fixed32, sfixed32, int64, uint64, sint64, fixed64, sfixed64, bool, enum, string,
-  bytes, messages, embedded messages, float, double
+  bytes, messages, embedded messages, legacy groups, float, double
   
   ```protobuf
   message Test {
