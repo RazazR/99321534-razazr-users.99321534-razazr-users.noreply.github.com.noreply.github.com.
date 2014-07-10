@@ -1,6 +1,10 @@
-It's also possible to transform .proto files into their JSON counterparts or to transform entire namespaces into ready-to-use message classes and enum objects by using the `proto2js` command line utility.
+It's also possible to transform .proto files into their JSON counterparts or to transform entire namespaces into ready-to-use message classes and enum objects by using the `proto2js` command line utility. The **json2proto** utility does the reverse from a raw JSON ast.
 
 ```
+  _  _ _ |_ _  _ . _
+ |_)| (_)|_(_) _)|_)
+ |            (_ '
+
  Usage: proto2js protoFile [-class[=My.Package]|-commonjs[=My.Package]|-amd[=My.Package]]
                            [-min] [> outFile]
 
@@ -26,6 +30,14 @@ It's also possible to transform .proto files into their JSON counterparts or to 
 
    -legacy                 Includes legacy descriptors from google/protobuf/ if
                            explicitly referenced.
+```
+
+```
+ . _ _  _  _  _  _ _ |_ _
+ |_)(_)| ) _)|_)| (_)|_(_) ProtoBuf.js v3.1.0 https://github.com/dcodeIO/ProtoBuf.js
+ '        (_ |
+
+ Usage: json2proto jsonFile [> outFile]
 ```
 
 So, to create a JSON definition from the [tests/complex.proto](https://github.com/dcodeIO/ProtoBuf.js/blob/master/tests/complex.proto)
