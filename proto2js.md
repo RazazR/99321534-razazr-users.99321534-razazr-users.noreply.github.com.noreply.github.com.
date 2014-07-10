@@ -22,6 +22,9 @@ It's also possible to transform .proto files into their JSON counterparts or to 
    -min                    Minifies the output.
 
    -path=DIR               Adds a directory to the include path.
+
+   -legacy                 Includes legacy descriptors from google/protobuf/ if
+                           explicitly referenced.
 ```
 
 So, to create a JSON definition from the [tests/complex.proto](https://github.com/dcodeIO/ProtoBuf.js/blob/master/tests/complex.proto)
