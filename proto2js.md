@@ -34,7 +34,7 @@ It's also possible to transform .proto files into their JSON counterparts or to 
 
 ```
  . _ _  _  _  _  _ _ |_ _
- |_)(_)| ) _)|_)| (_)|_(_) ProtoBuf.js v3.1.0 https://github.com/dcodeIO/ProtoBuf.js
+ |_)(_)| ) _)|_)| (_)|_(_)
  '        (_ |
 
  Usage: json2proto jsonFile [> outFile]
