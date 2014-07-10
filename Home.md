@@ -9,6 +9,7 @@
 * [How to validate / decode / reverse engineer a protobuf buffer by hand?](https://github.com/dcodeIO/ProtoBuf.js/issues/55)
 * [How to read binary data in the browser / under node.js?](https://github.com/dcodeIO/ProtoBuf.js/wiki/How-to-read-binary-data-in-the-browser-or-under-node.js%3F)
 * [field_name looks ugly, can it be converted to fieldName?](https://github.com/dcodeIO/ProtoBuf.js/wiki/Advanced-options#convert-fields-to-camelcase)
+* [What about google/protobuf/descriptor.proto?](https://github.com/dcodeIO/ProtoBuf.js/tree/master/src/google/protobuf)
 
 Usage
 -----
