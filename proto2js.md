@@ -47,6 +47,12 @@ file, run:
 proto2js tests/complex.proto > tests/complex.json
 ```
 
+And to reverse the previous, run:
+
+```bash
+json2proto tests/complex.json > tests/complex.proto
+```
+
 Or to create classes/a CommonJS export/an AMD define for the entire `Game` namespace, run:
 
 ```bash
