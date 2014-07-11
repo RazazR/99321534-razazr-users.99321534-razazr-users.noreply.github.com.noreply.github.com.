@@ -1,4 +1,4 @@
-It's also possible to transform .proto files into their JSON counterparts or to transform entire namespaces into ready-to-use message classes and enum objects by using the `proto2js` command line utility. The **json2proto** utility does the reverse from a raw JSON ast.
+It's also possible to transform .proto files into their JSON counterparts or to transform entire namespaces into ready-to-use message classes and enum objects by using the `proto2js` command line utility. The **json2proto** utility does the reverse from raw JSON.
 
 ```
   _  _ _ |_ _  _ . _
@@ -22,7 +22,7 @@ It's also possible to transform .proto files into their JSON counterparts or to 
                            If you do not specify a package, the package
                            declaration from the .proto file is used instead.
 
- If none of -class, -commonjs or -amd is specified, the raw AST will be returned.
+ If none of -class, -commonjs or -amd is specified, raw JSON will be returned.
 
    -min                    Minifies the output.
 
@@ -40,8 +40,7 @@ It's also possible to transform .proto files into their JSON counterparts or to 
  Usage: json2proto jsonFile [> outFile]
 ```
 
-So, to create a JSON definition from the [tests/complex.proto](https://github.com/dcodeIO/ProtoBuf.js/blob/master/tests/complex.proto)
-file, run:
+So, to create a JSON definition from the [tests/complex.proto](https://github.com/dcodeIO/ProtoBuf.js/blob/master/tests/complex.proto) file, run:
 
 ```bash
 proto2js tests/complex.proto > tests/complex.json
