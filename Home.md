@@ -80,6 +80,11 @@ You'll need the full build to load .proto files and you may either load them fro
 // i.e. `import "file2.proto"` will import `path/to/file2.proto`)
 var builder = ProtoBuf.loadProtoFile("path/to/file.proto");
 
+// Asynchronous usage:
+ProtoBuf.loadProtoFile("path/to/file.proto", function(err, builder) {
+    ...
+});
+
 // Loading from a file, overriding the import root directory for relative imports
 // i.e. `import "to/file2.proto"` will import `./path/to/file2.proto`
 var builder = ProtoBuf.loadProtoFile({ root: "./path", file: "to/file.proto" });
