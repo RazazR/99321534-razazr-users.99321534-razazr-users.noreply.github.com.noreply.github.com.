@@ -1,4 +1,4 @@
-It's also possible to transform .proto files into their JSON counterparts or to transform entire namespaces into ready-to-use message classes and enum objects by using the `proto2js` command line utility. The **json2proto** utility does the reverse from raw JSON.
+It's also possible to transform .proto files into their JSON counterparts or to transform entire namespaces into ready-to-use message classes and enum objects by using the `proto2js` command line utility. The **json2proto** utility does the reverse from a JSON counterpart.
 
 ```
   _  _ _ |_ _  _ . _
