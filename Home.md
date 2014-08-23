@@ -11,90 +11,12 @@
 * [field_name looks ugly, can it be converted to fieldName?](https://github.com/dcodeIO/ProtoBuf.js/wiki/Advanced-options#convert-fields-to-camelcase)
 * [What about google/protobuf/descriptor.proto?](https://github.com/dcodeIO/ProtoBuf.js/tree/master/src/google/protobuf)
 
-Usage
------
-#### node.js / CommonJS ####
+Installation
+------------
+* [wiki/Installation](https://github.com/dcodeIO/ProtoBuf.js/wiki/Installation)
 
-```bash
-npm install protobufjs
-```
-
-```javascript
-var ProtoBuf = require("protobufjs");
-...
-```
-
-#### RequireJS / AMD
-
-Requires [ByteBuffer.js](http://github.com/dcodeIO/ByteBuffer.js). Optionally depends on [Long.js](https://github.com/dcodeIO/Long.js)
-for long (int64) support. If you do not require long support, you can skip the Long.js config. [Require.js](http://requirejs.org/)
-example:
-
-```javascript
-require.config({
-    ...
-    "paths": {
-        "Long": "/path/to/Long.js",
-        "ByteBuffer": "/path/to/ByteBufferAB.js",
-        "ProtoBuf": "/path/to/ProtoBuf.js"
-    },
-    ...
-});
-require(["ProtoBuf"], function(ProtoBuf) {
-    ...
-});
-```
-
-Or as a module dependency:
-
-```javascript
-define("MyModule", ["ProtoBuf"], function(ProtoBuf) {
-    ...
-});
-```
-
-#### Browser
-
-Requires [ByteBuffer.js](http://github.com/dcodeIO/ByteBuffer.js). Optionally depends on [Long.js](https://github.com/dcodeIO/Long.js)
-for long (int64) support. If you do not require long support, you can skip the Long.js include.
-
-```html
-<script src="Long.min.js"></script>
-<script src="ByteBufferAB.min.js"></script>
-<script src="ProtoBuf.min.js"></script>
-```
-
-```javascript
-var ProtoBuf = dcodeIO.ProtoBuf;
-...
-```
-
-Now, everything is set up and ready to go.
-
-#### Loading .proto files
-
-You'll need the full build to load .proto files and you may either load them from a file or as a string.
-
-```js
-// Loading from a file, assuming imports to be relative to that file
-// i.e. `import "file2.proto"` will import `path/to/file2.proto`)
-var builder = ProtoBuf.loadProtoFile("path/to/file.proto");
-
-// Asynchronous usage:
-ProtoBuf.loadProtoFile("path/to/file.proto", function(err, builder) {
-    ...
-});
-
-// Loading from a file, overriding the import root directory for relative imports
-// i.e. `import "to/file2.proto"` will import `./path/to/file2.proto`
-var builder = ProtoBuf.loadProtoFile({ root: "./path", file: "to/file.proto" });
-
-// Loading from a string
-var builder = ProtoBuf.loadProto(protoString[, filename]);
-// The optional filename parameter is required only if imports are used and is
-// equivalent to the usage of ProtoBuf.loadProtoFile
-```
-
-Loading .json files created manually or through proto2js [is also possible](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-json-without-the-proto-parser).
+Getting started
+---------------
+* [wiki/Getting-started](https://github.com/dcodeIO/ProtoBuf.js/wiki/Getting-started)
 
 **Next:** [Learn more about using the API](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
