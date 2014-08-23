@@ -56,3 +56,5 @@ for long (int64) support. If you do not require long support, you can skip the L
 var ProtoBuf = dcodeIO.ProtoBuf;
 ...
 ```
+
+**Next:** [Getting started](https://github.com/dcodeIO/ProtoBuf.js/wiki/Getting-started)
