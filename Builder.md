@@ -120,6 +120,12 @@ car.model = "Rusty"; // car.model;
 ...
 ```
 
+This only applies to non-extended fields. Extension fields use their fully qualified name as their key instead to prevent naming collisions and setting them is done this way:
+
+```js
+cat.set(".OtherMessage.otherField", 123);
+```
+
 #### Putting multiple .proto files into a common namespace programmatically ####
 
 Example: [tests/example1.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example1.proto),
