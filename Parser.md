@@ -142,12 +142,23 @@ The **Parser** is only available in the full build (i.e. not in "noparse" builds
 * Extensions:
   
   ```protobuf
-  extend something {
-      ...
+  message A {
+      a = 1;
+  }
+  
+  message B {
+      extend something {
+          optional b = 2;
+      }
   }
   ```
 
-  Extensions are parsed and applied since 1.4.0. Internal extensions to the ``google.protobuf.*`` namespace  are ignored because low-level bootstrapping is not required by ProtoBuf.js, thus the internal definitions are not present by default. However, if they have been loaded manually, extensions will be applied but will not have any effect on the parser's workflow (like when extending internal structures with a new keyword):
+  Extensions are parsed and applied since 1.4.0. Internal extensions to the ``google.protobuf.*`` namespace  are ignored because low-level bootstrapping is not required by ProtoBuf.js, thus the internal definitions are not present by default. However, if they have been loaded manually, extensions will be applied but will not have any effect on the parser's workflow (like when extending internal structures with a new keyword).
+
+  Extension fields use their fully qualified name as their name. Regarding the example above:
+  ```js
+  a.set(".B.b", 234);
+  ```
 
 * Services:
 
