@@ -13,10 +13,10 @@
 
 Installation
 ------------
-* [wiki/Installation](https://github.com/dcodeIO/ProtoBuf.js/wiki/Installation)
+* See: [wiki/Installation](https://github.com/dcodeIO/ProtoBuf.js/wiki/Installation)
 
 Getting started
 ---------------
-* [wiki/Getting-started](https://github.com/dcodeIO/ProtoBuf.js/wiki/Getting-started)
+* See: [wiki/Getting-started](https://github.com/dcodeIO/ProtoBuf.js/wiki/Getting-started)
 
 **Next:** [Learn more about using the API](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
