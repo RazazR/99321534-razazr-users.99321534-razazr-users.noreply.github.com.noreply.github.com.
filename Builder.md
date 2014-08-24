@@ -194,6 +194,6 @@ try {
 ```
 Documentation
 -------------
-* [Read the API docs](http://htmlpreview.github.com/?http://github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
+* [Read the API docs](http://htmlpreview.github.io/?https://raw.githubusercontent.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
 
 **Next:** [Learn more about the Parser](https://github.com/dcodeIO/ProtoBuf.js/wiki/Parser)
