@@ -1,6 +1,8 @@
+*Note:* You'll need the full build to load .proto data. NOPARSE builds are able to load JSON only.
+
 #### Loading .proto files
 
-You'll need the full build to load .proto files. To load a .proto file, use:
+To load a .proto file, use:
 
 **API:** `ProtoBuf.loadProtoFile(source[, callback[, builder]]):Builder|undefined`
 
