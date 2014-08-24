@@ -152,6 +152,8 @@ car.set(".price", 50000); // using Message#set, or
 car[".OtherMessage.description"] = "Perfect for families."; // as properties
 ```
 
+Please note that getters and setters will never override fields with the same name and will not be populated individually in this case. If even `Message#set` or `Message#get` collide with a field, these are also aliases as `Message#$set` and `Message#$get`.
+
 #### Putting multiple .proto files into a common builder programmatically ####
 
 Example: [tests/example1.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example1.proto),
