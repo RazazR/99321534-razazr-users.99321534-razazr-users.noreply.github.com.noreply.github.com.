@@ -25,3 +25,5 @@ var builder = ProtoBuf.loadProto(...protoString..., "myproto.proto");
 ```
 
 Loading .json files created manually or through proto2js [is also possible](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-json-without-the-proto-parser).
+
+**Next:** Learn more about [using the Builder](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
