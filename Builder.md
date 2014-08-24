@@ -148,8 +148,8 @@ message OtherMessage {
 ```
 
 ```js
-car.set(".price", 50000);
-car.set(".OtherMessage.description", "Perfect for families.");
+car['.price'] = 50000; // as a property
+car.set(".OtherMessage.description", "Perfect for families."); // using Message#set
 ```
 
 #### Putting multiple .proto files into a common builder programmatically ####
