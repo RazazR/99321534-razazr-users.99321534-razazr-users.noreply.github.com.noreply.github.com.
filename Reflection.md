@@ -107,7 +107,7 @@ Reflection type instances have a set of shared and custom properties to work wit
   * `id: number`
 
 * **ProtoBuf.Reflect.Extension** extends *ProtoBuf.Reflect.T*  
-  Extension definition in its original scope.
+  Extension definition in its original scope, one for each extension field.
   * `field: ProtoBuf.Reflect.Message.Field` Extended message field located in another namespace
 
 * **ProtoBuf.Reflect.Service** extends *ProtoBuf.Reflect.Namespace*  
