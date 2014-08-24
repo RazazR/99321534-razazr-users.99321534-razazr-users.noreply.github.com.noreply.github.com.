@@ -152,7 +152,9 @@ car.set(".price", 50000); // using Message#set, or
 car[".OtherMessage.description"] = "Perfect for families."; // as properties
 ```
 
-Please note that getters and setters will never override fields with the same name and will not be populated individually in this case. In case that even `Message#set` or `Message#get` collide with a field, these are also always aliases as `Message#$set` and `Message#$get`.
+Please note that getters and setters will never override fields with the same name and will not be populated individually in this case. In case that even `Message#set` or `Message#get` collide with a field, these are also always aliased as `Message#$set` and `Message#$get`.
+
+Additionally, if an ECMAScript 5 compatible environment is used, there is a `Message#$type` property on each message referencing the [reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection) type and a `Message#$options` property which holds all the options as a plain object. Field options are available on the respective reflection type.
 
 #### Putting multiple .proto files into a common builder programmatically ####
 
