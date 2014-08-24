@@ -113,6 +113,10 @@ A common cause of failures is loading the same file twice, which will result in 
 var builder = ProtoBuf.loadProtoFile("./my.proto");
 var MessageA = builder.build("MessageA"),
     MessageB = builder.build("MessageB");
+// or:
+var root = builder.build(),
+    MessageA = root.MessageA,
+    MessageB = root.MessageB;
 ...
 ```
 
