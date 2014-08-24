@@ -111,6 +111,7 @@ A common cause of unexpected errors being thrown is loading the same file twice,
 
 ```js
 var builder = ProtoBuf.loadProtoFile("./my.proto");
+// maybe also: ProtoBuf.loadProtoFile("./myother.proto", builder);
 var MessageA = builder.build("MessageA"),
     MessageB = builder.build("MessageB");
 // or:
