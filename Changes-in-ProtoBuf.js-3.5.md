@@ -29,3 +29,5 @@ a.set(".id", 234); // or a['.id'] = 234;
 a.set(".B.id", 345); // or a['.B.id'] = 345;
 ...
 ```
+
+Likewise, getting them can be done through `Message#get`.
