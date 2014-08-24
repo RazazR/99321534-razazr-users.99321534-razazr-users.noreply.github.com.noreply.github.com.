@@ -5,6 +5,7 @@ To address this issue, extension fields now use their fully qualified name as th
 ```protobuf
 message A {
     required string id = 1;
+    extensions 2 to max;
 }
 
 extend A {
