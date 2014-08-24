@@ -106,6 +106,16 @@ var Car = Game.Cars.Car;
 ... actually the same as above ...
 ```
 
+#### Hints
+A common cause of failures is loading the same file twice, which will result in two different builders that do not share their types. Always use a single builder instead:
+
+```js
+var builder = ProtoBuf.loadProtoFile("./my.proto");
+var MessageA = builder.build("MessageA"),
+    MessageB = builder.build("MessageB");
+...
+```
+
 #### Getters, setters and properties
 In addition to using object notation to initialize message contents, each message instance magically implements a couple of setters and getters for its properties. For example:
 
