@@ -107,7 +107,7 @@ var Car = Game.Cars.Car;
 ```
 
 #### Hints
-A common cause of failures is loading the same file twice, which will result in two different builders that do not share their types. Always use a single builder instead:
+A common cause of unexpected errors being thrown is loading the same file twice, which will result in two different builders that do not share their types. Always use a single builder instead:
 
 ```js
 var builder = ProtoBuf.loadProtoFile("./my.proto");
