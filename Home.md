@@ -3,7 +3,7 @@
 **Latest API changes:**
 * [ProtoBuf.js 3.5](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-ProtoBuf.js-3.5) - Extension fields
 * [ProtoBuf.js 2.2](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-ProtoBuf.js-2.2) - Delimited encode/decode
-* [ProtoBuf.js 2.0](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-ProtoBuf.js-2)
+* [ProtoBuf.js 2.0](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-ProtoBuf.js-2) - General API
 
 **Frequently asked questions:**
 * [Why ProtoBuf.js instead of, let's say, JSON?](https://github.com/dcodeIO/ProtoBuf.js/wiki/ProtoBuf.js-vs-JSON)
