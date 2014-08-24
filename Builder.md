@@ -6,9 +6,6 @@ The **Builder** is probably the core component of ProtoBuf.js. It resolves all t
 * a JSON definition or string: `ProtoBuf.loadJson`
 * or created manually: `ProtoBuf.newBuilder`, `Builder#define/create` ([see](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-manual-creation))
 
-When using JSON and/or manual creation only, you can use [ProtoBuf.noparse.js](https://github.com/dcodeIO/ProtoBuf.js/blob/master/ProtoBuf.noparse.js)
-/ [ProtoBuf.noparse.min.js](https://github.com/dcodeIO/ProtoBuf.js/blob/master/ProtoBuf.noparse.min.js) instead, which do NOT include the `ProtoBuf.DotProto` package for parsing and are therefore even smaller.
-
 #### Using .proto files ####
 
 Example: [tests/complex.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/complex.proto)
