@@ -2,7 +2,7 @@
 
 You'll need the full build to load .proto files. To load a .proto file, use:
 
-**API:** ProtoBuf.loadProtoFile(source[, callback[, builder]]):Builder|undefined
+**API:** `ProtoBuf.loadProtoFile(source[, callback[, builder]]):Builder|undefined`
 
 ```js
 // Synchronously
@@ -18,7 +18,7 @@ ProtoBuf.loadProtoFile("path/to/file.proto", function(err, builder) {
 
 #### Loading .proto strings
 
-**API:** ProtoBuf.loadProto(source[, builder][, filename]):Builder
+**API:** `ProtoBuf.loadProto(source[, builder][, filename]):Builder`
 
 ```js
 var builder = ProtoBuf.loadProto(...protoString..., "myproto.proto");
