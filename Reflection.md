@@ -92,7 +92,11 @@ Reflection type instances have a set of shared and custom properties to work wit
   * `type: {name: string, wireType: number}` Unresolved or native type
   * `id: number`
   * `options: Object.<string,*>`
+  * `scope: ProtoBuf.Reflect.Namespace` Namespace for resolving the type
   * `resolvedType: ProtoBuf.Reflect.T|null` Resolved non-native reference type
+
+* **ProtoBuf.Reflect.Message.ExtensionField** extends *ProtoBuf.Reflect.Message.Field*  
+  An extension message field imported from another namespace. `scope` in this case references the parent of the extend block.
 
 * **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*  
   Enum namespace containing enum values.
@@ -101,6 +105,10 @@ Reflection type instances have a set of shared and custom properties to work wit
 * **ProtoBuf.Reflect.Enum.Value** extends *ProtoBuf.Reflect.T*  
   Enum value contained in an enum.
   * `id: number`
+
+* **ProtoBuf.Reflect.Extension** extends *ProtoBuf.Reflect.T*  
+  Extension definition in its original scope.
+  * `field: ProtoBuf.Reflect.Message.Field` Extended message field located in another namespace
 
 * **ProtoBuf.Reflect.Service** extends *ProtoBuf.Reflect.Namespace*  
   Service namespace containing service methods.  
