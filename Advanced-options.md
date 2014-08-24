@@ -8,4 +8,9 @@ To activate the option, set `ProtoBuf.convertFieldsToCamelCase = true;` prior to
 
 When there is a collision, let's say there are two fields named `some_field` *and* `someField` ProtoBuf.js will prefer to keep the original names.
 
+Skipping population of accessors
+--------------------------------
+If you do not require getters and setters for each individual field, you may turn this feature off by setting.
+`ProtoBuf.populateAccessors = false`, which defaults to `true`. Available since ProtoBuf.js 3.2.2.
+
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
