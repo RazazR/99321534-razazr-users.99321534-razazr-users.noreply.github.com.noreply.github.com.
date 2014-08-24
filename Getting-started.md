@@ -28,7 +28,7 @@ Loading .json files created manually or through proto2js [is also possible](http
 
 #### Loading JSON files and strings
 
-To load raw JSON files generated through [proto2js](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js), use `ProtoBuf.loadJsonFile` respectively `ProtoBuf.loadJson`. It's the same API.
+To load the (raw) JSON counterpart generated through [proto2js](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js), use `ProtoBuf.loadJsonFile` respectively `ProtoBuf.loadJson`. It's the same API.
 
 If you generated classes or modules with it, loading is done just by including respectively requiring the resulting file. Loading is handled transparently in this case.
 
