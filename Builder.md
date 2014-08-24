@@ -123,7 +123,7 @@ This only applies to non-extended fields. Extension fields use their fully quali
 cat.set(".OtherMessage.otherField", 123);
 ```
 
-#### Putting multiple .proto files into a common namespace programmatically ####
+#### Putting multiple .proto files into a common builder programmatically ####
 
 Example: [tests/example1.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example1.proto),
 [tests/example2.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example2.proto)
