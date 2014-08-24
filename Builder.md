@@ -106,7 +106,7 @@ var Car = Game.Cars.Car;
 ... actually the same as above ...
 ```
 
-#### Hints
+#### Common mistakes
 A common cause of unexpected errors being thrown is loading the same file twice, which will result in two different builders that do not share their types. Always use a single builder instead:
 
 ```js
