@@ -135,8 +135,21 @@ car.model = "Rusty"; // car.model;
 
 This only applies to non-extended fields. Extension fields use their fully qualified name as their key instead to prevent naming collisions and setting them is done this way:
 
+```protobuf
+extend Car {
+    optional uint32 price = 1001;
+}
+
+message OtherMessage {
+    extend Car {
+        optional string description = 1002;
+    }
+}
+```
+
 ```js
-cat.set(".OtherMessage.otherField", 123);
+car.set(".price", 50000);
+car.set(".OtherMessage.description", "Perfect for families.");
 ```
 
 #### Putting multiple .proto files into a common builder programmatically ####
