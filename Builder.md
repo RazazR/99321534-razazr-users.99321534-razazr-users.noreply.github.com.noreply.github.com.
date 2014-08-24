@@ -111,7 +111,6 @@ A common cause of unexpected errors being thrown is loading the same file twice,
 
 ```js
 var builder = ProtoBuf.loadProtoFile("./my.proto");
-// maybe also: ProtoBuf.loadProtoFile("./myother.proto", builder);
 var MessageA = builder.build("MessageA"),
     MessageB = builder.build("MessageB");
 // or:
@@ -120,6 +119,8 @@ var root = builder.build(),
     MessageB = root.MessageB;
 ...
 ```
+
+See also: [Putting multiple .proto files into a common builder programmatically](#putting-multiple-proto-files-into-a-common-builder-programmatically)
 
 #### Getters, setters and properties
 In addition to using object notation to initialize message contents, each message instance magically implements a couple of setters and getters for its properties. For example:
