@@ -92,7 +92,7 @@ Reflection type instances have a set of shared and custom properties to work wit
   * `type: {name: string, wireType: number}` Unresolved or native type
   * `id: number`
   * `options: Object.<string,*>`
-  * `scope: ProtoBuf.Reflect.Namespace` Namespace for resolving the type
+  * `scope: ProtoBuf.Reflect.Namespace` Scope used to resolve the type
   * `resolvedType: ProtoBuf.Reflect.T|null` Resolved non-native reference type
 
 * **ProtoBuf.Reflect.Message.ExtensionField** extends *ProtoBuf.Reflect.Message.Field*  
