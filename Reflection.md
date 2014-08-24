@@ -96,7 +96,9 @@ Reflection type instances have a set of shared and custom properties to work wit
   * `resolvedType: ProtoBuf.Reflect.T|null` Resolved non-native reference type
 
 * **ProtoBuf.Reflect.Message.ExtensionField** extends *ProtoBuf.Reflect.Message.Field*  
-  An extension message field imported from another namespace. `scope` in this case references the parent of the extend block.
+  An extension message field imported from another namespace.
+  * `name` in this case is the fully qualified name inside of the original namespace
+  * `scope` in this case references the parent of the extend block
 
 * **ProtoBuf.Reflect.Enum** extends *ProtoBuf.Reflect.Namespace*  
   Enum namespace containing enum values.
