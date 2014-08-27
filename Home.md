@@ -22,6 +22,6 @@ Getting started
 
 Examples
 --------
-* See: [examples/](https://github.com/dcodeIO/ProtoBuf.js/tree/master/examples) and start with protoify
+* See: [examples/](https://github.com/dcodeIO/ProtoBuf.js/tree/master/examples) and start with [protoify](https://github.com/dcodeIO/ProtoBuf.js/tree/master/examples/protoify)
 
 **Next:** [Learn more about using the API](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
