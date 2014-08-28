@@ -64,8 +64,8 @@ See: [Using proto2js to transform .proto files to JSON](https://github.com/dcode
 ```javascript
 var ProtoBuf = require("protobufjs");
 
-var builder = ProtoBuf.newBuilder();    // Alternatively:
-builder.define("Game");                 // var builder = ProtoBuf.newBuilder("Game");
+var builder = ProtoBuf.newBuilder();
+builder.define("Game");
 builder.create([
       {
           "name": "Car",
