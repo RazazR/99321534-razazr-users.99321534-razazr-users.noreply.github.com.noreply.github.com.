@@ -72,6 +72,7 @@ Reflection type instances have a set of shared and custom properties to work wit
 
 * **ProtoBuf.Reflect.T**  
   Base type extended by all reflection classes.
+  * `builder: ProtoBuf.Builder`
   * `parent: ProtoBuf.Reflect.Namespace`
   * `name: string`
 
