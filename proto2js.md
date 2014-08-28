@@ -22,6 +22,8 @@ It's also possible to transform .proto files into their JSON counterparts or to 
                            If you do not specify a package, the package
                            declaration from the .proto file is used instead.
 
+   -with:name[=key]        Sets a builder option, e.g. convertFieldsToCamelCase
+
  If none of -class, -commonjs or -amd is specified, raw JSON will be returned.
 
    -min                    Minifies the output.
