@@ -64,7 +64,7 @@ See: [Using proto2js to transform .proto files to JSON](https://github.com/dcode
 ```javascript
 var ProtoBuf = require("protobufjs");
 
-// Creates a new empty Builder pointing to the root namespace:
+// Creates a new empty Builder pointing at the root namespace:
 var builder = ProtoBuf.newBuilder();
 // Defines namespace Game and adjusts the pointer to it:
 builder.define("Game");
