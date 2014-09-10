@@ -3,15 +3,17 @@ It [has been requested](https://github.com/dcodeIO/ProtoBuf.js/issues/183) to ad
 As of version 3.7.0, ProtoBuf.js is capable of using the oneof syntax:
 
 ```js
-message MyOneOf {
-    oneof my_oneof {
-        uint32 id = 1;
-        string name = 2;
+message MyMessage {
+    oneof request {
+        CreateRequest create = 1;
+        UpdateRequest update = 2;
+        DeleteRequest delete = 3;
     }
+    ...
 }
 ```
 
-For such messages, ProtoBuf.js adds a virtual property named like the oneof to message instances (here: `MyOneOf#my_oneof`), holding the name of the field that is present, or evaluates to `null` if none is set. If `MyOneOf#id` is set, `MyOneOf#my_oneof` evaluates to `"id"`.
+For such messages, ProtoBuf.js adds a virtual property named like the oneof to message instances (here: `MyMessage#request`), holding the name of the field that is present, or evaluates to `null` if none is set. If `MyMessage#create` is set, `MyMessage#request` evaluates to `"create"`.
 
 **Note:** When working with oneof enclosed fields, it is highly recommended to always use `Message#set(key, value[, noAssert])` when assigning values, as this guarantees that the virtual property is adjusted and a possibly previously assigned value to another enclosed field is unset. It is possible though to assign values directly to multiple oneof enclosed fields, but this will result in all of these fields being present on the wire. The decoding side, however, will most likely discard any values but the latest, which is in the case of ProtoBuf.js the latest declared and present field.
 
@@ -19,20 +21,21 @@ For such messages, ProtoBuf.js adds a virtual property named like the oneof to m
 
 ```js
 // Encoding side
-var myOneOf = new MyOneOf();
-myOneOf.set("id", 123);
-// myOneOf.id = 123
-// myOneOf.name = null
-// myOneOf.my_oneof = "id"
-var bb = myOneOf.encode();
+var myMessage = new MyMessage();
+myMessage.set("create", new CreateRequest(...));
+// myMessage.create = CreateRequest instance
+// myMessage.update = null
+// myMessage.delete = null;
+// myMessage.request = "create"
+var bb = myMessage.encode();
 ```
 
 ```js
 // Decoding side
-var myOneOf = MyOneOf.decode(bb),
-    which = myOneOf.my_oneof;
-var my_oneof = which !== null ? myOneOf[which] : null;
-// my_oneof = 123
+var myMessage = MyMessage.decode(bb),
+    which = myMessage.request;
+var request = which !== null ? myMessage[which] : null;
+// request = CreateRequest instance
 ```
 
 Assigning a value to the virtual field has no effect on encoding, it's basically just a volatile marker.
