@@ -13,7 +13,7 @@ message MyOneOf {
 
 For such messages, ProtoBuf.js adds a virtual property named like the oneof to message instances (here: `MyOneOf#my_oneof`), holding the name of the field that is present, or evaluates to `null` if none is set. If `MyOneOf#id` is set, `MyOneOf#my_oneof` evaluates to `"id"`.
 
-**Note:** When working with oneof enclosed fields, it is highly recommended to always use `Message#set(key, value[, noAssert])` when assigning values, as this guarantees that the virtual property is adjusted and a possibly previously assigned value to another enclosed field is unset. This is what happens otherwise: It is possible to assign values directly to multiple oneof enclosed fields, but this will result in all of these fields being present on the wire. The decoding side, however, will discard any values but the latest, which is in the case of ProtoBuf.js the latest declared and present field.
+**Note:** When working with oneof enclosed fields, it is highly recommended to always use `Message#set(key, value[, noAssert])` when assigning values, as this guarantees that the virtual property is adjusted and a possibly previously assigned value to another enclosed field is unset. It is possible though to assign values directly to multiple oneof enclosed fields, but this will result in all of these fields being present on the wire. The decoding side, however, will most likely discard any values but the latest, which is in the case of ProtoBuf.js the latest declared and present field.
 
 **Example:**
 
