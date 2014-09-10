@@ -1,4 +1,4 @@
-It [has been requested](https://github.com/dcodeIO/ProtoBuf.js/issues/183) to add [oneof](https://developers.google.com/protocol-buffers/docs/proto#oneof) support to ProtoBuf.js. This feature has been introducted with Protocol Puffers 2.6.0.
+It [has been requested](https://github.com/dcodeIO/ProtoBuf.js/issues/183) to add [oneof](https://developers.google.com/protocol-buffers/docs/proto#oneof) support to ProtoBuf.js. This feature has been introducted with Protocol Buffers 2.6.0.
 
 As of version 3.7.0, ProtoBuf.js is capable of using the oneof syntax:
 
