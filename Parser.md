@@ -177,7 +177,7 @@ The **Parser** is only available in the full build (i.e. not in "noparse" builds
   }
   ```
 
-  Oneof syntax is supported since 3.7.0. In the example above, there will be a virtual property `MyMessage#request` that holds the name of the field being present. If `MyMessage#create` is present, it evaluates to `"create"`.  
+  Oneof syntax is supported since 3.7.0. In the example above, there will be a virtual property `MyMessage#request` that holds the name of the field being present, or evaluates to `null` if none is set. If `MyMessage#create` is present, it evaluates to `"create"`.  
   
   **NOTE:** Always use `Message#set(key, value[, noAssert])` to assign values to oneof enclosed fields to ensure that any possibly previously assigned values will be unset and the virtual property adjusted accordingly. Assigning a value to the virtual property has no effect on encoding.
 
