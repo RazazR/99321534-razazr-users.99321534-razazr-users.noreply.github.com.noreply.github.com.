@@ -47,12 +47,11 @@ Requires [ByteBuffer.js](http://github.com/dcodeIO/ByteBuffer.js). Optionally de
 for long (int64) support. If you do not require long support, you can skip the Long.js include.
 
 ```html
+<!-- Order is important -->
 <script src="Long.min.js"></script>
 <script src="ByteBufferAB.min.js"></script>
 <script src="ProtoBuf.min.js"></script>
 ```
-
-**Note:** Order is important.
 
 ```javascript
 var ProtoBuf = dcodeIO.ProtoBuf;
