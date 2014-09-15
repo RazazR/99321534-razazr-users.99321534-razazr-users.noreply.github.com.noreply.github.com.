@@ -52,6 +52,8 @@ for long (int64) support. If you do not require long support, you can skip the L
 <script src="ProtoBuf.min.js"></script>
 ```
 
+**Note:** Order is important.
+
 ```javascript
 var ProtoBuf = dcodeIO.ProtoBuf;
 ...
