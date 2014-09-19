@@ -2,7 +2,7 @@ It [has been requested](https://github.com/dcodeIO/ProtoBuf.js/issues/183) to ad
 
 As of version 3.7.0, ProtoBuf.js is capable of using the oneof syntax:
 
-```js
+```protobuf
 message MyMessage {
     oneof request {
         CreateRequest create = 1;
