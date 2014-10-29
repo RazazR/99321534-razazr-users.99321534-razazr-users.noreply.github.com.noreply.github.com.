@@ -1,4 +1,4 @@
-It [has been requested](https://github.com/dcodeIO/ProtoBuf.js/issues/191) to change the default representation of binary data when assigning strings to bytes fields respectively converting messages to raw JSON structures.
+It [has been requested](https://github.com/dcodeIO/ProtoBuf.js/issues/191) to change the default representation of binary data when converting binary fields to JSON-like objects and vice-versa.
 
 As of version 3.8.0, ProtoBuf.js uses base64 encoding by default:
 
