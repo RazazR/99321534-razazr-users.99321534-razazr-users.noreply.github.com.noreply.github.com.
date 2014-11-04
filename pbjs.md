@@ -1,4 +1,4 @@
-ProtoBuf.js ships with the `pbjs` command line utility. With it it's possible to convert between .proto and JSON descriptors and even to generate the code required to access runtime structures as pure JS (classes), an AMD module or a CommonJS module.
+Since ProtoBuf.js 4.0.0 the library ships with the `pbjs` command line utility. With it it's possible to convert between .proto and JSON descriptors and even to generate the code required to access runtime structures as pure JS (classes), an AMD module or a CommonJS module.
 
 ```
  _ |_ . _
