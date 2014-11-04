@@ -1,3 +1,5 @@
+**NOTE:** This page covers `proto2js` as available until ProtoBuf.js 3.8.0. For newer versions, please refer to [pbjs](./pbjs), a major overhaul of the command line utility.
+
 It's also possible to transform .proto files into their JSON counterparts or to transform entire namespaces into ready-to-use message classes and enum objects by using the `proto2js` command line utility. The **json2proto** utility does the reverse from a JSON counterpart.
 
 ```
