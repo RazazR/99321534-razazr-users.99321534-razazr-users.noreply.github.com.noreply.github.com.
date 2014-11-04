@@ -1,7 +1,7 @@
 ```
 
  _ |_ . _
-|_)|_)|_)              ProtoBuf.js v4.0.0-pre https://github.com/dcodeIO/ProtoBuf.js
+|_)|_)|_)
 |     '
 
  CLI utility to convert between .proto and JSON syntax / to generate classes.
