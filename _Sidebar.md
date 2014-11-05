@@ -4,7 +4,7 @@
 * [Getting started](https://github.com/dcodeIO/ProtoBuf.js/wiki/Getting-started)
 * [Builder](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
 * [Parser](https://github.com/dcodeIO/ProtoBuf.js/wiki/Parser)
-* [pbjs CLI](https://github.com/dcodeIO/ProtoBuf.js/wiki/pbjs)
+* [pbjs (cli)](https://github.com/dcodeIO/ProtoBuf.js/wiki/pbjs)
 * [Long/int64 support](https://github.com/dcodeIO/ProtoBuf.js/wiki/Long)
 * [Services](https://github.com/dcodeIO/ProtoBuf.js/wiki/Services)
 * [Reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection)
