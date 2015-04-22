@@ -6,6 +6,7 @@
 
 ### Real time applications
 * [SketchTogether](https://www.sketchtogether.com/) - Meet and discuss informally sketched ideas
+* [Parallels Access web client](https://access.parallels.com) - Remote access to your computer from mobile devices and browser.
 
 ### Language support
 * [Proto2TypeScript](https://github.com/SINTEF-9012/Proto2TypeScript) - Generate TypeScript definitions from a Protocol Buffers model
