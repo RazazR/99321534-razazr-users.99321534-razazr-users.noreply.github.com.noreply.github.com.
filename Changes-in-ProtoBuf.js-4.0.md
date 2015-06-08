@@ -1,0 +1,1 @@
+Beside incorporating a lot of bug fixes, ProtoBuf.js 4.0 now supports **proto3 syntax** and got a new CLI utility named `pbjs`, which replaces `proto2js` and `json2proto` and uses more intuitive command line options ([see](https://github.com/dcodeIO/ProtoBuf.js/wiki/pbjs)).
