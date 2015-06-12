@@ -205,4 +205,4 @@ if (ProtoBuf.DotProto) {
 ...
 ```
 
-**Next:** [Learn more about proto2js on the command line](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js)
+**Next:** [Learn more about pbjs on the command line](https://github.com/dcodeIO/ProtoBuf.js/wiki/pbjs)
