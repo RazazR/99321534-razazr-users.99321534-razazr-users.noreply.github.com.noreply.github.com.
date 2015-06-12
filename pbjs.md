@@ -41,3 +41,5 @@ Options:
                     Defaults to 'protobufjs' for CommonJS, 'ProtoBuf' for
                     AMD modules and 'dcodeIO.ProtoBuf' for classes.
 ```
+
+**Next:** [Learn more about long (int64) support](https://github.com/dcodeIO/ProtoBuf.js/wiki/Long)
