@@ -26,11 +26,11 @@ ProtoBuf.loadProtoFile("path/to/file.proto", function(err, builder) {
 var builder = ProtoBuf.loadProto(...protoString..., "myproto.proto");
 ```
 
-Loading .json files created manually or through proto2js [is also possible](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-json-without-the-proto-parser).
+Loading .json files created manually or through pbjs [is also possible](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-json-without-the-proto-parser).
 
 #### Loading JSON files and strings
 
-To load the (raw) JSON counterpart generated through [proto2js](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js), use `ProtoBuf.loadJsonFile` respectively `ProtoBuf.loadJson`. It's the same API.
+To load the (raw) JSON counterpart generated through [pbjs](https://github.com/dcodeIO/ProtoBuf.js/wiki/pbjs), use `ProtoBuf.loadJsonFile` respectively `ProtoBuf.loadJson`. It's the same API.
 
 If you generated classes or modules with it, loading is done just by including respectively requiring the resulting file. Loading is handled transparently in this case.
 
