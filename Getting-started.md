@@ -34,7 +34,7 @@ To load the (raw) JSON counterpart generated through [pbjs](https://github.com/d
 
 If you generated classes or modules with it, loading is done just by including respectively requiring the resulting file. Loading is handled transparently in this case.
 
-When using JSON only, you can use [ProtoBuf.noparse.js 
-or ProtoBuf.noparse.min.js](https://github.com/dcodeIO/ProtoBuf.js/tree/master/dist) instead, which do NOT include the `ProtoBuf.DotProto` package for parsing and are therefore even smaller.
+When using JSON only, you can use [ProtoBuf-light.js 
+or ProtoBuf-light.min.js](https://github.com/dcodeIO/ProtoBuf.js/tree/master/dist) instead, which do NOT include the `ProtoBuf.DotProto` package for parsing and are therefore smaller.
 
 **Next:** Learn more about [using the Builder](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
