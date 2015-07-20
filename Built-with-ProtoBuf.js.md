@@ -1,9 +1,6 @@
 ### Databases
 * [RethinkDB](https://npmjs.org/package/rethinkdb)
 
-### Games
-* [eSoccer](http://www.esoccer.me) - omg that spin!
-
 ### Real time applications
 * [SketchTogether](https://www.sketchtogether.com/) - Meet and discuss informally sketched ideas
 * [Parallels Access web client](https://access.parallels.com) - Remote access to your computer from mobile devices and browser.
