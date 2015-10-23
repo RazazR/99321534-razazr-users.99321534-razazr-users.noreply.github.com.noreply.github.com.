@@ -4,4 +4,4 @@ For optimal compatibility with [webpack](https://github.com/webpack/webpack), di
 
 * If you are using AMD, the respective module names should be changed to lower case.
 
-* If you are using neither of those, the &ltscript&gt;-include should be changed to reference the new lower case file. The script namespace remains `dcodeIO.ProtoBuf` etc.
+* If you are using neither of those, the &lt;script&gt;-include should be changed to reference the new lower case file. The script namespace remains `dcodeIO.ProtoBuf` etc.
