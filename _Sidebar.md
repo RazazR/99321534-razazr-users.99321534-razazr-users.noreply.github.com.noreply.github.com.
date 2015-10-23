@@ -1,4 +1,4 @@
-<img src="https://raw.github.com/dcodeIO/ProtoBuf.js/master/ProtoBuf.png" width="200">
+<img src="https://raw.github.com/dcodeIO/ProtoBuf.js/master/protobuf.png" width="200">
 * [Home / FAQ](https://github.com/dcodeIO/ProtoBuf.js/wiki)
 * [Installation](https://github.com/dcodeIO/ProtoBuf.js/wiki/Installation)
 * [Getting started](https://github.com/dcodeIO/ProtoBuf.js/wiki/Getting-started)
