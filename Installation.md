@@ -14,7 +14,7 @@ RequireJS / AMD
 ---------------
 
 Requires [bytebuffer.js](http://github.com/dcodeIO/bytebuffer.js). Optionally depends on [long.js](https://github.com/dcodeIO/long.js)
-for long (int64) support. If you do not require long support, you can skip the Long.js config. [Require.js](http://requirejs.org/)
+for long (int64) support. If you do not require long support, you can skip the Long.js config. [RequireJS](http://requirejs.org/)
 example:
 
 ```javascript
