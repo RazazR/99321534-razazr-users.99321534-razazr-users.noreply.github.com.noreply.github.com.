@@ -1,7 +1,7 @@
 [protobuf.js](https://github.com/dcodeIO/protobuf.js) is a [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) implementation on top of [bytebuffer.js](https://github.com/dcodeIO/bytebuffer.js) including a .proto parser, reflection, message class building and simple encoding and decoding in plain JavaScript. There is no compilation step required, it's super easy to use and it works out of the box on .proto files.
 
 **Latest API changes:**
-* [protobuf.js 5.0](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-ProtoBuf.js-5.0) - webpack compatibility
+* [protobuf.js 5.0](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-protobuf.js-5.0) - webpack compatibility
 * [ProtoBuf.js 4.0](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-ProtoBuf.js-4.0) - proto3 and pbjs
 * [ProtoBuf.js 3.8](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-ProtoBuf.js-3.8) - Binary in JSON
 * [ProtoBuf.js 3.7](https://github.com/dcodeIO/ProtoBuf.js/wiki/Changes-in-ProtoBuf.js-3.7) - OneOfs
