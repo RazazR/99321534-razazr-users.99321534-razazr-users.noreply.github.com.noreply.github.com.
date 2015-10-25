@@ -1,4 +1,4 @@
-The **Builder** is probably the core component of ProtoBuf.js. It resolves all type references, performs all the necessary checks and returns ready to use classes. A builder can be created from
+The **Builder** is probably the core component of protobuf.js. It resolves all type references, performs all the necessary checks and returns ready to use classes. A builder can be created from
 
 * a .proto file: `ProtoBuf.loadProtoFile`
 * a .proto string: `ProtoBuf.loadProto`
@@ -8,7 +8,7 @@ The **Builder** is probably the core component of ProtoBuf.js. It resolves all t
 
 #### Using .proto files ####
 
-Example: [tests/complex.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/complex.proto)
+Example: [tests/complex.proto](https://github.com/dcodeIO/protobuf.js/tree/master/tests/complex.proto)
 
 ```javascript
 var ProtoBuf = require("protobufjs");
@@ -47,7 +47,7 @@ socket.send(car.toArrayBuffer()); // node.js: car.toBuffer()
 
 #### Using JSON without the .proto parser ####
 
-Example: [tests/complex.json](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/complex.json)
+Example: [tests/complex.json](https://github.com/dcodeIO/protobuf.js/tree/master/tests/complex.json)
 
 ```js
 var ProtoBuf = require("protobufjs");
@@ -57,7 +57,7 @@ var builder = ProtoBuf.loadJsonFile("tests/complex.json");
 ...actually the same as above...
 ```
 
-See: [Using proto2js to transform .proto files to JSON](https://github.com/dcodeIO/ProtoBuf.js/wiki/proto2js)
+See: [Using proto2js to transform .proto files to JSON](https://github.com/dcodeIO/protobuf.js/wiki/proto2js)
 
 #### Using manual creation ####
 
@@ -158,12 +158,12 @@ car[".OtherMessage.description"] = "Perfect for families."; // as properties
 
 Please note that getters and setters will never override fields with the same name and will not be populated individually in this case. In case that even `Message#set` or `Message#get` collide with a field, these are also always aliased as `Message#$set` and `Message#$get`.
 
-Additionally, if an ECMAScript 5 compatible environment is used, there is a `Message#$type` property on each message referencing the [reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection) type and a `Message#$options` property which holds all the options as a plain object. Field options are available on the respective reflection type.
+Additionally, if an ECMAScript 5 compatible environment is used, there is a `Message#$type` property on each message referencing the [reflection](https://github.com/dcodeIO/protobuf.js/wiki/Reflection) type and a `Message#$options` property which holds all the options as a plain object. Field options are available on the respective reflection type.
 
 #### Putting multiple .proto files into a common builder programmatically ####
 
-Example: [tests/example1.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example1.proto),
-[tests/example2.proto](https://github.com/dcodeIO/ProtoBuf.js/tree/master/tests/example2.proto)
+Example: [tests/example1.proto](https://github.com/dcodeIO/protobuf.js/tree/master/tests/example1.proto),
+[tests/example2.proto](https://github.com/dcodeIO/protobuf.js/tree/master/tests/example2.proto)
 
 ```javascript
 var builder = ProtoBuf.newBuilder({ convertFieldsToCamelCase: true });
@@ -212,7 +212,7 @@ var myMessage = YourMessage.decode(buffer);
 var b64str = ...; // E.g. a string fetched via AJAX
 var myMessage = YourMessage.decode64(b64str); // (*)
 ```
-* Base64 encoding requires ProtoBuf.js >= 1.2.0 with ByteBuffer >= 1.5.0.
+* Base64 encoding requires protobuf.js >= 1.2.0 with bytebuffer >= 1.5.0.
 
 #### Handling truncated messages
 If a message is missing a required field when it is en- or decoded, the library will throw an `Error` that still contains the rest of the encoded or decoded message as its `encoded` respectively `decoded` property. Decoding example:
@@ -232,6 +232,6 @@ try {
 ```
 Documentation
 -------------
-* [Read the API docs](http://htmlpreview.github.io/?https://raw.githubusercontent.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
+* [Read the API docs](http://htmlpreview.github.io/?https://raw.githubusercontent.com/dcodeIO/protobuf.js/master/docs/ProtoBuf.html)
 
-**Next:** [Learn more about the Parser](https://github.com/dcodeIO/ProtoBuf.js/wiki/Parser)
+**Next:** [Learn more about the Parser](https://github.com/dcodeIO/protobuf.js/wiki/Parser)
