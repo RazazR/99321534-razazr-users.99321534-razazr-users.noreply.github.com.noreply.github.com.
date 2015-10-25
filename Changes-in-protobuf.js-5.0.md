@@ -1,4 +1,4 @@
-For optimal compatibility with [webpack](https://github.com/webpack/webpack), distributed files for ProtoBuf.js, ByteBuffer.js and Long.js have been renamed to lower case.
+For optimal compatibility with [webpack](https://github.com/webpack/webpack), distributed files for protobuf.js, bytebuffer.js (&gt;=5.0.0) and long.js (&gt;=3.0.0) have been renamed to lower case.
 
 * If you are using the npm package, it will just keep working.
 
