@@ -26,15 +26,15 @@ ProtoBuf.loadProtoFile("path/to/file.proto", function(err, builder) {
 var builder = ProtoBuf.loadProto(...protoString..., "myproto.proto");
 ```
 
-Loading .json files created manually or through pbjs [is also possible](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder#using-json-without-the-proto-parser).
+Loading .json files created manually or through pbjs [is also possible](https://github.com/dcodeIO/protobuf.js/wiki/Builder#using-json-without-the-proto-parser).
 
 #### Loading JSON files and strings
 
-To load the (raw) JSON counterpart generated through [pbjs](https://github.com/dcodeIO/ProtoBuf.js/wiki/pbjs), use `ProtoBuf.loadJsonFile` respectively `ProtoBuf.loadJson`. It's the same API.
+To load the (raw) JSON counterpart generated through [pbjs](https://github.com/dcodeIO/protobuf.js/wiki/pbjs), use `ProtoBuf.loadJsonFile` respectively `ProtoBuf.loadJson`. It's the same API.
 
 If you generated classes or modules with it, loading is done just by including respectively requiring the resulting file. Loading is handled transparently in this case.
 
-When using JSON only, you can use [ProtoBuf-light.js 
-or ProtoBuf-light.min.js](https://github.com/dcodeIO/ProtoBuf.js/tree/master/dist) instead, which do NOT include the `ProtoBuf.DotProto` package for parsing and are therefore smaller.
+When using JSON only, you can use [protobuf-light.js 
+or protobuf-light.min.js](https://github.com/dcodeIO/protobuf.js/tree/master/dist) instead, which do NOT include the `ProtoBuf.DotProto` package for parsing and are therefore smaller.
 
-**Next:** Learn more about [using the Builder](https://github.com/dcodeIO/ProtoBuf.js/wiki/Builder)
+**Next:** Learn more about [using the Builder](https://github.com/dcodeIO/protobuf.js/wiki/Builder)
