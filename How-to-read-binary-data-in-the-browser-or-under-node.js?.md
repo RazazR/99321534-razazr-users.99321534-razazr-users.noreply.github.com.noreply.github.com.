@@ -7,8 +7,10 @@ To make it easier for you to get this right, here is some insight on the topic:
 * [node.js: Buffer](http://nodejs.org/api/buffer.html)
 
 #### Browser XMLHttpRequest snippet
+
+Simple case, when you do request with response encoded only with protobuf bytes
+
 ```js
-...
 var SomeMessage = ...; // Obtained via ProtoBuf.protoFromFile(...).build("SomeMessage") for example
 
 var xhr = ProtoBuf.Util.XHR();
@@ -24,6 +26,51 @@ xhr.onload = function(evt) {
 }
 xhr.send(null);
 ```
+
+Multipart case, when you make request to endpoint that produce response encoded in "multipart" format, where different part of message could be encoded in different types, for example one part is encoded with XML and second part is encoded with protobuf. (For example, you can meet this case when you make requests against [MTOM2](http://www.crosschecknet.com/intro_to_mtom.php) endpoint):
+
+```js
+var SomeMessage = ...; // Obtained via ProtoBuf.protoFromFile(...).build("SomeMessage") for example
+
+var xhr = ProtoBuf.Util.XHR();
+xhr.open(
+    /* method */ "GET",
+    /* file */ "/path/to/encodedSomeMessageData.mtom2",
+    /* async */ true
+);
+xhr.responseType = "arraybuffer";
+xhr.onload = function(evt) {
+    // reading whole body
+    var bodyEncodedInString = String.fromCharCode.apply(String, new Uint8Array(xhr.response));
+    console.log(bodyEncodedInString);
+    /*
+        for example it would be something like that in console:
+        `RESPONSE_BODY:
+            --protobuf
+            [...someprotobytes]
+            --protobuf--
+        `
+    */
+   
+   var protoStart = bodyEncodedInString.indexOf('--protobuf');
+   var protoEnd = bodyEncodedInString.indexOf('--protobuf--');
+
+   /*
+        "Offset start" and "offset end" are required for line endings. Don't forget, that on various operating systems there is different line endings, and it is not so uncommon when your backend is running on Windows and generates "\r\n" in place of line endings.
+    */
+   var offsetStart = 2;
+   var offsetEnd = 2;
+
+   var bufferSliceWhereProtobufBytesIs = xhr.response.slice(protoStart + offsetStart, protoEnd - offsetEnd);
+
+   var msg = SomeMessage.decode(bufferSliceWhereProtobufBytesIs);
+   alert(JSON.stringify(msg, null, 4)); // Correctly decoded
+}
+
+xhr.send(null);
+```
+
+__NOTE:__ In multipart case you need to use `xhr.responseType = "arraybuffer";` and slice buffers via offsets because browsers, when read binary encoded parts, creates some corrupted text from it, and you can't convert it to buffer and get correct ArrayBuffer for protobuf, so you need to slice original buffer (i did not found any solution, correct me if you find, please. Tested in Chrome, with native Typed arrays and Array Buffers).
 
 Depending on the actual browser you are using, this may differ.
 
