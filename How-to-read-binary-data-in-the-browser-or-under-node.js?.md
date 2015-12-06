@@ -27,7 +27,7 @@ xhr.onload = function(evt) {
 xhr.send(null);
 ```
 
-Multipart case, when you make request to endpoint that produce response encoded in "multipart" format, where different part of message could be encoded in different types, for example one part is encoded with XML and second part is encoded with protobuf. (For example, you can meet this case when you make requests against [MTOM2](http://www.crosschecknet.com/intro_to_mtom.php) endpoint):
+Multipart case, when you make request to endpoint that produce response encoded in "multipart" format, where different part of message could be encoded in different types, for example one part is encoded with XML and second part is encoded with protobuf. (For example, you can meet this case when you make requests against [MTOM2](https://en.wikipedia.org/wiki/Message_Transmission_Optimization_Mechanism) endpoint):
 
 ```js
 var SomeMessage = ...; // Obtained via ProtoBuf.protoFromFile(...).build("SomeMessage") for example
