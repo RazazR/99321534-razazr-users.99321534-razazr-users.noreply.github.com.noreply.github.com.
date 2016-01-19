@@ -1,4 +1,4 @@
-*Note:* You'll need the full build to load .proto data. NOPARSE builds are able to load JSON only.
+*Note:* You'll need the full build to load .proto data. light builds are able to load JSON only.
 
 #### Loading .proto files
 
