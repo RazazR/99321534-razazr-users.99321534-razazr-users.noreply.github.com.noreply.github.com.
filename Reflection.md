@@ -129,7 +129,7 @@ Reflection type instances have a set of shared and custom properties to work wit
 
 Documentation
 -------------
-* [ProtoBuf.Reflect API](http://htmlpreview.github.io/?http://raw.github.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.Reflect.html)
+* [ProtoBuf.Reflect API](http://htmlpreview.github.io/?https://raw.githubusercontent.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.Reflect.html)
 
 Please note: Ensure not to make any changes to the internal structure unless you know exactly what you are doing as this will most likely break your code otherwise.
 
