@@ -73,4 +73,24 @@ Additionally, all defined options are available as the `$options` property on th
 
 **Troubleshooting:** Keep in mind that protobuf is a binary protocol and thus its data is likely to be corrupted if it is carelessly converted to a string or vice-versa. If possible, use features like binaryType="arraybuffer" as available with WebSockets or, if nothing like that is available, make sure to encode the binary data to base64 prior to transmission and properly decode it on receival. To achieve this in a convenient way you can use `Message#toBase64():string` and `Message.decode64(string):Message` respectively (requires ByteBuffer >= 1.5.0). See also: [How to read binary data in the browser or under node.js?](https://github.com/dcodeIO/ProtoBuf.js/wiki/How-to-read-binary-data-in-the-browser-or-under-node.js%3F)
 
+#### Example RPC implementation over HTTP POST with superagent ####
+
+```
+let endPoint = window.location.origin + "/api/"
+
+function rpcImpl(method, req, callback) {
+  superagent
+    .post(endPoint + method)
+    .responseType("arraybuffer")
+    .set('Content-Type', "application/x-protobuf")
+    .send(req.toArrayBuffer())
+    .end((err, res) => {
+      if (err)
+        callback(err)
+      else
+        callback(null, res.xhr.response)
+    })
+}
+```
+
 **Next:** [Learn more about using reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection)
