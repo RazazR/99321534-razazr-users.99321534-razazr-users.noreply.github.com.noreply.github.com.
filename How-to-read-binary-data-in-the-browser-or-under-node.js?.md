@@ -93,6 +93,33 @@ http.get("http://some/url/to/binary.pb", function(res) {
 ...
 ```
 
+#### Example reading an HTML file `<input>` into a `bytes` field ###
+
+Consider this protobuf definition:
+
+```
+message ImageData {
+  bytes data = 1;
+  string name = 2;
+}
+```
+
+To properly set the image data from an HTML page's file upload:
+
+```
+let imagedata = new ImageData()
+
+onAttachFile(e) {
+  let file = e.target.files[0]
+  let reader = new FileReader()
+  reader.onload = (e) => imagedata.data = ByteBuffer.wrap(e.target.result)
+  reader.readAsArrayBuffer(file)
+  imagedata.name = file.name
+}
+```
+
+#### Word of the end ####
+
 *Note:* Do not use `ProtoBuf.Util.fetch(...)` for reading binary data. This is used exclusively to fetch .proto files. 
 
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
