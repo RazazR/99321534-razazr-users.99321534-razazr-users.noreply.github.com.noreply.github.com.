@@ -107,6 +107,8 @@ message ImageData {
 To properly set the image data from an HTML page's file upload:
 
 ```
+import ByteBuffer from 'bytebuffer'
+
 let imagedata = new ImageData()
 
 onAttachFile(e) {
