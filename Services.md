@@ -93,4 +93,8 @@ function rpcImpl(method, req, callback) {
 }
 ```
 
+#### Getting the type of a Message ####
+
+When the service response is decoded, all protobuf messages are of type `Message`.  To get the type of the returned message or any of the nested sub-messages, use the hidden `$type` property to access the builder type.
+
 **Next:** [Learn more about using reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection)
