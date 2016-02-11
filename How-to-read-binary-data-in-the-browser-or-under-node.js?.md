@@ -93,6 +93,8 @@ http.get("http://some/url/to/binary.pb", function(res) {
 ...
 ```
 
+*Note:* Do not use `ProtoBuf.Util.fetch(...)` for reading binary data. This is used exclusively to fetch .proto files. 
+
 #### Example reading an HTML file `<input>` into a `bytes` field ###
 
 Consider this protobuf definition:
@@ -119,9 +121,5 @@ onAttachFile(e) {
   imagedata.name = file.name
 }
 ```
-
-#### Word of the end ####
-
-*Note:* Do not use `ProtoBuf.Util.fetch(...)` for reading binary data. This is used exclusively to fetch .proto files. 
 
 **Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
