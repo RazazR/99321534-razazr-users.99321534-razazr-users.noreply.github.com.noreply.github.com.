@@ -177,7 +177,7 @@ var test2 = new root.Test2("123");
 
 Encoder / Decoder
 -----------------
-Built into all message classes. Just call `YourMessage.encode([buffer])` respectively `YourMessage.decode(buffer)`.
+Built into all message classes. Just call `YourMessage#encode([buffer])` respectively `YourMessage.decode(buffer)`.
 
 #### Encoding a message ####
 
