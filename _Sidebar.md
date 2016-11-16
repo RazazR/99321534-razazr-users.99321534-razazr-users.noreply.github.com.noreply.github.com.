@@ -9,7 +9,7 @@
 * [Services](https://github.com/dcodeIO/ProtoBuf.js/wiki/Services)
 * [Reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection)
 <hr />
-* [API docs](http://htmlpreview.github.io/?https://raw.githubusercontent.com/dcodeIO/ProtoBuf.js/master/docs/ProtoBuf.html)
+* [API docs](http://htmlpreview.github.io/?https://raw.githubusercontent.com/dcodeIO/ProtoBuf.js/master/docs/index.html)
 * [Examples](https://github.com/dcodeIO/ProtoBuf.js/tree/master/examples)
 * [Repository](https://github.com/dcodeIO/ProtoBuf.js) / [npm](https://npmjs.org/package/protobufjs)
 <hr />
