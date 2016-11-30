@@ -1,4 +1,3 @@
-<img src="https://raw.github.com/dcodeIO/ProtoBuf.js/master/protobuf.png" width="200">
 * [Home / FAQ](https://github.com/dcodeIO/ProtoBuf.js/wiki)
 * [Installation](https://github.com/dcodeIO/ProtoBuf.js/wiki/Installation)
 * [Getting started](https://github.com/dcodeIO/ProtoBuf.js/wiki/Getting-started)
@@ -9,9 +8,8 @@
 * [Services](https://github.com/dcodeIO/ProtoBuf.js/wiki/Services)
 * [Reflection](https://github.com/dcodeIO/ProtoBuf.js/wiki/Reflection)
 <hr />
-* [API docs](http://htmlpreview.github.io/?https://raw.githubusercontent.com/dcodeIO/ProtoBuf.js/master/docs/index.html)
-* [Examples](https://github.com/dcodeIO/ProtoBuf.js/tree/master/examples)
-* [Repository](https://github.com/dcodeIO/ProtoBuf.js) / [npm](https://npmjs.org/package/protobufjs)
+* [API docs](http://htmlpreview.github.io/?https://raw.githubusercontent.com/dcodeIO/ProtoBuf.js/ProtoBuf5/docs/index.html)
+* [Examples](https://github.com/dcodeIO/ProtoBuf.js/tree/ProtoBuf5/examples)
 <hr />
 * [Built with ProtoBuf.js](https://github.com/dcodeIO/ProtoBuf.js/wiki/Built-with-ProtoBuf.js)
 * [Other libraries](https://github.com/dcodeIO/ProtoBuf.js/wiki/Other-libraries)
