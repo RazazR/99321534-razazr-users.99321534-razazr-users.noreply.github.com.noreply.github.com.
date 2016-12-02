@@ -2,11 +2,11 @@ Documentation resources
 -----------------------
 * [Developer Guide](https://developers.google.com/protocol-buffers/docs/overview)
 
-protobuf.js 6 (current master)
+**protobuf.js 6** (current master)
 * [README](https://github.com/dcodeIO/protobuf.js/blob/master/README.md)
 * [API documentation](http://dcode.io/protobuf.js)
 
-protobuf.js 5 (old master)
+**protobuf.js 5** (old master)
 * [README](https://github.com/dcodeIO/protobuf.js/blob/ProtoBuf5/README.md)
 * [API documentation](http://htmlpreview.github.io/?https://raw.githubusercontent.com/dcodeIO/ProtoBuf.js/ProtoBuf5/docs/index.html)
 
