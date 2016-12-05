@@ -1,5 +1,5 @@
 * Instead of relying on bytebuffer.js, there is now a use case specific and reusable wire format reader / writer interface that abstract away any differences between node and modern to ancient browsers.
-* Overall minified size is now ~52kb instead of ~80kb with bytebuffer. ~16kb gziped.
+* Overall minified size is now ~52kb instead of ~96kb with bytebuffer. ~16kb gziped.
 * Basic long support has been integrated into the library to fall back to (possibly unsafe) JavaScript numbers if no long library is present.
 * Builder functionality has been integrated into reflection.
   Instead of calling `Builder#build`, there is now `Namespace#lookup` which returns the reflected type for a path.
