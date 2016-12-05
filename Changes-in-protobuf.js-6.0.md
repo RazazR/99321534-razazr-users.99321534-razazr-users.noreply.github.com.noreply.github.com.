@@ -13,6 +13,6 @@
 * Common Google types within `any.proto`, `duration.proto`, `timestamp.proto`, `empty.proto` and `struct.proto` are now integrated.
 * The build-process has been changed to gulp/browserify for seamless integration into your own project.
 * Documentation has received a major overhaul.
-* TypeScript definitions are now automatically generated and the API is built in a way that makes it easier to work with types dialects (i.e. working with typed reflection objects instead of just magically built messages).
+* TypeScript definitions are now automatically generated and the API is built in a way that makes it easier to work with typed dialects (i.e. working with typed reflection objects instead of just magically built messages).
 * The pbjs CLI now sets up itself only when required. Its dependencies are not pulled on `npm install`.
 * It's now easier to generate static code. There is actually a `static` target for `pbjs` now as a starting point.
