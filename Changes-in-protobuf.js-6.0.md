@@ -1,3 +1,5 @@
+protobuf.js 6 is a complete rewrite of the previous codebase, hence a lot has changed (to the better).
+
 ### Dependencies
 
 * Instead of relying on bytebuffer.js, there is now a use case specific and reusable wire format reader / writer interface that abstract away any differences between node and modern to ancient browsers.
