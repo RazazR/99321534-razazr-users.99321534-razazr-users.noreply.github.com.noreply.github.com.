@@ -3,7 +3,7 @@ protobuf.js 6 is a complete rewrite of the previous codebase, hence a lot has ch
 ### Dependencies
 
 * Instead of relying on bytebuffer.js, there is now a use case specific and reusable wire format reader / writer interface that abstract away any differences between node and modern to ancient browsers.
-* Overall minified size is now ~52kb instead of ~96kb with bytebuffer. ~16kb gziped.
+* Overall minified size is now ~54kb instead of ~96kb with bytebuffer. ~16kb gziped.
 * Basic long support has been integrated into the library to fall back to (possibly unsafe) JavaScript numbers if no long library is present.
 * The pbjs CLI now sets up itself only when required. Its dependencies are not pulled on `npm install protobufjs`.
 
