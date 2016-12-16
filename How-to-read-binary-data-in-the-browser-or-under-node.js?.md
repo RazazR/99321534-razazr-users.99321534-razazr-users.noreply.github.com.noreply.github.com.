@@ -1,4 +1,4 @@
-When reading/writing binary data in the browser or under node.js, it is mandatory to understand that just reading it (as a string) is not enough. When doing this, the data will probably become corrupted when it is converted between character sets and ProtoBuf.js will not be able to decode it or will return random stuff. What's actually required here is to properly handle the data as **binary**.
+When reading/writing binary data in the browser or under node.js, it is mandatory to understand that just reading it (as a string) is not enough. When doing this, the data will probably become corrupted when it is converted between character sets and protobuf.js will not be able to decode it or will return random stuff. What's actually required here is to properly handle the data as **binary**.
 
 To make it easier for you to get this right, here is some insight on the topic:
 
@@ -11,9 +11,7 @@ To make it easier for you to get this right, here is some insight on the topic:
 Simple case, when you do request with response encoded only with protobuf bytes
 
 ```js
-var SomeMessage = ...; // Obtained via ProtoBuf.protoFromFile(...).build("SomeMessage") for example
-
-var xhr = ProtoBuf.Util.XHR();
+var xhr = new XMLHttpRequest();
 xhr.open(
     /* method */ "GET",
     /* file */ "/path/to/encodedSomeMessageData.bin",
@@ -30,9 +28,7 @@ xhr.send(null);
 Multipart case, when you make request to endpoint that produce response encoded in "multipart" format, where different part of message could be encoded in different types, for example one part is encoded with XML and second part is encoded with protobuf. (For example, you can meet this case when you make requests against [MTOM2](https://en.wikipedia.org/wiki/Message_Transmission_Optimization_Mechanism) endpoint):
 
 ```js
-var SomeMessage = ...; // Obtained via ProtoBuf.protoFromFile(...).build("SomeMessage") for example
-
-var xhr = ProtoBuf.Util.XHR();
+var xhr = new XMLHttpRequest();
 xhr.open(
     /* method */ "GET",
     /* file */ "/path/to/encodedSomeMessageData.mtom2",
@@ -92,34 +88,3 @@ http.get("http://some/url/to/binary.pb", function(res) {
 });
 ...
 ```
-
-*Note:* Do not use `ProtoBuf.Util.fetch(...)` for reading binary data. This is used exclusively to fetch .proto files. 
-
-#### Example reading an HTML file `<input>` into a `bytes` field ###
-
-Consider this protobuf definition:
-
-```
-message ImageData {
-  bytes data = 1;
-  string name = 2;
-}
-```
-
-To properly set the image data from an HTML page's file upload:
-
-```
-import ByteBuffer from 'bytebuffer'
-
-let imagedata = new ImageData()
-
-onAttachFile(e) {
-  let file = e.target.files[0]
-  let reader = new FileReader()
-  reader.onload = (e) => imagedata.data = ByteBuffer.wrap(e.target.result)
-  reader.readAsArrayBuffer(file)
-  imagedata.name = file.name
-}
-```
-
-**Next:** [Feel enlightened and go back to start](https://github.com/dcodeIO/ProtoBuf.js/wiki)
