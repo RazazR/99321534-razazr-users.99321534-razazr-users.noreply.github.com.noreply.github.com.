@@ -33,3 +33,5 @@ protobuf.js 6 is a complete rewrite of the previous codebase, hence a lot has ch
 ### Other
 
 * It's now easier to generate static code. There is actually a `static` target for `pbjs` now as a starting point.
+
+Changes since 6.0.0 are documented within [CHANGELOG.md](https://github.com/dcodeIO/protobuf.js/blob/master/CHANGELOG.md).
