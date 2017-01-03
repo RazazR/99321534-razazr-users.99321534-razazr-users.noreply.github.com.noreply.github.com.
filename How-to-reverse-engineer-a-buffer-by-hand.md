@@ -91,7 +91,7 @@ So far the buffer looks ok and appears to match our assumptions on inner message
 
 Next steps: Either obtain more data or validate the other inner chunks. You got the drill. Happy reverse engineering!
 
-P.S.: This technique can also be used to build a protobuf definition for unknown data of course. In our case, this is what we have learned so far:
+P.S.: This technique can also be used to build a protobuf definition for unknown data. In our case, this is what we have learned so far:
 
 ```protobuf
 message Outer {
