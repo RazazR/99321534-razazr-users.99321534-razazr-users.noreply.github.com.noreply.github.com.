@@ -109,3 +109,5 @@ message Inner2 {
    uint32 value4 = 4;
 }
 ```
+
+As you see, the exact type of each field must be guessed because a single wire type can match multiple value types.
