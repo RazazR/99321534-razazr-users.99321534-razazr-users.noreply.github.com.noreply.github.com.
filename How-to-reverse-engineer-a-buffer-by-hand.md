@@ -42,13 +42,13 @@ Going back to our buffer, we now know that the field uses the **ldelim** wire ty
 22 06 08 02 10 19 18 03
 
 0a	id = 1, wireType = 2 
-        we clearly have a pattern here. this is most likely a repeated field.
-09      length = 9
+  	we clearly have a pattern here. this is most likely a repeated field.
+09	length = 9
 
 22 07 08 02 10 a2 03 18 20
 
 0a	id = 1, wireType = 2
-09      length = 9
+09	length = 9
 
 22 07 08 02 10 8d 02 ...
 ```
