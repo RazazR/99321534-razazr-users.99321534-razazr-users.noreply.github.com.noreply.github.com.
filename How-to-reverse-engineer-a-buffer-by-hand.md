@@ -30,14 +30,14 @@ Let's start decoding:
 
 Value     | Wire type   | Size                           | Possible types
 ----------|-------------|--------------------------------|---------------
-0         | varint      | 1 to 10 bytes                  | int32, int64, uint32, bool etc.
-1         | fixed64     | 8 bytes (little endian)        | fixed64, sfixed64, double
-2         | ldelim      | varint length + length * bytes | string, bytes, (inner) messages
-3         | start_group | N/A                            | N/A
-4         | end_group   | N/A                            | N/A
-5         | fixed32     | 4 bytes (little endian)        | fixed32, sfixed32, float
+0 = 000b  | varint      | 1 to 10 bytes                  | int32, int64, uint32, bool etc.
+1 = 001b  | fixed64     | 8 bytes (little endian)        | fixed64, sfixed64, double
+2 = 010b  | ldelim      | varint length + length * bytes | string, bytes, (inner) messages
+3 = 011b  | start_group | N/A                            | N/A
+4 = 100b  | end_group   | N/A                            | N/A
+5 = 101b  | fixed32     | 4 bytes (little endian)        | fixed32, sfixed32, float
 
-Wire types 6 or 7, which do not exist, are indicators for a corrupted buffer.
+Wire types 6 = 110b or 7 = 111b, which do not exist, are indicators for a corrupted buffer.
 
 Going back to our buffer, we now know that the field uses the **ldelim** wire type, which indicates a varint length followed by this exact amount of bytes.
 
