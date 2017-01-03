@@ -110,4 +110,4 @@ message Inner2 {
 }
 ```
 
-As you see, the exact type of each field must be guessed because a single wire type can match multiple value types.
+As you see, the exact type of each field must be guessed because a single wire type can refer to multiple value types.
