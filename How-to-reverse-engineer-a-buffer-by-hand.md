@@ -1,6 +1,6 @@
 Let's say you have the following buffer and that you want to know what's wrong with it:
 
-`0a 0a 32 08 08 07 10 00 18 1a 20 00 0a 08 22 06 08 02 10 19 18 03 0a 09 22 07 08 02 10 a2 03 18 20 0a 09 22 07 08 02 10 8d 02`
+`Buffer <0a 0a 32 08 08 07 10 00 18 1a 20 00 0a 08 22 06 08 02 10 19 18 03 0a 09 22 07 08 02 10 a2 03 18 20 0a 09 22 07 08 02 10 8d 02 ...>`
 
 First you need to know whether the message is length delimited or not. If it is length delimited, the first byte(s) would specify the message's total length as a **varint**. Otherwise, which is the case for our buffer above, the message starts with the first field's **tag**.
 
@@ -52,3 +52,5 @@ Going back to our buffer, we now know that the field uses the **ldelim** wire ty
 
 22 07 08 02 10 8d 02 ...
 ```
+
+Unfortunately, that's all the bytes printed to console, so the next step would be to get the complete buffer and continue here.
