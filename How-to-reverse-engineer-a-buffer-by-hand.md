@@ -20,14 +20,14 @@ Let's start decoding:
 
 ### So, what are those wire types?
 
-Value     | Wire type   | Size
-----------|-------------|------
-0         | varint      | 1 to 10 bytes
-1         | fixed64     | 8 bytes
-2         | ldelim      | varint length + length * bytes
-3         | start_group | N/A
-4         | end_group   | N/A
-5         | fixed32     | 4 bytes
+Value     | Wire type   | Size                           | Possible types
+----------|-------------|--------------------------------|---------------
+0         | varint      | 1 to 10 bytes                  | int32, int64, uint32 etc.
+1         | fixed64     | 8 bytes (little endian)        | fixed64, sfixed64, double
+2         | ldelim      | varint length + length * bytes | string, bytes, (inner) messages
+3         | start_group | N/A                            | N/A
+4         | end_group   | N/A                            | N/A
+5         | fixed32     | 4 bytes (little endian)        | fixed32, sfixed32, float
 
 Going back to our buffer, we now know that the field uses the **ldelim** wire type, which indicates a varint length followed by this exact amount of bytes.
 
