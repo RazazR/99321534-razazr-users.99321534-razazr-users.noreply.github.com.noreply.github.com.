@@ -5,7 +5,7 @@ Let's say you have the following buffer and that you want to know what's wrong w
 First you need to know whether the message is length delimited or not. If it is length delimited, the first byte(s) would specify the message's total length as a **varint**. Otherwise the message starts with the first field's **tag** directly.
 
 ### How to decode a varint?
-Varints occupy 1 to 10 bytes to efficiently encode integer values. The most significant bit of each byte indicates whether more bytes are following (msb=1, | 0x80) or not (msb=0, & 0x7f). Most of the time the actual value isn't of importance when just reverse engineering a standard buffer because the varint is either just 1 byte long or the value isn't of importance. If not important you can just skip all bytes with the msb set plus one. If it's just 1 byte, you can just take the byte as the value (msb isn't set anyway). Otherwise you can calculate the value by taking the other 7 bits and add each byte's value by shifting it by 0, 7, 14, 21 etc. first. In code:
+Varints occupy 1 to 10 bytes to efficiently encode integer values. The most significant bit of each byte indicates whether more bytes are following (msb=1, | 0x80) or not (msb=0). Most of the time the actual value isn't of importance when just reverse engineering a standard buffer because the varint is either just 1 byte long or the value isn't of importance. If not important you can just skip all bytes with the msb set plus one. If it's just 1 byte, you can just take the byte as the value (msb isn't set anyway). Otherwise you can calculate the value by taking the other 7 bits and add each byte's value by shifting it by 0, 7, 14, 21 etc. first. In code:
 ```js
 var i = 0;
 while (buffer[pos] & 0x80)
