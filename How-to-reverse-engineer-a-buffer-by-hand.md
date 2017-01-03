@@ -12,7 +12,10 @@ while (buffer[pos] & 0x80)
     value |= (buffer[pos++] & 0x7f) << i++ * 7;
 ```
 
-Back to our buffer: In our case the message isn't length delimited, hence the message starts with the first field's tag. Tags are encoded as a varint. The last 3 bits of the tag's value represent the wire type, all other bits except the last 3 represent the field id.
+Back to our buffer: In our case the message isn't length delimited, hence the message starts with the first field's tag.
+
+### Tags
+Tags are encoded as a varint. The last 3 bits of the tag's value represent the wire type, all other bits except the last 3 represent the field id.
 
 Let's start decoding:
 
