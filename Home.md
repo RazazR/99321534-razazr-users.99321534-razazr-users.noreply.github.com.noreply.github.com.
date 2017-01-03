@@ -13,6 +13,6 @@ Documentation resources
 Frequently asked questions
 --------------------------
 * [Why protobuf.js instead of, let's say, JSON?](https://github.com/dcodeIO/ProtoBuf.js/wiki/ProtoBuf.js-vs-JSON)
-* [How to validate / decode / reverse engineer a protobuf buffer by hand?](https://github.com/dcodeIO/protobuf.js/issues/55)
+* [How to reverse engineer a buffer by hand](https://github.com/dcodeIO/protobuf.js/wiki/How-to-reverse-engineer-a-buffer-by-hand)
 * [How to read binary data in the browser / under node.js?](https://github.com/dcodeIO/protobuf.js/wiki/How-to-read-binary-data-in-the-browser-or-under-node.js%3F)
 * [What about google/protobuf/descriptor.proto?](https://github.com/dcodeIO/protobuf.js/tree/master/google/protobuf)
