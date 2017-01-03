@@ -90,3 +90,22 @@ Just as we assumed, it appears that the chunks are inner messages. Again, the in
 So far the buffer looks ok and appears to match our assumptions on inner messages. Something else must be wrong. Either other inner messages are invalid or there is an error even farther down the road.
 
 Next steps: Either obtain more data or validate the other inner chunks. You got the drill. Happy reverse engineering!
+
+P.S.: This technique can also be used to build a protobuf definition for unknown data of course. In our case, this is what we have learned so far:
+
+```protobuf
+message Outer {
+   repeated Inner1 inner1 = 1;
+}
+
+message Inner1 {
+   Inner2 inner2 = 6;
+}
+
+message Inner2 {
+   uint32 value1 = 1; // could also be int32, sint32, int64 etc.
+   uint32 value2 = 2;
+   uint32 value3 = 3;
+   uint32 value4 = 4;
+}
+```
