@@ -73,10 +73,13 @@ Just as we assumed, it appears that the chunks are inner messages. Again, the in
 08	1 | 000 = id 1, wireType 0
   	remember: wire type 0 is a varint
 07	value 7
+
 10	10 | 000 = id 2, wireType 0 (varint)
 00	value 0
+
 18	11 | 000 = id 3, wireType 0 (varint)
 1a	value 26
+
 20	100 | 000 = id 4, wireType 0 (varint)
 00	value 0
 ```
