@@ -59,7 +59,7 @@ Going back to our buffer, we now know that the field uses the **ldelim** wire ty
 22 07 08 02 10 8d 02 ...
 ```
 
-Unfortunately, that's all the bytes printed to console, so the next step would be to get the complete buffer and continue here OR to make a guess what actual type the length delimited chunks above could be. We already know it must be a repeated field because the same id is used multiple times. We also learned that the ldelim wire type is either encoding an UTF8 encoded strings raw bytes or an inner message. When looking at the chunks above, these do not appear to be strings so it makes sense to check for inner messages.
+Unfortunately, that's all the bytes printed to console, so the next step would be to get the complete buffer and continue here OR to make a guess what actual type the length delimited chunks above could be. We already know it must be a repeated field because the same id is used multiple times. We also learned from the table above that the ldelim wire type is either encoding a string, raw bytes or an inner message. When looking at the chunks above, these do not appear to be strings, hence it makes sense to check for inner messages.
 
 Let's start with the first:
 
