@@ -12,7 +12,8 @@ Back to our buffer: In our case the message isn't length delimited, hence the me
 Let's start decoding:
 
 ```
-0a	convert to binary: 1010, split into id and wireType: 1 | 010
+0a	convert to binary: 1010
+  	split into id and wireType: 1 | 010
   	convert to decimal: id = 1, wireType = 2
   	note that the msb isn't set here, hence it is a varint of just 1 byte
 ```
