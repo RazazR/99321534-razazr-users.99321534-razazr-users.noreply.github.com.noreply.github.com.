@@ -2,7 +2,7 @@ Let's say you have the following buffer and that you want to know what's wrong w
 
 `Buffer <0a 0a 32 08 08 07 10 00 18 1a 20 00 0a 08 22 06 08 02 10 19 18 03 0a 09 22 07 08 02 10 a2 03 18 20 0a 09 22 07 08 02 10 8d 02 ...>`
 
-First you need to know whether the message is length delimited or not. If it is length delimited, the first byte(s) would specify the message's total length as a **varint**. Otherwise, which is the case for our buffer above, the message starts with the first field's **tag**.
+First you need to know whether the message is length delimited or not. If it is length delimited, the first byte(s) would specify the message's total length as a **varint**. Otherwise the message starts with the first field's **tag** directly.
 
 ### How to decode a varint?
 Varints occupy 1 to 10 bytes (var = variable) to encode integer values. The most significant bit of each byte indicates whether more bytes are following (msb=1, | 0x80) or not (msb=0, & 0x7f). Most of the time the actual value isn't of importance when just reverse engineering a standard buffer. In these cases you can just skip all bytes with the msb set plus one. Otherwise you can calculate the value by taking the other 7 bits (all except the msb) and add each byte's value by shifting it by 0, 7, 14, 21 etc. first. In code: `var i = 0; while (buffer[pos] & 0x80) value |= (buffer[pos++] & 0x7f) << i++*7;`
