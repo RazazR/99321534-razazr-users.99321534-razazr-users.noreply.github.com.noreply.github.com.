@@ -7,7 +7,7 @@ First you need to know whether the message is length delimited or not. If it is 
 ### How to decode a varint?
 Varints occupy 1 to 10 bytes (var = variable) to encode integer values. The most significant bit of each byte indicates whether more bytes are following (msb=1, | 0x80) or not (msb=0, & 0x7f). Most of the time the actual value isn't of importance when just reverse engineering a standard buffer. In these cases you can just skip all bytes with the msb set plus one. Otherwise you can calculate the value by taking the other 7 bits (all except the msb) and add each byte's value by shifting it by 0, 7, 14, 21 etc. first. In code: `var i = 0; while (buffer[pos] & 0x80) value |= (buffer[pos++] & 0x7f) << i++*7;`
 
-Back to our buffer: In our case the message isn't length delimited, hence the message starts with the first field's tag, which are encoded as a varint. The last 3 bits of the value represent the wire type, all other bits except the last 3 represent the field id.
+Back to our buffer: In our case the message isn't length delimited, hence the message starts with the first field's tag. Tags are encoded as a varint. The last 3 bits of the tag's value represent the wire type, all other bits except the last 3 represent the field id.
 
 Let's start decoding:
 
