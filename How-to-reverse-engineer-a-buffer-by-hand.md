@@ -30,7 +30,7 @@ Let's start decoding:
 
 Value     | Wire type   | Size                           | Possible types
 ----------|-------------|--------------------------------|---------------
-0         | varint      | 1 to 10 bytes                  | int32, int64, uint32 etc.
+0         | varint      | 1 to 10 bytes                  | int32, int64, uint32, bool etc.
 1         | fixed64     | 8 bytes (little endian)        | fixed64, sfixed64, double
 2         | ldelim      | varint length + length * bytes | string, bytes, (inner) messages
 3         | start_group | N/A                            | N/A
