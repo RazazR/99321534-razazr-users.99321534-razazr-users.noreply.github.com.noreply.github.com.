@@ -37,6 +37,8 @@ Value     | Wire type   | Size                           | Possible types
 4         | end_group   | N/A                            | N/A
 5         | fixed32     | 4 bytes (little endian)        | fixed32, sfixed32, float
 
+Wire types 6 or 7, which do not exist, are indicators for a corrupted buffer.
+
 Going back to our buffer, we now know that the field uses the **ldelim** wire type, which indicates a varint length followed by this exact amount of bytes.
 
 ```
