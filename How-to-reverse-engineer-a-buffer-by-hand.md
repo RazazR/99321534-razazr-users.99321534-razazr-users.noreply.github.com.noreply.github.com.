@@ -18,9 +18,9 @@ Let's start decoding:
 
 ```
 0a	convert to binary: 1010
+  	note that the msb isn't set here, hence it is a varint of just 1 byte
   	split into id and wireType: 1 | 010
   	convert to decimal: id = 1, wireType = 2
-  	note that the msb isn't set here, hence it is a varint of just 1 byte
 ```
 
 ### So, what are those wire types?
