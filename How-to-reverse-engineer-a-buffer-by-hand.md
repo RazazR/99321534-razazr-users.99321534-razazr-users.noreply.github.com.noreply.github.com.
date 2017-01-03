@@ -15,7 +15,7 @@ while (buffer[pos] & 0x80)
 Back to our buffer: In our case the message isn't length delimited, hence the message starts with the first field's tag.
 
 ### Tags
-Tags are encoded as a varint. The last 3 bits of the tag's value represent the wire type, all other bits except the last 3 represent the field id.
+Tags are encoded as a varint. The last 3 bits (`value & 7`) of the tag's value represent the wire type, all other bits except the last 3 (`value >>> 3`) represent the field id.
 
 Let's start decoding:
 
