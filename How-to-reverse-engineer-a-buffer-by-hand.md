@@ -87,4 +87,4 @@ Just as we assumed, it appears that the chunks are inner messages. Again, the in
 
 So far the buffer looks ok and appears to match our assumptions on inner messages. Something else must be wrong. Either other inner messages are invalid or there is an error even farther down the road.
 
-Next steps: Either obtain more data or validate the other inner chunks. You know the drill (now). Happy reverse engineering!
+Next steps: Either obtain more data or validate the other inner chunks. You got the drill. Happy reverse engineering!
