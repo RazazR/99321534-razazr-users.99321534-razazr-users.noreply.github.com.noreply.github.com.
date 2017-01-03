@@ -53,6 +53,34 @@ Going back to our buffer, we now know that the field uses the **ldelim** wire ty
 22 07 08 02 10 8d 02 ...
 ```
 
-Unfortunately, that's all the bytes printed to console, so the next step would be to get the complete buffer and continue here.
+Unfortunately, that's all the bytes printed to console, so the next step would be to get the complete buffer and continue here OR to make a guess what actual type the length delimited chunks above could be. We already know it must be a repeated field because the same id is used multiple times.
 
-But you get the idea!
+### What could wireType = 2 / ldelim refer to?
+There are a couple of types encoding as the ldelim wire type: UTF8 encoded strings, raw bytes or inner messages. When looking at the chunks above, these do not appear to be strings so it makes sense to check for inner messages.
+
+Let's start with the first:
+
+```
+32	110 | 010 = id 6, wireType 2
+08	length = 8
+
+08 07 10 00 18 1a 20 00
+```
+
+Just as we assumed, it appears that the chunks are inner messages. Again, the inner inner chunks do not appear to be strings, so let's assume another level of nesting:
+
+```
+08	1 | 000 = id 1, wireType 0
+  	remember: wire type 0 is a varint
+07	value 7
+10	10 | 000 = id 2, wireType 0 (varint)
+00	value 0
+18	11 | 000 = id 3, wireType 0 (varint)
+1a	value 26
+20	100 | 000 = id 4, wireType 0 (varint)
+00	value 0
+```
+
+So far the buffer looks ok and appears to match our assumptions on inner messages. Something else must be wrong. Either other inner messages are invalid or there is an error even farther down the road.
+
+Next steps: Either obtain more data or validate the other inner chunks. You know the drill (now). Happy reverse engineering!
