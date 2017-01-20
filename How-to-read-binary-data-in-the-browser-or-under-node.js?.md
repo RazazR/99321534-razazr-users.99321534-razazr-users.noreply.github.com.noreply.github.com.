@@ -19,7 +19,7 @@ xhr.open(
 );
 xhr.responseType = "arraybuffer";
 xhr.onload = function(evt) {
-    var msg = SomeMessage.decode(xhr.response);
+    var msg = SomeMessage.decode(new Uint8Array(xhr.response));
     alert(JSON.stringify(msg, null, 4)); // Correctly decoded
 }
 xhr.send(null);
