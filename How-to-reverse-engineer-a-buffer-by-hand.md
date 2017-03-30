@@ -117,4 +117,4 @@ message Inner2 {
 
 As you see, the exact type of each field must be guessed because a single wire type can refer to multiple value types.
 
-A few additional examples are available starting with and referenced within [this issue](https://github.com/dcodeIO/protobuf.js/issues/55).
+A few additional examples are available starting with and referenced within [this issue](https://github.com/dcodeIO/protobuf.js/issues/55). More: [736](https://github.com/dcodeIO/protobuf.js/issues/736)
