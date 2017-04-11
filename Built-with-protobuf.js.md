@@ -10,7 +10,7 @@
 * [Proto2TypeScript](https://github.com/SINTEF-9012/Proto2TypeScript) - Generate TypeScript definitions from a Protocol Buffers model
 
 ### RPC
-* [grpc](https://github.com/grpc/grpc)
+* [grpc](https://www.grpc.io) - A high performance, open-source universal RPC framework
 
 ### Utility
 * [heka-node](https://github.com/mozilla-services/heka-node) - A node.js client for Mozilla's Heka logging server
